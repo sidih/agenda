@@ -1,0 +1,2126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+                <author>Pretnar, Ajda</author>
+            </titleStmt>
+            <editionStmt>
+                <edition><date>2022-07-25</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <p>unknown</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application xml:id="docxtotei" ident="TEI_fromDOCX" version="2.15.0">
+                    <label>DOCX to TEI</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <revisionDesc>
+            <listChange>
+                <change><date>2022-09-08T12:59:34Z</date><name>Pretnar, Ajda</name></change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <head>Kolofon</head>
+                <p>Ajda Pretnar Žagar</p>
+                <p>Kristina Pahor de Maiti</p>
+                <p>Darja Fišer</p>
+                <p>What's on the agenda?: Topic modelling parliamentary debates before and during
+                    the COVID-19 pandemic<lb/>Kaj je na dnevnem redu?: Tematsko modeliranje
+                    parlamentarnih razprav pred in med epidemijo covida-19</p>
+                <p>Recenzenta / Reviewers:</p>
+                <p>Çağrı Çöltekin</p>
+                <p>Marta Kołczyńska</p>
+                <p>TEI Encoding / Kodiranje TEI:</p>
+                <p>Andrej Pančur</p>
+                <p>Editon 1.0</p>
+                <p>Word count: words 12752, characters (with spaces) 87170.</p>
+                <p>Inštitut za novejšo zgodovino / Institute of Contemporary History</p>
+                <p>2022</p>
+                <p>Creative Commons licenca</p>
+                <p>This work by Ajda Pretnar Žagar, Kristina Pahor de Maiti and Darja Fišer is
+                    licensed under a Creative Commons Attribution Non-commercial Non-derivative 4.0
+                    International license</p>
+                <p>Kataložni zapis o publikaciji (CIP) pripravili v Narodni in univerzitetni
+                    knjižnici v Ljubljani</p>
+                <p>COBISS.SI-ID=<hi rend="background(yellow)">X</hi></p>
+                <p>ISBN <hi rend="background(yellow)">X</hi> (html)</p>
+                <p>ISBN <hi rend="background(yellow)">X</hi></p>
+                <p><hi rend="background(yellow)">https://sidih.github.io/agenda/</hi></p>
+                <p><hi rend="background(yellow)">http://hdl.handle.net/</hi></p>
+                <p>COBISS.SI <hi rend="background(yellow)">X</hi></p>
+                <p><pb/></p>
+                <p>Kaj je na dnevnem redu?</p>
+                <p>Tematsko modeliranje parlamentarnih razprav pred in med epidemijo covida-19</p>
+                <divGen type="toc"/>
+            </div>
+            <div>
+                <head>Uvod</head>
+                <p>V demokratičnih državah parlament deluje kot osrednje predstavniško in
+                    zakonodajno telo. To pomeni, da ga sestavljajo izvoljeni predstavniki
+                        državljanov<note place="foot" xml:id="ftn1" n="1">V učnem gradivu
+                        uporabljamo generični moški spol.</note>, ki v njihovem imenu sodelujejo pri
+                    oblikovanju in sprejemanju zakonov ter tako urejajo vsa področja življenja in
+                    delovanja v družbi. Parlament pogosto nadzoruje tudi delo izvršilne oblasti
+                    (Norton, 2002). Zaradi ključne vloge, ki jo ima parlament pri razvoju in
+                    življenju družbe, je delovanje parlamenta vedno znova pomemben in aktualen
+                    predmet humanističnih in družboslovnih raziskav.</p>
+                <p>V zadnjih dveh desetletjih so zaradi napredka tehnologije, povečanega zanimanja
+                    medijev in državljanov za delo parlamenta ter želje po večji transparentnosti
+                    podatki o dogajanju v parlamentu, vključno z zapisi parlamentarnih sej, postali
+                    bolj dostopni (Norton, 2002). Zapisi sej so edinstven raziskovalni vir, saj
+                    parlamentarne razprave odsevajo politično, družbeno in kulturno vzdušje
+                    določenega časa (Ilie, 2010). Zaradi ustaljenosti parlamentarnega diskurza in
+                    digitalnega formata pa so zapisi parlamentarnih sej tudi priročen vir za
+                    izdelavo parlamentarnih korpusov. Pri tem gre za časovno zamejene in
+                    strukturirane nabore zapisov sej, ki so dodatno opremljeni z metapodatki o
+                    govorcih in govorih ter jezikoslovnimi oznakami (Truan in Romary, 2021).</p>
+                <p>Parlamentarni korpusi običajno vsebujejo velike količine podatkov, ki jih je v
+                    razumnem času nemogoče obdelati ročno. Eno od priljubljenih orodij za analizo
+                    korpusov so konkordančniki, s katerimi se lahko spoznate v <ref
+                        target="https://sidih.github.io/voices/index-sl.html"><hi
+                            rend="underline color(1155CC)">sorodnem učnem gradivu</hi></ref> (gl.
+                    Fišer in Pahor de Maiti, 2021), druga orodja, npr. <ref
+                        target="https://orangedatamining.com/"><hi rend="underline color(1155CC)"
+                            >Orange</hi></ref> (Demšar idr., 2013), ki ga bomo uporabljali v tem
+                    učnem gradivu, pa omogočajo uporabo naprednih avtomatskih analitičnih tehnik oz.
+                    t. i. rudarjenje besedil, na podlagi katerega je iz velikih količin podatkov
+                    mogoče izluščiti vzorce in informacije, ki na prvi pogled niso razvidni iz
+                    besedila (Wiedemann, 2016).</p>
+                <p>Tehnike rudarjenja besedil so raznovrstne in se jih med drugim uporablja za
+                    analizo čustvene zaznamovanosti parlamentarnih razprav (Rheault idr., 2016;
+                    Rudkowsky idr., n.d.), prepoznavo politične opredelitve (Bergmann idr., 2018)
+                    ali stališča poslancev (Abercrombie in Batista-Navarro, 2020), modeliranje
+                    argumentacije v parlamentarnih razpravah (Petukhova idr., 2015) in podobno. Ena
+                    od njih je tudi tematsko modeliranje (Meeks in Weingart, 2012), ki sodi med
+                    najbolj razširjene tehnike s področja besedilnega rudarjenja v digitalni
+                    humanistiki in ki se ji bomo posvetili v tem učnem gradivu.</p>
+                <p>Namen učnega gradiva je raziskovalce s področja humanistike in družboslovja
+                    vpeljati v svet rudarjenja besedil ter prikazati vrednost tovrstnih pristopov za
+                    družboslovne in humanistične raziskave. Učno gradivo razlaga posebnosti
+                    parlamentarnega diskurza in uporabo tematskega modeliranja za reševanje
+                    konkretnih raziskovalnih vprašanj. Analiza temelji na prosto dostopnem korpusu
+                    slovenskih parlamentarnih razprav <ref target="http://hdl.handle.net/11356/1432"
+                            ><hi rend="underline color(1155CC)">ParlaMint</hi></ref> (Erjavec idr.,
+                    2021) ter na orodju <ref target="https://orangedatamining.com/"><hi
+                            rend="underline color(1155CC)">Orange</hi></ref> (Demšar idr., 2013), ki
+                    uporabniku brez znanja programiranja omogoča uporabo naprednih metod rudarjenja
+                    besedil.</p>
+            </div>
+            <div>
+                <head>Pregled učnega gradiva in navodila za uporabo</head>
+                <p>Učno gradivo je razdeljeno na teoretični in praktični del. V teoretičnem delu
+                    predstavimo značilnosti parlamentarnih razprav in korpus ParlaMint (3. poglavje)
+                    ter metodo tematskega modeliranja (4. poglavje). Praktični del se začne s
+                    poglavjem, ki nas vodi skozi pripravo na analizo in v katerem je razloženo, kako
+                    namestiti program Orange, uvoziti in pregledati podatke ter pripraviti vzorec
+                    podatkov za analizo (5. poglavje). V naslednjem poglavju preidemo na osrednji
+                    praktični del učnega gradiva (6. poglavje), ki ga sestavljajo tri povezane
+                    naloge. V teh nalogah z metodo tematskega modeliranja in različnimi
+                    vizualizacijami raziščemo, o čem so govorili poslanci, kateri temi so posvetili
+                    največ pozornosti in katere teme so še posebej izstopale med epidemijo v
+                    primerjavi s predepidemičnim obdobjem.</p>
+                <p>Vsi viri in orodja, uporabljeni v tem učnem gradivu, so prosto dostopni na
+                    spletu. Podrobna navodila glede prenosa podatkov <ref
+                        target="http://hdl.handle.net/11356/1432">ParlaMint</ref> in namestitve
+                    programa <ref target="https://orangedatamining.com/">Orange</ref> so navedena v
+                    poglavju 5.1. Če vas zanima predvsem analiza besedil v programu Orange, lahko
+                    začnete s 5. poglavjem, vendar priporočamo, da si preberete tudi začetna
+                    teoretična poglavja, saj vsebujejo ključne informacije za razumevanje podatkov
+                    in metode tematskega modeliranja, kar zmanjša možnost za nekritično uporabo
+                    metode in neustrezno interpretacijo rezultatov.</p>
+                <p>Poleg opisa postopkov učno gradivo vsebuje tudi številne posnetke zaslonov, ki
+                    prikazujejo nastavitve gradnikov<note place="foot" xml:id="ftn2" n="2">Gradniki
+                        predstavljajo posamezne korake analize.</note> in dobljene rezultate. Na
+                    začetku in koncu vsake naloge je prikazan delotok, ki prikazuje sosledje
+                    uporabljenih gradnikov. Celoten delotok je na voljo za prenos v poglavju 5.1,
+                    vendar priporočamo, da delotok sestavite sami ob sledenju navodilom v učnem
+                    gradivu, saj boste tako najbolje razumeli posamezne korake analize. Imena <hi
+                        rend="bold">gradnikov </hi>so v besedilu zapisana odebeljeno, <hi
+                        rend="italic">nastavitve gradnikov</hi>, <hi rend="italic">imena
+                        spremenljivk, iskalni ukazi, obravnavane besede</hi> ter <hi rend="italic"
+                        >angleške ustreznice izrazov</hi> pa so označene ležeče.</p>
+                <p>Oranžni okvirčki <hi rend="italic">Poskusite sami</hi> vsebujejo navodila za
+                    samostojno raziskovanje podatkov in utrjevanje pridobljenega znanja.</p>
+            </div>
+            <div>
+                <head>Parlamentarne razprave</head>
+                <p>V učnem gradivu analiziramo govore poslancev na parlamentarnih sejah. V tem
+                    poglavju se zato najprej posvetimo nekaterim splošnim značilnostim, ki veljajo
+                    za parlamentarne razprave, saj je dobro poznavanje gradiva ključnega pomena tako
+                    pri oblikovanju raziskovalnih vprašanj kot pri interpretaciji rezultatov.</p>
+                <div>
+                    <head>Parlamentarne razprave</head>
+                    <p>Zaradi svoje institucionalne narave ima parlament jasno določeno strukturo in
+                        kompleksna pravila delovanja<note place="foot" xml:id="ftn3" n="3">Ključna
+                            in zavezujoča pravila delovanja, ki urejajo organizacijo in delo
+                            parlamenta ter pravice in dolžnosti parlamentarcev, so zapisana v
+                            poslovnikih posameznega parlamenta, npr. <ref
+                                target="http://www.pisrs.si/Pis.web/pregledPredpisa?id=POSL34">v
+                                poslovniku slovenskega državnega zbora</ref>, <ref
+                                target="https://erskinemay.parliament.uk/">poslovniku britanskega
+                                parlamenta</ref>, <ref
+                                target="https://www.btg-bestellservice.de/pdf/80060000.pdf"
+                                >poslovniku nemškega zveznega parlamenta</ref> itd.</note>, skozi
+                        zgodovino pa so se oblikovali tudi številni neformalni dogovori obnašanja
+                        (Norton, 2002). Ta pravila se med posameznimi parlamenti razlikujejo,
+                        spreminjajo pa se tudi skozi čas (Sieberer idr., 2011), zato jih je za
+                        ustrezno zasnovo analize in interpretacijo podatkov nujno treba poznati.
+                        Poleg tega se je pri analizi treba zavedati tudi vpliva, ki ga imajo na
+                        parlamentarne razprave lokalni in globalni politični kontekst, različne
+                        javne in zasebne vloge parlamentarcev in razmerja moči med njimi ter
+                        različna občinstva, ki lahko spremljajo isto razpravo (npr. ostali
+                        parlamentarci, gosti, javnost) (Ilie, 2010).</p>
+                    <p>Parlamentarne seje so vedno natančno strukturirane: imajo torej opredeljen
+                        dnevni red, seje vodi za to določena oseba, predajanje besede pa poteka po
+                        jasnih pravilih (prim. Proksch in Slapin, 2010). Posebna pravila veljajo
+                        tudi za specifične točke dnevnega reda oziroma vrste razprav, npr. za
+                        poslanska vprašanja in pobude ali za interpelacije. Vse to pomembno oblikuje
+                        in omejuje parlamentarni diskurz, tj. dejanje sporazumevanja v specifičnem
+                        okolju parlamenta.</p>
+                    <p>Parlamentarni diskurz je sicer le del širšega pojma političnega diskurza,
+                        znotraj katerega predstavlja najbolj institucionalizirani, s pravili
+                        zamejeni in uradni podtip (Bayley, 2004). Parlamentarni diskurz je tako
+                        ključna značilnost parlamenta, ki je osrednji prostor skupnosti za politično
+                        razpravo. Pri tem pa ni pomembna zgolj vsebina razprave, ampak v veliki meri
+                        tudi način govora oziroma diskurzivne strategije, ki jih govorci uporabljajo
+                        v svojih govorih, ter ostale, nejezikovne okoliščine. Trend raziskav
+                        parlamentarnega dogajanja gre zato vse bolj v smeri interdisciplinarnega
+                        pristopa h gradivu, ki omogoča široko interpretacijo dogodkov in procesov,
+                        vzrokov in posledic (Bayley, 2004; Ilie, 2010).</p>
+                </div>
+                <div>
+                    <head>Korpusi parlamentarnih razprav</head>
+                    <p>Temeljni vir za raziskovanje parlamentarnega diskurza so zapisi
+                        parlamentarnih sej, ki so za večino parlamentov že javno dostopni v
+                        digitalni obliki. Obstoj zapisov, predvsem pa njihova dostopnost v digitalni
+                        obliki je izjemnega pomena tako za javnost, saj lajša nadzor nad delom
+                        parlamenta, kot tudi za raziskovalno skupnost, vendar je dejanska uporabnost
+                        zapisov odvisna od raziskovalnega problema (prim. Mollin, 2007). Tako kot
+                        parlamentarni diskurz imajo namreč tudi zapisi sej svoje posebnosti, ki
+                        izhajajo iz tradicije zapisovanja, ki velja v posameznem parlamentu
+                        (smernice za zapisovanje se med parlamenti razlikujejo in običajno niso
+                        prosto dostopne), in iz dejstva, da so zapisi pisna različica sicer
+                        govorjenih nastopov poslancev. Zapisi parlamentarnih sej kot uradni pisni
+                        viri so nedvomno verodostojni na ravni vsebine, ne pa nujno tudi na ravni
+                        izgovorjenega besedila. Zapisi namreč <ref target="ch4.2-sl"><hi
+                                rend="underline color(0000FF)">niso natančne transkripcije
+                                govorov</hi></ref> in zato običajno ne vsebujejo, vsaj ne v celoti,
+                        prvin govorjenega jezika (npr. mašil, popravkov) in številnih informacij o
+                        neverbalni komunikaciji v dvorani (npr. prekinitev, gest), ki jih je sicer
+                        mogoče zaznati ob spremljanju dejanskega nastopa govorcev (Bayley, 2004).
+                        Pogosto pa zapisi vsebujejo tudi različne dodatne informacije oziroma
+                        metapodatke, npr. seznam govorcev, rezultate glasovanja, obravnavano gradivo
+                        ipd.</p>
+                    <p>Parlamentarni zapisi v digitalni obliki so priročen vir za izdelavo <ref
+                            target="https://sidih.github.io/voices/ch3-sl.html"><hi
+                                rend="underline color(0000FF)">parlamentarnih korpusov</hi></ref>,
+                        torej strukturiranih zbirk besedil, ki so obogatena z različnimi
+                        informacijami. Glede na dostopno gradivo so lahko parlamentarni korpusi tudi
+                        večmodalni, če poleg besedila vsebujejo tudi zvočne in/ali video posnetke,
+                        npr. <ref
+                            target="https://lindat.mff.cuni.cz/repository/xmlui/handle/11858/00-097C-0000-0005-CF9C-4"
+                                ><hi rend="underline color(0000FF)">korpus razprav iz češkega
+                                parlamenta</hi></ref>. Parlamentarni korpusi običajno vsebujejo
+                        bogate metapodatke, ki vključujejo raznovrstne podatke o sejah (npr. datum,
+                        vrsta seje, dnevni red), govorih in govorcih (npr. ime, datum rojstva,
+                        strankarska pripadnost), običajno pa so tudi bogato jezikoslovno označeni
+                        (npr. besedne vrste, osnovna oblika besede, imenske entitete). Vse te oznake
+                        raziskovalcem omogočajo, da pri oblikovanju raziskovalnih vprašanj
+                        upoštevajo tudi različne kombinacije spremenljivk (glejte Pančur in Šorn,
+                        2016).</p>
+                    <p>Ravno zaradi bogatih informacij in kontinuiranosti so <ref
+                            target="https://www.clarin.eu/resource-families/parliamentary-corpora"
+                            >parlamentarni korpusi</ref> vir informacij za vrsto področij, ki se pri
+                        raziskovanju vse bolj prepletajo, mdr. za jezikoslovje (Bayley, 2004),
+                        zgodovino (Piersma idr., 2014), politične vede (Rheault in Cochrane, 2020),
+                        demografijo (Kilroy, 2021) ipd. Raziskovalcem so parlamentarni korpusi <ref
+                            target="https://sidih.github.io/voices/ch3-sl.html"><hi
+                                rend="underline color(0000FF)">dostopni prek
+                            konkordančnikov</hi></ref> (tj. spletnih orodij za raziskovanje in
+                        analizo besedil v korpusih) ali pa v <ref
+                            target="https://www.clarin.si/repository/xmlui/discover?query=parl*&amp;submit=I%C5%A1%C4%8Di&amp;filtertype_2=title&amp;filter_relational_operator_2=contains&amp;filter_2=&amp;query=parl*"
+                                ><hi rend="underline color(0000FF)">repozitorijih jezikovnih
+                                virov</hi></ref>, kjer je mogoče dostopati do celotnega korpusa v
+                        različnih formatih in ga nato obdelati z različnimi orodji. To zadnjo
+                        možnost bomo izkoristili tudi v tem učnem gradivu (glejte poglavje 5.2).</p>
+                </div>
+                <div>
+                    <head>Korpus ParlaMint</head>
+                    <p>V tem učnem gradivu bomo uporabili podatke iz družine korpusov <ref
+                            target="http://hdl.handle.net/11356/1432">ParlaMint</ref> (Erjavec idr.,
+                        2021), ki vsebuje zapise parlamentarnih sej 17 držav: Belgije, Bolgarije,
+                        Češke, Danske, Francije, Hrvaške, Islandije, Italije, Latvije, Litve,
+                        Madžarske, Nizozemske, Poljske, Romunije, Slovenije, Turčije in Velike
+                        Britanije. Večina korpusov ParlaMint pokriva obdobje od 2015 do sredine
+                        2020. Družina korpusov je nastala pod okriljem raziskovalne infrastrukture
+                        za jezikovne vire in tehnologije <ref target="https://www.clarin.eu"><hi
+                                rend="underline color(0000FF)">CLARIN ERIC</hi></ref> in vsebuje pol
+                        milijarde besed oziroma pet milijonov govorov, ki jih je izreklo približno
+                        11 tisoč govorcev. Korpusi ParlaMint so razdeljeni na dva podkorpusa, in
+                        sicer <hi rend="italic">Reference </hi>(referenčno obdobje) in <hi
+                            rend="italic">COVID, </hi>ki zajemata čas pred epidemijo covida-19 in
+                        med njo (tj. pred novembrom 2019 oziroma od novembra 2019 naprej).</p>
+                    <p>Vsak od korpusov za posamezno državo je označen po enotni shemi, ki temelji
+                        na smernicah za označevanje <ref
+                            target="https://clarin-eric.github.io/parla-clarin/"><hi
+                                rend="underline color(0000FF)">Parla-CLARIN</hi></ref> (Erjavec in
+                        Pančur, 2019). To zagotavlja maksimalno primerljivost nacionalnih delov
+                        ParlaMinta. Ravno zaradi te značilnosti je ParlaMint dragocen vir za
+                        politične, sociološke, zgodovinske, jezikoslovne in druge raziskave, saj
+                        omogoča primerjalne analize, ki so bile do zdaj zaradi različne strukture
+                        parlamentarnih korpusov težko izvedljive. Poleg tega ParlaMint pokriva širok
+                        nabor evropskih držav, kar širi območje vedenja o parlamentarizmu, ki je še
+                        vedno zgoščeno predvsem okoli zahodnih držav. Primerjalne raziskave so tako
+                        ključnega pomena za napredek pri razumevanju pozitivnih in negativnih
+                        parlamentarnih praks in posledično za razvoj parlamentarnih sistemov
+                        (Norton, 2002). </p>
+                    <p>V učnem gradivu bomo uporabili slovenski del korpusa ParlaMint. ParlaMint-SI
+                        vključuje razprave iz Državnega zbora, ki je <hi rend="color(202122)"
+                            >osrednja in najvišja predstavniška in zakonodajna institucija v
+                            državi</hi>. Državni zbor sestavlja 90 poslancev (88 predstavnikov
+                        ljudstva in dva predstavnika narodnih manjšin), ki so izvoljeni na podlagi
+                        splošne volilne pravice (Brezovšek idr., 2012). ParlaMint-SI pokriva dva
+                        parlamentarna mandata v šestletnem obdobju (avgust 2014–julij 2020) in
+                        obsega približno 20 milijonov besed (Erjavec idr., 2022). Uporabili bomo
+                            <ref target="https://www.clarin.si/repository/xmlui/handle/11356/1431"
+                                ><hi rend="underline color(0000FF)">jezikoslovno označeno različico
+                                korpusa 2.1</hi></ref> (Erjavec idr., 2021), ki je tudi stavčno
+                        segmentirana (s tem so določene meje povedi) in tokenizirana (s tem je
+                        pojavnica – beseda, številka, ločilo – določena kot osnovna enota za
+                        analizo).</p>
+                </div>
+            </div>
+            <div>
+                <head>Tematsko modeliranje besedil</head>
+                <p>Za analizo parlamentarnih razprav bomo uporabili tematsko modeliranje, eno od
+                    tehnik rudarjenja besedil, ki se uporablja pri raziskovanju velikih količin
+                    podatkov. Za ustrezno izbiro metode raziskovanja, ki bo dala kakovostne
+                    rezultate, in za kritično interpretacijo rezultatov je nujno poznati delovanje
+                    ter prednosti in slabosti uporabljenih metod (prim. Shadrova, 2021). Ker bomo v
+                    naši analizi kot tehniko tematskega modeliranja uporabili latentno Dirichletovo
+                    dodelitev, sledi predstavitev delovanja tehnike in izsledkov nekaterih raziskav,
+                    pri katerih je bila le-ta uporabljena na parlamentarnem diskurzu.</p>
+                <p>Tematsko modeliranje je priljubljena metoda za avtomatsko analizo besedil, na
+                    podlagi katere lahko iz korpusa izluščimo prevladujoče teme, ki se pojavljajo v
+                    preučevanih besedilih. Rezultat tematskega modeliranja je tematski model, ki ga
+                    sestavljajo <hi rend="italic">teme</hi>, ki pa ne zaznamujejo dejanske tematike,
+                    o kateri govori besedilo, ampak so zgolj skupine besed, ki glede na matematično
+                    verjetnost sodijo skupaj in naj bi predstavljale isto tematiko. Raziskovalec pa
+                    mora nato ročno opredeliti oziroma poimenovati temo, ki naj bi jo te besede
+                    predstavljale.</p>
+                <p>Za tematsko modeliranje korpusa je mogoče uporabiti različne tehnike oziroma
+                    algoritme (Vayansky in Kumar, 2020). Med najpogosteje uporabljenimi je tehnika
+                    LDA oziroma <hi rend="italic">latentna Dirichletova dodelitev</hi>, ki jo bomo
+                    uporabili tudi v naši analizi. Tehniko so razvili Pritchard idr. (2000), za
+                    analizo besedil pa so jo predlagali Blei, Ng in Jordan (2003). Tehnika je
+                    izrazito primerna za obdelavo obsežnih zbirk besedilnih podatkov, ki jih zaradi
+                    velikosti ne moremo obdelati ročno.</p>
+                <div>
+                    <head>Tehnika LDA</head>
+                    <p>LDA vključuje naslednje korake, izvedene v več ponovitvah:<lb/></p>
+                    <list type="ordered">
+                        <item>Algoritem najprej vsem besedam v besedilu naključno dodeli oznako
+                            teme.</item>
+                    </list>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="center"><p style="text-align:center;"><hi
+                                        rend="bold smallcaps">Beseda</hi></p><p><hi
+                                        rend="bold smallcaps">Dokument</hi></p></cell>
+                            <cell rend="left"><hi rend="smallcaps">EPIDEMIJA</hi></cell>
+                            <cell rend="left"><hi rend="smallcaps">KRIZA</hi></cell>
+                            <cell rend="left"><hi rend="smallcaps">DAVEK</hi></cell>
+                            <cell rend="left"><hi rend="smallcaps">GOSPODARSTVO</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok1</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok2</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok3</hi></cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok4</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                        </row>
+                    </table>
+                    <list type="ordered">
+                        <item>Algoritem prešteje, kolikokrat se določena tema pojavi v posameznem
+                            besedilu (leva tabela) in kolikokrat je določena tema pripisana
+                            posamezni besedi (desna tabela).</item>
+                    </list>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"><table rend="rules">
+                                    <row>
+                                        <cell rend="left"/>
+                                        <cell rend="left"><hi rend="bold smallcaps">tema
+                                            1</hi></cell>
+                                        <cell rend="left"><hi rend="bold smallcaps">tema
+                                            2</hi></cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps">dok1</hi></cell>
+                                        <cell rend="left">2</cell>
+                                        <cell rend="left">2</cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps">dok2</hi></cell>
+                                        <cell rend="left">3</cell>
+                                        <cell rend="left">1</cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps">dok3</hi></cell>
+                                        <cell rend="left">2</cell>
+                                        <cell rend="left">2</cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps">dok4</hi></cell>
+                                        <cell rend="left">1</cell>
+                                        <cell rend="left">3</cell>
+                                    </row>
+                                </table></cell>
+                            <cell rend="left"><table rend="rules">
+                                    <row>
+                                        <cell rend="left"/>
+                                        <cell rend="left"><hi rend="bold smallcaps">tema
+                                            1</hi></cell>
+                                        <cell rend="left"><hi rend="bold smallcaps">tema
+                                            2</hi></cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps"
+                                            >epidemija</hi></cell>
+                                        <cell rend="left">3</cell>
+                                        <cell rend="left">1</cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps"
+                                            >kriza</hi></cell>
+                                        <cell rend="left">2</cell>
+                                        <cell rend="left">2</cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps"
+                                            >davek</hi></cell>
+                                        <cell rend="left">1</cell>
+                                        <cell rend="left">3</cell>
+                                    </row>
+                                    <row>
+                                        <cell rend="left"><hi rend="bold smallcaps"
+                                                >gospodarstvo</hi></cell>
+                                        <cell rend="left">2</cell>
+                                        <cell rend="left">2</cell>
+                                    </row>
+                                </table></cell>
+                        </row>
+                    </table>
+                    <list type="ordered">
+                        <item>Nato algoritem za posamezno besedo privzame, da ne pozna več njene
+                            teme.</item>
+                    </list>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"/>
+                            <cell rend="left"><hi rend="bold smallcaps">epidemija</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">kriza</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">davek</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">gospodarstvo</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok1</hi></cell>
+                            <cell rend="left"><hi rend="bold color(FF0000)">?</hi>
+                            </cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok2</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok3</hi></cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok4</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                        </row>
+                    </table>
+                    <list type="ordered">
+                        <item>Za tem posodobi obe tabeli iz 2. koraka, tako da znova določi
+                            frekvenco določene teme v posameznih besedilih (leva tabela) in
+                            frekvenco določene besede v posameznih temah (desna tabela).</item>
+                    </list>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"/>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 1</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 2</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok1</hi></cell>
+                            <cell rend="left"><hi rend="bold color(FF0000)">1</hi></cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok2</hi></cell>
+                            <cell rend="left">3</cell>
+                            <cell rend="left">1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok3</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok4</hi></cell>
+                            <cell rend="left">1</cell>
+                            <cell rend="left">3</cell>
+                        </row>
+                    </table>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"/>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 1</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 2</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">epidemija</hi></cell>
+                            <cell rend="left"><hi rend="bold color(FF0000)">2</hi></cell>
+                            <cell rend="left">1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">kriza</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">davek</hi></cell>
+                            <cell rend="left">1</cell>
+                            <cell rend="left">3</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">gospodarstvo</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                    </table>
+                    <list type="ordered">
+                        <item>Izračuna, kako močna je <hi rend="bold">povezava med besedilom in temo
+                            </hi>(verjetnost teme v dokumentu: moder pravokotnik) ter <hi
+                                rend="bold">temo in izbrano besedo </hi>(verjetnost besede v temi:
+                            rdeč pravokotnik).</item>
+                    </list>
+                    <figure>
+                        <graphic url="media/image1.png"/>
+                    </figure>
+                    <list type="ordered">
+                        <item>Vijolični pravokotnik je zmnožek rdečega in modrega pravokotnika in
+                            predstavlja verjetnost, da beseda pripada določeni temi. Na podlagi
+                            slednje verjetnosti (oba vijolična kvadrata) nato tehnika določi, kateri
+                            temi bo pripadal dokument (zelena zvezda, ki, glede na izračunano
+                            verjetnost kombinacije besede in teme, predstavlja naključno dodelitev
+                            teme izbranemu dokumentu). <graphic url="media/image2.png"/>
+                        </item>
+                    </list>
+                    <p>Na kratko, algoritem na podlagi verjetnosti (vijolična kvadrata) določi novo
+                        temo (zelena zvezda). Verjetnostna porazdelitev tem v besedilu se izračuna
+                        na podlagi Dirichletove porazdelitve, ki določa, da verjetnost nikoli ni
+                        ničelna. To pomeni, da ima vsaka beseda vsaj majhno možnost, da pripada tudi
+                        manj pogosti temi, oziroma da je v dokumentu prisotna tudi manj pogosta
+                        tema.<lb/>Ko besedi algoritem določi temo, posodobi tudi tabelo
+                        besedila-besede.<lb/></p>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"/>
+                            <cell rend="left"><hi rend="bold smallcaps">epidemija</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">kriza</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">davek</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">gospodarstvo</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok1</hi></cell>
+                            <cell rend="left"><hi rend="bold color(FF0000)">tema 2</hi></cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok2</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok3</hi></cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok4</hi></cell>
+                            <cell rend="left">tema 1</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                            <cell rend="left">tema 2</cell>
+                        </row>
+                    </table>
+                    <list type="ordered">
+                        <item>Glede na novo vrednost iz tabele v 6. koraku algoritem znova posodobi
+                            obe tabeli, torej tabeli teme-besedila in besede-teme.<lb/></item>
+                    </list>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"/>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 1</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 2</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok1</hi></cell>
+                            <cell rend="left">1</cell>
+                            <cell rend="left"><hi rend="bold color(FF0000)">3</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok2</hi></cell>
+                            <cell rend="left">3</cell>
+                            <cell rend="left">1</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok3</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">dok4</hi></cell>
+                            <cell rend="left">1</cell>
+                            <cell rend="left">3</cell>
+                        </row>
+                    </table>
+                    <table rend="rules">
+                        <row>
+                            <cell rend="left"/>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 1</hi></cell>
+                            <cell rend="left"><hi rend="bold smallcaps">tema 2</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">epidemija</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left"><hi rend="bold color(FF0000)">2</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">kriza</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">davek</hi></cell>
+                            <cell rend="left">1</cell>
+                            <cell rend="left">3</cell>
+                        </row>
+                        <row>
+                            <cell rend="left"><hi rend="bold smallcaps">gospodarstvo</hi></cell>
+                            <cell rend="left">2</cell>
+                            <cell rend="left">2</cell>
+                        </row>
+                    </table>
+                    <list type="ordered">
+                        <item>Postopek se ponavlja, dokler se dodelitve tem ne nehajo spreminjati.
+                            Končni rezultat je tematski model. Temo predstavlja skupina besed, ki se
+                            pogosto pojavljajo skupaj v besedilih.</item>
+                    </list>
+                    <p>Zgoraj smo opisali verzijo LDA z Gibbsovim vzorčenjem. Orange namesto
+                        Gibbsovega vzorčenja uporablja metodo variacijske inference. Gibbsovo
+                        vzorčenje je veliko bolj natančno, medtem ko je variacijska inferenca
+                        hitrejša za večje podatke.</p>
+                </div>
+                <div>
+                    <head>Značilnosti tehnike LDA</head>
+                    <p>LDA temelji na več predpostavkah. Prva je, da temo zaznamujejo besede, ki se
+                        v besedilih pogosto pojavljajo skupaj. To pomeni, da je LDA jezikovno
+                        neodvisna tehnika, saj besede združuje v skupine na podlagi njihove
+                        pojavitve v besedilu in ne na podlagi njihovega pomena. Isto metodo je torej
+                        mogoče uporabiti na podatkih v različnih jezikih. Obenem velja, da je lahko
+                        posamezna beseda uvrščena v več tem, vendar običajno z različno
+                        verjetnostjo.</p>
+                    <p>Druga predpostavka je, da se teme v korpusu pojavljajo različno pogosto in da
+                        so medsebojno neodvisne. LDA ne opredeli morebitne povezave med temami,
+                        pokaže pa verjetnost razporeditve tem v besedilu, pri čemer opredeli njihovo
+                        pomembnost v določenem besedilu. Posamezno besedilo običajno vsebuje več
+                        tem, vendar določena tema najpogosteje izstopa (tj. v glavno skupino besed
+                        algoritem razvrsti več besed kot v druge skupine besed oziroma teme).</p>
+                    <p>Tretja predpostavka je, da je število tem vnaprej določeno. To pomeni, da
+                        mora raziskovalec vnaprej določiti število tem, v katere naj algoritem
+                        razvrsti dokumente. Optimalno število tem za določeno besedilo je tisto, pri
+                        katerem je za dobljene skupine besed najlažje opredeliti smiselne teme, ki
+                        so še vedno informativne glede na zastavljeni raziskovalni problem. Zato
+                        raziskovalci običajno postopek tematskega modeliranja za vsako raziskavo
+                        posebej večkrat ponovijo z različnim številom tem, pri čemer ocenjujejo
+                        povednost skupin besed, ki jih je iz besedila izluščil algoritem. Nekateri
+                        si pomagajo tudi z dodatnimi statističnimi izračuni (prim. Smith in Graham,
+                        2019). Čeprav se torej ustrezno število tem razlikuje od primera do primera,
+                        običajno število tem sega od 5 do 50 (Arun idr., 2010), veliko raziskav pa
+                        se odloči za 20 tem (Zhao idr., 2015; Gkoumas idr., 2018; Rosa idr.,
+                        2021).</p>
+                    <p>Četrta predpostavka je, da vrstni red besed v besedilu ni pomemben. LDA
+                        namreč deluje na podlagi t. i. vreče besed, ki ne upošteva jezikovne
+                        strukture in povezav med besedami. Ta predpostavka je problematična, saj je
+                        vrstni red besed ena ključnih značilnosti realnih besedil. </p>
+                    <p>Na rezultate pa ključno vpliva vrstni red besedil, saj tehnika v začetku
+                        besedilom naključno dodeli teme. Če se spremeni vrstni red, se bo tudi
+                        začetna dodelitev spremenila. Vrstni red besedil v smislu njihovega
+                        časovnega zaporedja prav tako lahko pomembno vpliva na značilnosti besedil
+                        (Vayansky in Kumar, 2020).</p>
+                </div>
+                <div>
+                    <head>Predobdelava podatkov</head>
+                    <p>Za potrebe tematskega modeliranja morajo biti podatki ustrezno pripravljeni.
+                        To največkrat vključuje tokenizacijo (členitev na pojavnice, običajno
+                        besede, števila, ločila), lematizacijo (pripis osnovne oblike vsaki
+                        pojavnici) in oblikoskladenjsko označevanje (pripis besedne vrste vsaki
+                        pojavnici, npr. glagol). Slednje nam omogoča, da tematsko modeliranje
+                        izvedemo zgolj na določeni besedni vrsti. Raziskave namreč kažejo, da
+                        lematizacija in omejitev korpusa zgolj na samostalnike izboljšata tako
+                        hitrost algoritma kot njegove rezultate, in sicer z vidika koherence oziroma
+                        smiselne povezanosti besed v posameznih skupinah, zaradi česar jim je lažje
+                        pripisati temo (Martin in Johnson, 2015). Razlikovanje po oblikoskladnji
+                        lahko uporabimo tudi za iskanje odgovorov na različna raziskovalna
+                        vprašanja. Tako so na primer Van der Zwaan idr. (2016) tematsko modeliranje
+                        najprej izvedli na samostalnikih in tako pridobili teme, nato pa algoritem
+                        pognali še na glagolih, pridevnikih in prislovih, na podlagi česar so nato
+                        izluščili stališča parlamentarcev. Pred uporabo metode LDA iz korpusa
+                        običajno odstranimo tudi zelo pogoste besede, ki so lahko preveč splošne
+                        (npr. zaimki, predlogi) ali preveč specifične za preučevani žanr (npr.
+                        pozdravne besede, kot je <hi rend="italic">spoštovani</hi>, v parlamentarnem
+                        korpusu), glede na izbrani raziskovalni problem pa lahko odstranimo tudi
+                        zelo redke besede, ločila, veliko začetnico ipd. (Smith in Graham,
+                        2019).</p>
+                </div>
+                <div>
+                    <head>Omejitve metode LDA</head>
+                    <p>Kot prvo omejitev lahko izpostavimo dejstvo, da LDA za uspešno delovanje
+                        potrebuje daljša besedila, saj temelji na porazdelitvah besed, ki za kratka
+                        besedila niso izrazite. Tako na primer LDA ni primerna tehnika za tematsko
+                        modeliranje tvitov, uporabniških komentarjev ali poezije. Čeprav jo je
+                        mogoče uporabiti tudi za analizo npr. objav na Facebooku (Serrano idr.,
+                        2019), se za tovrstna besedila priporočajo druge metode tematskega
+                        modeliranja (Albalawi idr., 2020; Morstatter idr., 2018). Čeprav so
+                        parlamentarni govori običajno dovolj dolgi za učinkovito uporabo metode LDA,
+                        pa lahko nekatere seje vključujejo tudi zelo kratke govore, ki jih je pred
+                        uporabo metode LDA dobro odstraniti (glejte poglavje 5.4).</p>
+                    <p>Druga omejitev je povezana s predpostavko, da so besede medsebojno neodvisne,
+                        prav tako pa tudi besedila in teme, kar je po eni strani jezikoslovno
+                        netočno, po drugi strani pa raziskovalcem onemogoča pregled nad korelacijami
+                        med besedami oziroma med besedili. Ta informacija pri mnogih raziskovalnih
+                        problemih sicer ni potrebna, zato tehnika LDA zadostuje. Če pa je ta
+                        informacija pomembna (npr. če nas zanima razvoj teme skozi daljše časovno
+                        obdobje), so na voljo druge metode tematskega modeliranja, npr. dinamično
+                        tematsko modeliranje (Müller-Hansen idr., 2021). Poleg tega LDA ne deluje
+                        dobro, če besedilo o neki temi ne govori koherentno, ampak jo omeni zgolj s
+                        par besedami. Po drugi strani pa tehnika dobro deluje za daljša, tematsko
+                        opredeljena besedila, na primer za novice, akademske članke, politične
+                        govore in določena prozna dela.</p>
+                    <p>Naslednja omejitev je vezana na število tem, ki ga mora raziskovalec določiti
+                        po lastni presoji in je običajno rezultat preizkušanja. Kot opozarjata Allen
+                        in Murdock (2020), bodo pri zelo velikem številu nekatere teme predstavljale
+                        zgolj zelo specifičen del enega od besedil v korpusu, zaradi česar je težje
+                        iskati tematske povezave med besedili. Kadar pa je število tem postavljeno
+                        zelo nizko, jih je običajno lažje interpretirati, vendar so najpogosteje
+                        teme zelo splošne in tako precej neinformativne za analizo.</p>
+                    <p>Kot zadnjo omejitev lahko omenimo težavnost interpretacije rezultatov
+                        tematskega modeliranja, vključno z načinom navajanja rezultatov v
+                        publikacijah. Ker so rezultat izolirane skupine besed, obstaja nevarnost, da
+                        raziskovalci v njih vidijo vzorec, ki ga pravzaprav ni, oziroma prepoznajo
+                        teme, ki so jih že v izhodišču pričakovali (Shadrova, 2021). Pri
+                        interpretaciji je zato pomembno, kakšno število besed upošteva raziskovalec,
+                        ko opredeljuje temo. Ta je lahko namreč precej drugačna, če raziskovalec
+                        sklepa o temi na podlagi prvih 10 ali prvih 30 besed, ki jih ponudi
+                        algoritem (Allen in Murdock, 2020). Pri interpretaciji skupin besed in
+                        opredeljevanju ter interpretaciji tem je zato nujno potrebno kvalitativno
+                        branje oziroma poznavanje izvirnih delov besedila, v katerih se izbrane
+                        besede pojavljajo, še posebej za skupinsko delo pa je priporočljivo
+                        oblikovati tudi smernice za odločanje. </p>
+                    <p>Tematsko modeliranje po metodi LDA torej ni hitra rešitev, ki bi raziskovalca
+                        lahko brez kritične presoje rezultatov privedla do kakovostnih zaključkov.
+                        Prav razumevanje omejitev je bistvenega pomena za uspešno uporabo tematskega
+                        modeliranja v raziskovalne namene. Kvantitativne, avtomatske metode analize
+                        torej lahko pomembno dopolnjujejo raziskovalčeve sposobnosti za analizo,
+                        vendar ne morejo nadomestiti človeške interpretacije (Grimmer in Stewart,
+                        2013). Tematsko modeliranje omogoča pomembno prednost pred kvalitativnim
+                        branjem, in sicer možnost obdelave velike količine podatkov, kar
+                        raziskovalcem omogoča robustnejše posploševanje na podlagi rezultatov kot
+                        pri analizi, izvedeni na majhnem vzorcu (Jacobs in Tschötschel, 2019). Poleg
+                        tega postopek tematskega modeliranja omogoča večjo objektivnost rezultatov
+                        (Müller-Hansen idr., 2021), čeprav zaradi prej omenjenih omejitev, kot je
+                        opredelitev tem na podlagi skupine besed, tehnika ni v celoti objektivna. To
+                        je obenem tudi prednost te tehnike, saj algoritem ne poda neposrednih
+                        odgovorov, ampak raziskovalce sili v upoštevanje konteksta pri oblikovanju
+                        končnih rezultatov (Schmidt, 2012). Tematsko modeliranje vnaša tudi večjo
+                        sistematizacijo analize in omogoča sorazmerno večjo ponovljivost rezultatov
+                        (Jacobs in Tschötschel, 2019). Priljubljenost in aktualnost te tehnike za
+                        humanistične in družboslovne raziskave se kažeta tudi v velikem številu
+                        raziskav, ki tematsko modeliranje uporabljajo v svoji metodologiji (gl.
+                        poglavje 4.5).</p>
+                </div>
+                <div>
+                    <head>Tematsko modeliranje parlamentarnih razprav</head>
+                    <p>V politologiji in drugih humanističnih in družboslovnih vedah, ki analizirajo
+                        velike količine realnih podatkov, se tematsko modeliranje vse bolj
+                        uveljavlja kot pomembna analitična tehnika, ki dopolnjuje ustaljene,
+                        kvalitativne pristope za analizo. Rezultati tematskega modeliranja namreč
+                        lahko služijo kot usmeritev za kvalitativno analizo (npr. identifikacijo
+                        relevantnih besedil o najbolj izstopajoči temi) ali pa že predstavljajo del
+                        končnih rezultatov. V tem poglavju predstavljamo nekaj primerov uporabe
+                        tematskega modeliranja parlamentarnih podatkov.</p>
+                    <p>S tematskim modeliranjem lahko <hi rend="bold">izluščimo vsebinske
+                            tematike</hi>, o katerih se razpravlja v parlamentu. Schuler (2020) je
+                        na primer z metodo LDA analiziral razprave v vietnamskem parlamentu in
+                        rezultate povezal s temami iz novic, tudi pridobljenimi z LDA, ter seznamom
+                        področij pod neposrednim upravljanjem Komunistične partije (KP). S tem je
+                        raziskal, ali poslanci v avtoritarnih sistemih, kot je vietnamski, izražajo
+                        svoja stališča in aktivno razpravljajo glede pomembnih tem. Ugotovil je, da
+                        do dejanske razprave pride zgolj pri temah, ki ne pokrivajo področij, ki so
+                        v neposrednem upravljanju KP, pri čemer slednja spodbuja takšno razpravo
+                        zato, da lahko pritiska na vlado in ji obenem naprti odgovornost za
+                        posledice sprejetih ukrepov. Kadar pa tema razprave zadeva eno od področij,
+                        ki jo s svojimi odbori neposredno upravlja KP, slednja ne spodbuja javne
+                        razprave. Obenem je zanimiva njegova ugotovitev, da se tudi pri temah, ki so
+                        odprte za izmenjavo stališč, v razpravo ne vključujejo vsi poslanci, ampak
+                        predvsem tisti, ki niso člani KP in so bili za polni delovni čas kot
+                        predstavniki ljudstva izvoljeni na lokalni ravni.</p>
+                    <p>Za <hi rend="bold">odkrivanje vsebinskih tematik </hi>v parlamentarnih
+                        razpravah sta tematsko modeliranje uporabila tudi Chizhik in Sergeyev
+                        (2021), ki sta analizirala približno tri desetletja govorov ruskih
+                        poslancev, da bi ugotovila, ali obstajajo povezave med dejavnostjo strank v
+                        parlamentu in skepticizmom javnosti glede večstrankarskega sistema kot
+                        temelja za demokracijo. Ugotovila sta, da stranke ruskega parlamenta svojo
+                        pozornost predvsem posvečajo zunanjim zadevam, gospodarstvu in razmerju moči
+                        med vejami oblasti, medtem ko se precej manj posvečajo drugim družbenim
+                        problemom. Pri tem njihove govore, še posebej to velja za uveljavljene
+                        stranke, v veliki meri zaznamuje ideološki in propagandistični diskurz.</p>
+                    <p>Tematsko modeliranje torej omogoča, da pridobimo splošen pregled nad
+                        gradivom, ki lahko zadošča, če je naš namen, na primer, opazovati
+                        izpostavljenost tematik, o katerih se razpravlja v parlamentu. Tematsko
+                        modeliranje pa lahko uporabimo tudi za pridobivanje bolj specifičnih
+                        rezultatov. Ker so parlamentarni korpusi običajno bogato označeni z
+                        metapodatki, lahko <hi rend="bold">teme raziskujemo v razmerju do drugih
+                            spremenljivk </hi>(npr. spol, starost, pripadnost politični stranki,
+                        mandat itd.) in tako izluščimo tiste teme, ki najbolj razlikujejo med
+                        vrednostmi izbrane spremenljivke. Tako lahko na primer opazujemo, kako
+                        aktualna je bila določena tema skozi čas ali pri določeni stranki. Curran
+                        idr. (2018) so na primer z metodo LDA in analizo kompleksnih mrež razkrili
+                        teme razprav v novozelandskem parlamentu in jih povezali s poslanci ter
+                        njihovimi strankami, ki so te teme naslavljali v svojih govorih. Na ta način
+                        so izluščili prevladujoče teme razprav v posameznih obdobjih in jih
+                        interpretirali v povezavi z zunanjimi dogodki (npr. potres leta 2011). Poleg
+                        tega so na podlagi rezultatov opredelili, koliko zanimanja je določeni temi
+                        namenila posamezna stranka. Izkazalo se je, da je Laburistična stranka
+                        veliko bolj zavzeto razpravljala o nepremičninski krizi kot takrat vladajoča
+                        Nacionalna stranka. Rezultati so pokazali tudi, da je Nacionalna stranka
+                        zavzela glavnino razprave, medtem ko se je prispevek manjših strank skozi
+                        čas zmanjševal. Zmanjšala pa se je tudi specializacija parlamentarcev za
+                        različne teme, kar se kaže v velikem številu tem, ki jih naslavlja večina
+                        poslancev.</p>
+                    <p>Ena od možnosti <hi rend="bold">uporabe metapodatkov pri tematskem
+                            modeliranju</hi> je predstavljena tudi v raziskavi, ki so jo izvedli de
+                        Campos idr. (2021). Metodo LDA so namreč uporabili za določanje tematskega
+                        profila španskih poslancev, ki odraža področja, ki jih ti pokrivajo v
+                        parlamentu. Metapodatke sta s pridom uporabila tudi Høyland in Søyland
+                        (2019), ki sta želela ugotoviti, ali je sprememba volilnega sistema leta
+                        1919, ko je norveški politični sistem postal bolj odvisen od strankarske
+                        politike in poslanci niso imeli več toliko avtonomije kot pred reformo,
+                        vplivala na tematiko parlamentarnih razprav. Pri tem sta uporabila različico
+                        metode LDA, in sicer strukturno tematsko modeliranje (STM), ki poleg
+                        porazdelitve besed pri izračunu rezultatov sočasno upošteva tudi izbrane
+                        metapodatke. Ugotovila sta, da razporeditev tem jasno kaže, da
+                        institucionalna ureditev vpliva na delovanje parlamentarcev. Po reformi, ki
+                        je poudarila pomen strankarske politike, so postale teme, ki so izrazito
+                        kazale ideološke razlike med strankami, pogostejše, medtem ko so poslanci
+                        manj govorov namenjali neposredni kritiki drugih poslancev. Obenem so
+                        poslanci po reformi pogosteje razpravljali o temah splošnega zanimanja (npr.
+                        o izobraževalnem sistemu) in redkeje o temah, ki so neposredno obravnavale
+                        težave njihovih volilnih okrajev (npr. o izgradnji infrastrukture v nekem
+                        oddaljenem kraju).</p>
+                    <p>S tematskim modeliranjem lahko tudi <hi rend="bold">raziščemo kontekst in
+                            nabor tem, s katerimi je povezan določen pojem. </hi>Müller-Hansen idr.
+                        (2021) so uporabili različico tehnike LDA, imenovano dinamično tematsko
+                        modeliranje (DTM), ki omogoča analizo tem skozi čas. S to metodo so
+                        analizirali sedemdeset let nemških parlamentarnih razprav o premogu, in tako
+                        raziskali, kako so se razprave o premogu spreminjale skozi čas<note
+                            place="foot" xml:id="ftn4" n="4">Diahrono analizo tem, torej razvoj tem
+                            skozi čas, je mogoče analizirati tudi le s tehniko LDA, vendar je pri
+                            tem treba za vsako časovno obdobje narediti ločen tematski model,
+                            interpretirati dobljene teme in jih nato primerjati med različnimi
+                            časovnimi obdobji. Tak pristop zahteva več ročnega, subjektivnega dela,
+                            kar lahko negativno vpliva na rezultate. Druga možnost za časovno
+                            analizo tem je <hi rend="italic">dinamična nenegativna matrična
+                                faktorizacija</hi> (<hi rend="italic">dynamic NMF</hi>) (Gkoumas
+                            idr., 2018), ki pa tematike med različnimi obdobji poveže zgolj
+                            posredno. (Müller-Hansen idr., 2021)</note>. Razprave iz zgodnjih let
+                        korpusa kažejo, da so poslanci premog dojemali kot gonilo gospodarskega
+                        razvoja in jamstvo energetske varnosti, medtem ko v zadnjih letih razprave o
+                        premogu predvsem govorijo o energetskem prehodu, postopni opustitvi premoga
+                        in razmahu obnovljivih virov energije. Obenem so raziskovalci ugotovili, da
+                        manjše in mlajše stranke (npr. Zeleni) v nemškem parlamentu pogosteje kot
+                        druge stranke govorijo o premogu v kontekstu energetskega prehoda in
+                        varovanja okolja.</p>
+                    <p>Namesto izbranega pojma lahko na podlagi rezultatov tematskega modeliranja
+                            <hi rend="bold">opazujemo kontekst določene teme oziroma prepletanje
+                            tem. </hi>Blätte idr. (2020) so, na primer, želeli izvedeti, kako
+                        pogosto se o migracijah razpravlja v kontekstu skupne evropske politike. Z
+                        metodo LDA so ustvarili tematski model za parlamentarne razprave Avstrije,
+                        Francije, Nemčije in Nizozemske, izbrali tri teme, ki so najbolje
+                        predstavljale migracije oziroma evropske zadeve, nato pa izluščili vse
+                        govore, kjer sta se ti dve krovni temi križali. Raziskava je pokazala, da so
+                        bile razprave o migrantih v dveh večjih državah iz korpusa (Francija,
+                        Nemčija) bolj usmerjene navznoter. Še posebej v Nemčiji je evropski vidik
+                        skoraj izginil, medtem ko se je v manjših državah iz vzorca (Avstrija,
+                        Nizozemska) delež govorov, ki o migracijah razpravljajo z vidika evropskega
+                        odziva, povečal.</p>
+                    <p>V tem učnem gradivu se delno naslanjamo na metodologijo, ki so jo uporabili
+                        Curran in sodelavci (2018) v zgoraj omenjeni raziskavi novozelandskih
+                        govorov, pri čemer v naši analizi obravnavamo krajše časovno obdobje, zato
+                        podrobnejša delitev po letih ni smiselna. Kot je razvidno iz zgoraj opisanih
+                        raziskav, bi lahko analizo nadgradili s strukturnim tematskim modeliranjem,
+                        pri čemer bi upoštevali, na primer, strankarsko pripadnost govorcev in
+                        opazovali razlike med njimi. Lahko pa bi analizirali tudi celoten korpus
+                        ParlaMint-SI in z dinamičnim tematskim modeliranjem opazovali razlike tem
+                        skozi čas. Vendar je za primerjavo tem v dveh obdobji, pred in med
+                        epidemijo, tehnika LDA povsem ustrezna.</p>
+                </div>
+            </div>
+            <div>
+                <head>Priprava na analizo</head>
+                <p>S tem poglavjem se začne praktični del učnega gradiva. Poglavje nas bo vodilo vse
+                    od namestitve programa ter uvoza in kontrolnega pregleda osnovnih podatkov do
+                    izdelave vzorca za analizo in predprocesiranja podatkov.</p>
+                <p>Za prenos in namestitev programa Orange, vključno s programom Miniconda, ki je
+                    del namestitvenega paketa za Orange, boste potrebovali približno 1 GB prostora
+                    na disku. Za prenos datotek ParlaMint boste potrebovali 2,3 GB prostora.
+                    Upoštevajte, da je tematsko modeliranje računsko zahteven proces, zato bo morda
+                    delovanje računalnika upočasnjeno, sploh če uporabljate napravo z malo delovnega
+                    pomnilnika (RAM).</p>
+                <div>
+                    <head>Namestitev in uporaba programa Orange</head>
+                    <p>Analizo bomo izvedli v odprtokodnem in prostodostopnem programu <ref
+                            target="https://orangedatamining.com/"><hi
+                                rend="underline color(1155CC)">Orange</hi></ref> v3.32.0, ki temelji
+                        na programskem jeziku Python (Demšar idr., 2013). Program je namenjen
+                        podatkovni analitiki, razširitev <hi rend="italic">Text </hi> (v1.10.0) pa
+                        ponuja poseben nabor orodij za rudarjenje besedil. Orange je osnovan na
+                        vizualnem programiranju, kar pomeni, da potek analize določimo tako, da
+                        korake analize oziroma tako imenovane gradnike sestavljamo v analitski
+                        delotok.</p>
+                    <p>Program najprej s spletne strani <ref target="https://orangedatamining.com/"
+                                ><hi rend="underline color(0000FF)">orangedatamining.com</hi></ref>
+                        prenesemo na računalnik. Preneseno programsko datoteko odpremo in sledimo
+                        navodilom za namestitev. Nato program odpremo in naložimo še razširitev <hi
+                            rend="italic">Text</hi>. To storimo tako, da izberemo zavihek <hi
+                            rend="italic">Options </hi>in v spustnem meniju kliknemo <hi
+                            rend="italic">Add-ons.</hi> Odpre se okno, kjer obkljukamo polje <hi
+                            rend="italic">Text </hi>in namestitev razširitve potrdimo s klikom gumba
+                        OK (Slika 1).</p>
+                    <figure>
+                        <head>Slika 1: Namestitev razširitve Text.</head>
+                    </figure>
+                    <p>Po namestitvi moramo znova zagnati program<note place="foot" xml:id="ftn5"
+                            n="5">Če ste Orange že kdaj uporabljali, svetujemo, da ponastavite
+                            gradnike, in sicer z možnostjo <hi rend="italic">Options </hi><g
+                                style="font-family:Wingdings;" n="F0E0"/><hi rend="italic"> Reset
+                                widget settings.</hi> Tako boste lažje sledili analizi, kot je
+                            opisana v tem učnem gradivu.</note>. Ko se program odpre, se v levem
+                        meniju prikaže zavihek <hi rend="italic">Text Mining</hi>, ki vsebuje
+                        različne gradnike (npr. <hi rend="italic">Corpus, Bag of Words</hi>), ki so
+                        namenjeni analizi besedil (Slika 2). Na desni strani je belo polje, ki ga
+                        imenujemo platno (<hi rend="italic">canvas</hi>). Nanj zlagamo gradnike (<hi
+                            rend="italic">widgets</hi>), ki jih povezujemo v analitski delotok.</p>
+                    <figure>
+                        <head>Slika 2: Začetni zaslon ob zagonu programa po namestitvi razširitve
+                            Text.</head>
+                    </figure>
+                    <p>Gradnike na platno dodajamo tako, da jih povlečemo iz menija na levi in
+                        spustimo na platno, ali pa z desnim klikom na platno odpremo spustni meni,
+                        vtipkamo ime gradnika, npr. <hi rend="bold">Corpus</hi>, in ga s tipko <hi
+                            rend="bold">Enter </hi>dodamo na platno. Če gradnik dvokliknemo, se
+                        odpre okno z nastavitvami. Vsak gradnik ima vhod ali izhod oziroma oboje,
+                        kar je označeno s črtkano črto ob strani gradnika. Vhod v gradnik je na
+                        levi, izhod pa na desni strani. Analiza v Orangeu vedno poteka od leve proti
+                        desni, nikoli obratno.</p>
+                    <p>Z enakim postopkom, kot smo dodali gradnik <hi rend="bold">Corpus</hi>,
+                        dodajmo še gradnik <hi rend="bold">Corpus Viewer</hi>. Če ga dvokliknemo, se
+                        odpre prazno okno. Gradnik namreč še ni prejel podatkov za obdelavo. Podatke
+                        pošljemo v gradnik tako, da z miško povežemo gradnika med sabo od desne
+                        črtkane črte gradnika <hi rend="bold">Corpus </hi>do leve črtkane črte
+                        gradnika <hi rend="bold">Corpus Viewer </hi>(Slika 3). Ta gradnik z
+                        dvoklikom znova odpremo in tokrat pojavno okno prikazuje podatke.<note
+                            place="foot" xml:id="ftn6" n="6">Prikazani so prednaloženi
+                            podatki.</note></p>
+                    <figure>
+                        <head>Slika 3: Povezava med gradnikoma omogoča prehod podatkov od izhoda
+                            prvega gradnika do vhoda naslednjega gradnika.</head>
+                    </figure>
+                    <p>V učnem gradivu bomo sestavili delotok, s katerim bomo izvedli tematsko
+                        modeliranje parlamentarnih govorov in teme dodatno raziskali z
+                        vizualizacijami. Celoten delotok si lahko <ref
+                            target="https://www2.sistory.si/publikacije/material/parlamint/tutorial-slo.ows"
+                            >prenesete</ref>, vendar priporočamo, da sledite postopnim korakom v
+                        gradivu in sosledje gradnikov sestavite sami, saj boste tako najbolje
+                        razumeli posamezne faze analize.</p>
+                </div>
+                <div>
+                    <head>Prenos in uvoz podatkov v Orange</head>
+                    <p>Korpus ParlaMint-SI obsega parlamentarne govore med leti 2014 in 2020. V
+                        praktičnem delu nas bo zanimala primerjava govorov tik pred in med epidemijo
+                        COVID-19, zato podatke najprej zamejimo na primerljivo dolgi obdobji pred in
+                        med epidemijo. Ker epidemično obdobje, ki je zajeto v korpusu ParlaMint-SI,
+                        vključuje devet mesecev (november 2019–julij 2020, Erjavec idr. 2022), bomo
+                        uporabili tudi podobno dolgo obdobje tik pred začetkom pandemije, in sicer
+                        od januarja 2019 do oktobra 2019.<note place="foot" xml:id="ftn7" n="7"
+                            >Predhodno smo preverili, da sta tako časovno zamejeni obdobji
+                            primerljivi tudi z vidika količine govorov in sej, ki jih
+                            vsebujeta.</note></p>
+                    <p>Pri analizi bomo uporabili slovenski del jezikoslovno označenega korpusa
+                        parlamentarnih podatkov ParlaMint 2.1 (gl. poglavje 3.3). Parlamentarni
+                        govori s pripisanimi jezikoslovnimi oznakami so zapisani v <ref
+                            target="https://universaldependencies.org/format.html"><hi
+                                rend="underline color(0000FF)">formatu CoNLL-U</hi></ref>. Da bomo
+                        lažje začeli, so podatki za potrebe tega učnega gradiva že pripravljeni in
+                        si jih <ref
+                            target="https://www2.sistory.si/publikacije/material/parlamint/ParlaMint-SI-conllu.zip"
+                            >prenesemo</ref> na računalnik.<note place="foot" xml:id="ftn8" n="8">Če
+                            bi želeli analizirati celoten korpus ali uporabiti drugačno časovno
+                            obdobje, je celoten korpus na voljo v repozitoriju CLARIN.SI v <ref
+                                target="http://hdl.handle.net/11356/1431">datoteki s podatki
+                                </ref><ref target="http://hdl.handle.net/11356/1431"><hi
+                                    rend="italic">ParlaMint-SI.ana.tgz</hi></ref>.</note><hi
+                            rend="superscript">,</hi><note place="foot" xml:id="ftn9" n="9"
+                            >Potrebujemo tako datoteke v formatu CoNLL-U kot tudi tiste v formatu
+                            TSV. Datoteke CoNLL-U vsebujejo jezikoslovno označene govore, datoteke
+                            TSV pa metapodatke o govorcih in govorih (glejte poglavje
+                        3.3).</note></p>
+                    <p>Na platno dodamo gradnik <hi rend="bold">Import Documents. </hi>Z dvoklikom
+                        odpremo okno za nastavitve in v prvi vrstici določimo mapo, v katero smo
+                        shranili podatke (Slika 4). Uvoza ni treba posebej potrjevati, zgodi se
+                        samodejno, ko določimo mapo. Malo nižje obkljukamo tudi možnosti <hi
+                            rend="italic">Lemma </hi>in <hi rend="italic">POS tags</hi>. Tako bomo
+                        poleg govorov uvozili tudi leme in oblikoskladenjske oznake. Govor
+                        posameznega poslanca za posamezno sejo bo predstavljen kot posamezen
+                        dokument. V spodnjem delu okna nas program obvesti, da smo uvozili 18.476
+                        dokumentov oziroma govorov.</p>
+                    <figure>
+                        <head>Slika 4: Okno za uvoz podatkov.</head>
+                    </figure>
+                    <p>Za boljše razumevanje strukture podatkov si na kratko oglejmo značilnosti
+                        formata CoNLL-U. Gre za obliko formata TSV, v katerem so vrednosti ločene s
+                        tabulatorjem in ki se na področju obdelave naravnega jezika uporablja za
+                        zapisovanje jezikoslovno označenih besedil, saj zaradi razporeditve besedila
+                        in oznak po stolpcih omogoča enostavno računalniško obdelavo. V tem formatu
+                        vsaka poved predstavlja svoj sklop, besedilo pa je tudi vertikalizirano, kar
+                        pomeni, da so besede zapisane ena pod drugo, kar omogoča jasen pregled nad
+                        pripisanimi jezikoslovnimi oznakami. Vsaka poved ima na začetku navedene
+                        tudi metapodatke (npr. ID govora, ID povedi in besedilo) (Slika 5).</p>
+                    <figure>
+                        <head>Slika 5: Zapis podatkov v formatu CoNLL-U za prvi dve povedi iz
+                            dokumenta ParlaMint-SI_2019-01-28-SDZ8-Redna-04.conllu.</head>
+                    </figure>
+                </div>
+                <div>
+                    <head>Pregled podatkov</head>
+                    <figure>
+                        <graphic url="media/image8.png"/>
+                    </figure>
+                    <p>Preden začnemo z analizo, se je dobro najprej prepričati, da so naloženi
+                        podatki res pravi. To bomo storili z gradnikom <hi rend="bold">Corpus
+                            Viewer</hi>, ki ga dodamo na platno in ga od leve proti desni povežemo s
+                        prejšnjim gradnikom. <hi rend="bold">Corpus Viewer</hi> odpremo z dvoklikom
+                        in prikaže se seznam dokumentov, ki v našem primeru predstavljajo posamezne
+                        govore (Slika 6). S klikom na seznam si lahko ogledamo tudi druge govore, če
+                        pa med klikanjem pridržimo tipko <hi rend="italic">Shift, </hi>lahko
+                        prikažemo več govorov hkrati.</p>
+                    <figure>
+                        <head>Slika 6: Pregled govorov v gradniku Corpus Viewer.</head>
+                    </figure>
+                    <p>V levem zgornjem kotu vidimo osnovne informacije o korpusu: število pojavnic
+                            (<hi rend="italic">tokens</hi>) in različnic (<hi rend="italic"
+                            >types</hi>)<note place="foot" xml:id="ftn10" n="10">Število pojavnic
+                            označuje število vseh besed, števil in ločil, ki so v korpusu. Število
+                            različnic pa je število unikatnih pojavnic v korpusu.</note> ter število
+                        govorov (<hi rend="italic">matching documents</hi>), ki ustrezajo iskalnemu
+                        filtru (<hi rend="italic">regexp filter</hi>), če bi ga uporabili. Ker je
+                        filter trenutno prazen, so prikazani vsi govori (18476/18476). Zadnji
+                        podatek (<hi rend="italic">matches</hi>) je število zadetkov iskalnega
+                        izraza, ki bi ga lahko vnesli v polje <hi rend="italic">RegExp
+                            Filter</hi>.<note place="foot" xml:id="ftn11" n="11">Pri določanju
+                            iskalnega izraza lahko uporabimo pravila <ref
+                                target="https://www.sketchengine.eu/guide/regular-expressions/"
+                                >regularnih izrazov</ref>, ki nam omogočajo iskanje zelo specifičnih
+                            zadetkov oziroma hkratno iskanje različnih oblik z enim iskalnim
+                            izrazom. Tako lahko npr. z iskalnim izrazom <hi rend="italic"
+                                >epidemij*</hi> zajamemo vse sklanjatve besede <hi rend="italic"
+                                >epidemija</hi>.</note></p>
+                    <p>V pregledovalniku na desni strani vidimo številne metapodatke<note
+                            place="foot" xml:id="ftn12" n="12">Nekateri metapodatki lahko manjkajo,
+                            če so bile izvorne parlamentarne evidence nepopolne. Jezikoslovne oznake
+                            so bile pripisane avtomatsko, kar pomeni, da so v korpusu možne napake,
+                            vendar so te minimalne, saj so bila uporabljena orodja z visoko
+                            natančnostjo: lematizacija 98–99 % pravilnost, oblikoslovne oznake 94–77
+                            %, skladenjske oznake 87–94 % (Erjavec idr., 2022).</note> o govorih in
+                        govorcih, s katerimi je opisana vsebina korpusa.<note place="foot"
+                            xml:id="ftn13" n="13">Nabor metapodatkov je enak za celotno družino
+                            korpusov ParlaMint (glejte poglavje 3.3), vendar vsi korpusi ne
+                            vsebujejo vseh metapodatkov.</note> Vsak govor je označen z imenom seje,
+                        ki ji pripada (<hi rend="italic">name</hi>), in unikatno oznako (<hi
+                            rend="italic">utterance</hi>), pri čemer zadnja številka izkazuje
+                        zaporedno številko govora v dotični seji. Celoten govor si lahko preberemo
+                        pod spremenljivko <hi rend="italic">content</hi>. Pomemben je tudi podatek o
+                        podkorpusu (<hi rend="italic">Subcorpus</hi>), ki označuje časovno obdobje,
+                        v katerem je bil govor podan (<hi rend="italic">Reference </hi>označuje
+                        govore pred novembrom 2019, <hi rend="italic">COVID </hi>pa od novembra
+                        2019).</p>
+                    <p>Sledijo podatki o govorcu – njegova vloga (<hi rend="italic">Speaker
+                            role</hi>), ki je lahko ali predsedujoči ali običajni govorec, funkcija
+                            (<hi rend="italic">Speaker type</hi>), ki je lahko ali poslanec ali
+                        gost, pripadnost politični stranki (<hi rend="italic">Speaker party</hi>),
+                        parlamentarni status stranke (<hi rend="italic">Party status</hi>), ki je
+                        lahko opozicija ali koalicija, ime govorca (<hi rend="italic">Speaker
+                            name</hi>), spol (<hi rend="italic">Speaker gender</hi>) in leto rojstva
+                            (<hi rend="italic">Speaker birth</hi>).</p>
+                    <figure>
+                        <graphic url="media/image8.png"/>
+                    </figure>
+                </div>
+                <div>
+                    <head>Priprava vzorca in predprocesiranje</head>
+                    <p>Kot smo videli v 3. poglavju, za parlamentarni diskurz velja jasna struktura,
+                        ki vključuje številne značilne fraze, npr. <hi rend="italic">besedo ima
+                            poslanec …, hvala za besedo, spoštovana gospa ministrica, potrjujem
+                            dnevni red</hi> ipd. Nekatere fraze, ki urejajo potek razprave, so še
+                        posebej značilne za predsedujoče parlamentarnim sejam, druge so zgolj del
+                        vljudnostnega izražanja. Zaradi svoje narave so take fraze v parlamentarnih
+                        korpusih zelo pogoste, vendar za tematsko analizo niso zanimive, temveč bi
+                        predstavljale zgolj šum v rezultatih, zato jih želimo izločiti iz vzorca. V
+                        celoti jih je sicer nemogoče izločiti na enostaven, avtomatiziran način,
+                        vseeno pa lahko njihovo število pomembno omejimo. To bomo storili tako, da
+                        bomo pripravili vzorec podatkov, iz katerega bomo izločili vse govore
+                        predsedujočih in govore, ki so krajši od 50 besed (Slika 8).</p>
+                    <p>»Hvala lepa. V skladu s poslovnikom bi želel v imenu poslanske skupine 30
+                        minut odmora pred glasovanjem« (Brane Golubović, redna seja, 6. marec
+                        2019).</p>
+                    <p>To odločitev smo sprejeli po ročnem pregledu dela korpusa, v katerem se je
+                        izkazalo, da so taki govori večinoma zgolj zahvale ali medklici. Podobno
+                        filtriranje uporabljajo tudi sorodne raziskave (Curran idr., 2018). Čeprav
+                        taki govori seveda niso nujno le proceduralne narave, so, zato ker so
+                        kratki, v vsakem primeru manj primerni za tematsko modeliranje z metodo LDA,
+                        ki za dobre rezultate potrebuje daljša besedila (glejte 4. poglavje). Poleg
+                        tega bomo iz vzorca za analizo izločili tudi vse govore posameznikov in
+                        posameznic, ki v parlamentu lahko nastopajo kot gosti.</p>
+                    <div>
+                        <head>Odstranjevanje neželenih govorov</head>
+                        <figure>
+                            <graphic url="media/image10.png"/>
+                        </figure>
+                        <p>Za oblikovanje vzorca potrebujemo gradnika <hi rend="bold">Statistics
+                            </hi>in <hi rend="bold">Select Rows</hi>. Na platno dodamo gradnik <hi
+                                rend="bold">Statistics</hi> in ga povežemo z gradnikom <hi
+                                rend="bold">Import Documents</hi>, pri čemer ohranimo
+                            prednastavitve, na podlagi katerih gradnik prešteje število besed (<hi
+                                rend="italic">word count) </hi>in število znakov (<hi rend="italic"
+                                >character count</hi>) v govorih. Gradnik <hi rend="bold"
+                                >Statistics</hi> podatkom doda stolpca s številom besed in znakov,
+                            kar si lahko ogledamo tako, da dodamo gradnik <hi rend="bold">Data
+                                Table, </hi>ga odpremo in se pomaknemo skrajno desno (Slika 7). Tako
+                            dobimo podatek o dolžini govorov, kar nam omogoča, da zdaj z gradnikom
+                                <hi rend="bold">Select Rows </hi>izberemo zgolj tiste, ki ustrezajo
+                            našim merilom glede dolžine.</p>
+                        <figure>
+                            <head>Slika 7: Stolpca skrajno desno prikazujeta podatke o številu besed
+                                in znakov, ki so dodani osnovnim podatkom.</head>
+                        </figure>
+                        <p>Ko dodamo gradnik <hi rend="bold">Select Rows</hi> (Slika 8), ga povežemo
+                            z gradnikom <hi rend="bold">Statistics</hi>, odpremo in nastavimo tri
+                            pogoje (pogoje dodajamo z gumbom <hi rend="italic">Add
+                            condition</hi>):</p>
+                        <list type="unordered">
+                            <item>s prvim pogojem določimo najmanjšo dolžino govora – spremenljivko
+                                    <hi rend="italic">Word count</hi> omejimo z možnostjo <hi
+                                    rend="italic">is greater than </hi>in vpišemo želeno minimalno
+                                dolžino, v našem primeru 50, s čimer bomo v vzorec vključili zgolj
+                                govore, ki imajo 51 besed ali več;</item>
+                            <item>z drugim pogojem iz vzorca izločimo predsedujoče sejam –
+                                spremenljivko <hi rend="italic">Speaker role</hi> določimo s
+                                parametrom <hi rend="italic">is</hi> in parametrom <hi rend="italic"
+                                    >Regular</hi>;</item>
+                            <item>s tretjim pogojem v vzorcu ohranimo zgolj govore poslancev –
+                                spremenljivko <hi rend="italic">Speaker type</hi> določimo s
+                                parametrom <hi rend="italic">is</hi> in parametrom <hi rend="italic"
+                                    >MP</hi>, s čimer izločimo govore gostov.</item>
+                        </list>
+                        <figure>
+                            <graphic url="media/image12.png"/>
+                            <head>Slika 8: Izbor govorov z več kot petdeset besedami, ki so jih
+                                izrekli redni poslanci.</head>
+                        </figure>
+                        <p>Na spodnjem robu gradnika <hi rend="bold">Select Rows </hi>vidimo, da se
+                            je število govorov skrčilo na 6861 (s prejšnjih 18.476; podrobne podatke
+                            dobimo, če kliknemo številke na spodnjem robu).</p>
+                        <figure>
+                            <graphic url="media/image10.png"/>
+                        </figure>
+                    </div>
+                    <div>
+                        <head>Odstranjevanje neželenih besed</head>
+                        <figure>
+                            <graphic url="media/image13.png"/>
+                        </figure>
+                        <p>Za dobre rezultate tematskega modeliranja je pomembna tudi predobdelava
+                            podatkov (glejte poglavje 4.3.). To storimo s filtriranjem v gradniku
+                                <hi rend="bold">Preprocess Text</hi>, ki ga dodamo na platno, vendar
+                            ga še ne povežemo. Najprej bomo nastavili vse parametre, saj se bo tako
+                            postopek izvedel bolj gladko. Kljub temu upoštevajte, da je ta korak
+                            računsko zahteven in zato lahko tudi precej zamuden. Ko torej odpremo
+                            gradnik <hi rend="bold">Preprocess Text</hi>, se prikažejo privzeti
+                            izbrani koraki za predobdelavo besedila, katerih vrstni red in
+                            nastavitve je mogoče poljubno spreminjati. Naši podatki so že
+                            tokenizirani in besede transformirane v zapis z malo začetnico (prim.
+                            poglavje 5.3). Zato koraka <hi rend="italic">Transformation </hi>in <hi
+                                rend="italic">Tokenization </hi>odstranimo s klikom križca levo
+                            zgoraj (Mac OS) oziroma desno zgoraj (Windows).<note place="foot"
+                                xml:id="ftn14" n="14">Če želimo onemogočiti posodobitev ob vsaki
+                                spremembi parametra, odznačimo možnost <hi rend="italic">Apply
+                                    Automatically </hi>levo spodaj, nato pa, ko smo vnesli vse
+                                želene nastavitve, kliknemo <hi rend="italic">Apply</hi>.</note>
+                            Ostane korak <hi rend="italic">Filtering</hi>, pri katerem bomo
+                            spremenili nekaj nastavitev (Slika 9):</p>
+                        <list type="unordered">
+                            <item>izključimo možnost <hi rend="italic">Stopwords</hi> – te možnosti,
+                                ki je namenjena odstranitvi nepolnopomenskih besed, kot so zaimki,
+                                vezniki, predlogi ipd., ne potrebujemo, ker se bomo osredotočili
+                                zgolj na samostalnike;</item>
+                            <item>obkljukamo možnost <hi rend="italic">Document frequency </hi>in
+                                kot mero izberemo absolutno vrednost (<hi rend="italic"
+                                    >Absolute)</hi>, pri kateri nastavimo razpon od 10 do 6861
+                                (število vseh govorov) – tako bomo pri analizi prezrli besede, ki se
+                                pojavijo v manj kot desetih govorih, kar pomeni, da bomo iz analize
+                                izločili zelo redke besede, ki ne vplivajo na oblikovanje
+                                specifičnih tem;</item>
+                            <item>obkljukamo tudi možnost <hi rend="italic">POS tags</hi>, kar lahko
+                                storimo, ker so naši podatki že oblikoskladenjsko označeni (glejte
+                                poglavje 3.3) – ta možnost je privzeto nastavljena tako, da pri
+                                poznejših analizah upošteva zgolj samostalnike (<hi rend="italic"
+                                    >noun</hi>) in glagole (<hi rend="italic">verb</hi>), a ker so
+                                se samostalniki izkazali kot najkoristnejši pri tematskem
+                                modeliranju (Martin in Johnson, 2015), za analizo ohranimo zgolj to
+                                besedno vrsto, glagole (verb) pa izbrišemo.</item>
+                        </list>
+                        <p>Sedaj <hi rend="bold">Preprocess Text</hi> povežemo z gradnikom <hi
+                                rend="bold">Select Rows</hi>.</p>
+                        <figure>
+                            <graphic url="media/image14.png"/>
+                            <head>Slika 9: Nastavitve gradnika Preprocess Text.</head>
+                        </figure>
+                        <p>Najpogostejše besede našega vzorca lahko preverimo v oblaku besed.
+                            Izdelamo ga z gradnikom <hi rend="bold">Word Cloud</hi>, ki ga pripnemo
+                            na gradnik <hi rend="bold">Preprocess Text.</hi> V oblaku najdemo zgolj
+                            samostalnike, pri čemer je velikost besede v oblaku sorazmerna z njeno
+                            frekvenco (Slika 10). Prikazane besede zelo jasno odražajo parlamentarni
+                            žanr besedil. Na seznamu na levi vidimo, da je najpogostejša beseda <hi
+                                rend="italic">zakon</hi>, ki se v korpusu pojavi 19.362-krat. Ker je
+                            parlament glavno zakonodajno telo v državi, tak rezultat seveda ni
+                            presenetljiv.</p>
+                        <figure>
+                            <head>Slika 10: Najpogostejše besede oblikovanega vzorca podatkov po
+                                predprocesiranju.</head>
+                        </figure>
+                        <p>Predprocesiranje je pomemben del obdelave besedilnih podatkov, vendar je
+                            potrebno vsak korak jasno utemeljiti. Vsaka odločitev namreč vpliva na
+                            končne rezultate, kar je potrebno upoštevati tudi pri interpretaciji.
+                            Omenimo še, da v Orangeu filtriranje ne spreminja izhodiščnih podatkov.
+                            Po predprocesiranju imamo torej še vedno na voljo izhodiščni korpus iz
+                            gradnika <hi rend="bold">Select Rows</hi> ter dodano informacijo o
+                            pojavnicah iz gradnika <hi rend="bold">Preprocess Text</hi>.</p>
+                        <figure>
+                            <graphic url="media/image13.png"/>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <head>Analiza parlamentarnih govorov</head>
+                <p>To poglavje je razdeljeno na tri praktične naloge, v katerih s tematskim
+                    modeliranjem in nekaterimi vizualizacijami raziščemo vsebino parlamentarnih
+                    razprav pred in med epidemijo. Pri tem bomo odgovorili na naslednja
+                    vprašanja:</p>
+                <list type="unordered">
+                    <item>v 1. nalogi: Katere teme zaznamujejo naše podatke?</item>
+                    <item>v 2. nalogi: O katerih temah so poslanci največ razpravljali?</item>
+                    <item>v 3. nalogi: Katere teme so izstopale med epidemijo v primerjavi s
+                        predepidemičnim obdobjem?</item>
+                </list>
+                <div>
+                    <head>Teme parlamentarnih razprav</head>
+                    <p>V tem poglavju bomo za vzorec podatkov najprej pripravili številski opis, ki
+                        je potreben za izvedbo metode LDA, nato bomo teme izluščili in jih
+                        poimenovali, na koncu pa bomo preverili še, kako so teme razporejene po
+                        dokumentih in kako lahko poiščemo govore na izbrano temo.</p>
+                    <div>
+                        <head>Ustvarjanje besedilnih vektorjev</head>
+                        <figure>
+                            <graphic url="media/image16.png"/>
+                        </figure>
+                        <p>Preden lahko izvedemo tematsko modeliranje, potrebujemo predprocesirane
+                            podatke in vektorsko reprezentacijo govorov. Predprocesiranje podatkov
+                            smo že opravili (glejte poglavje 5.4), vektorsko reprezentacijo pa
+                            izvedemo z gradnikom <hi rend="bold">Bag of Words</hi>, ki naredi
+                            številski opis govorov, na podlagi katerega je nato mogoče izračunati
+                            porazdelitev besed po temah oziroma izvesti tematsko modeliranje
+                            govorov. Številski opis, ki ga pridobimo s tehniko vreče besed,
+                            predstavljajo besede v stolpcih, vrednosti pa izkazujejo število
+                            pojavitev posamezne besede v danem govoru. Vsak govor je tako
+                            predstavljen s svojim vektorjem, ki predstavlja njegovo vsebino.
+                            Pogostejša kot je neka beseda v govoru, bolj vektor tega govora kaže v
+                            smeri te besede.</p>
+                        <p>Vendar pa niso vse besede enakovredne. Nekatere besede v korpusu so lahko
+                            izrazito proceduralne in žanrsko specifične (glejte poglavje 5.4),
+                            nepolnomenske (npr. zaimki, vezniki) ali pa preprosto nespecifične za
+                            izbrani govor. Beseda <hi rend="italic">hvala</hi> se, na primer, pojavi
+                            v tematsko zelo heterogenih govorih, saj se večina poslancev zahvali za
+                            predajo besede, zato tematsko gledano ni informativna. Besede v našem
+                            vzorcu zato želimo obtežiti tako, da bodo imele večjo težo take, ki so
+                            izrazito specifične za posamezni govor, nižjo težo pa take, ki se
+                            pogosto pojavljajo v vseh govorih. Taka obtežitev se imenuje TF-IDF, kar
+                            je angleška kratica za <hi rend="italic">term frequency-inverse document
+                                frequency</hi> oziroma <hi rend="italic">frekvenca izraza–inverzna
+                                frekvenca dokumenta</hi> (Jones, 1972), in je na voljo kot izbirna
+                            možnost v gradniku <hi rend="bold">Bag of Words</hi>.</p>
+                        <p>Gradnik <hi rend="bold">Bag of Words </hi>dodamo takoj za gradnikom <hi
+                                rend="bold">Preprocess Text </hi>in ga nastavimo tako, da ohranimo
+                            možnost preprostega štetja besed (<hi rend="italic">Count</hi>) v prvi
+                            vrstici (<hi rend="italic">Term Frequency</hi>), v drugi vrstici (<hi
+                                rend="italic">Document Frequency</hi>) pa izberemo IDF (Slika
+                            11).</p>
+                        <figure>
+                            <graphic url="media/image17.png"/>
+                            <head>Slika 11: Nastavitve gradnika Bag of Words.</head>
+                        </figure>
+                        <figure>
+                            <graphic url="media/image16.png"/>
+                            <head>Slika 11: Nastavitve gradnika Bag of Words.</head>
+                        </figure>
+                    </div>
+                    <div>
+                        <head>Luščenje tem</head>
+                        <figure>
+                            <graphic url="media/image18.png"/>
+                        </figure>
+                        <p>Sedaj, ko smo pripravili vektorsko reprezentacijo govorov, lahko začnemo
+                            z luščenjem tematik. To bomo storili z gradnikom <hi rend="bold">Topic
+                                Modelling</hi>, ki ga povežemo z <hi rend="bold">Bag of Words
+                            </hi>in nastavimo tako, da izberemo metodo LDA (<hi rend="italic">Latent
+                                Dirichlet Allocation</hi>) in določimo 20 tem (<hi rend="italic"
+                                >Number of topics</hi>). Izbira števila tem je sicer poljubna,
+                            vendar sorodne raziskave kažejo, da se pri večjih korpusih najbolje
+                            obnese 20 tem (glejte 4. poglavje). Na desni se izpiše dvajset skupin
+                            besed, ki zaznamujejo teme našega vzorca (Slika 12). Nekatere teme je
+                            enostavno poimenovati že na prvi pogled, medtem ko pri drugih krovna
+                            tematika ni povsem jasna. V naslednjem koraku bomo zato izvedli dodatno
+                            analizo, na podlagi katere bomo lažje opredelili teme.</p>
+                        <figure>
+                            <graphic url="media/image19.png"/>
+                            <head>Slika 12: Rezultat tematskega modeliranja s tehniko LDA za dvajset
+                                tem.</head>
+                        </figure>
+                        <p>Pri tem koraku velja omeniti še, da je tehnika LDA stohastična, kar
+                            pomeni, da ob vsakem izračunu vrne drugačne rezultate, saj temelji na
+                            naključnem določanju izhodiščnih tem. To značilnost metode, ki omejuje
+                            ponovljivost raziskav, v programu Orange zaobidemo z uporabo enotne
+                            začetne točke, kar omogoča, da uporabniki za iste podatke dobijo enake
+                            rezultate.</p>
+                        <figure>
+                            <graphic url="media/image18.png"/>
+                        </figure>
+                        <p>Poskusite sami: uporabite različna števila tem, npr. 5 in 10. Ali z
+                            manjšim številom tem dobite boljše rezultate? Kaj pa se zgodi ob uporabi
+                            precej večjega števila tem, npr. 50?</p>
+                    </div>
+                    <div>
+                        <head>Opredelitev tem</head>
+                        <figure>
+                            <graphic url="media/image20.png"/>
+                        </figure>
+                        <p>LDA za vsako temo vrne 10 besed, ki so najpogosteje povezane z njo.<note
+                                place="foot" xml:id="ftn15" n="15">Možno je, da dobite nekoliko
+                                drugačne rezultate, kot so navedeni v gradivu. LDA je namreč
+                                generativni model, ki deluje naključno. Na svojem računalniku bi
+                                morali vedno znova dobiti enake rezultate, medtem ko se rezultati
+                                lahko razlikujejo med različicami programa Orange ter med
+                                operacijskimi sistemi.</note> A kot smo videli, te besede niso nujno
+                            dovolj informativne, da bi omogočale opredelitev tematike. Zato si pri
+                            opredeljevanju lahko pomagamo z gradnikom <hi rend="bold">LDAvis</hi>
+                            (Sievert in Shirley, 2014). Bistvena prednost te vizualizacije je, da
+                            besede oceni na podlagi relevantnosti, ki predstavlja razmerje med <hi
+                                rend="italic">specifičnostjo besede v določeni temi</hi> in <hi
+                                rend="italic">specifičnostjo besede v celotnem korpusu</hi>.
+                            Vrednost parametra lambda, ki ga v gradniku nastavljamo z drsnikom <hi
+                                rend="italic">Relevance</hi>, lahko izbiramo med 0 in 1, pri čemer 1
+                            prikaže besede glede na specifičnost besede v temi (kot jih vidimo v
+                            gradniku <hi rend="bold">Topic Modelling</hi>), 0 pa glede na njihovo
+                            pogostost v celotnem korpusu. Specifičnost besede v celotnem korpusu
+                            imenujemo tudi dvig (<hi rend="italic">lift</hi>), ki predstavlja
+                            razmerje med verjetnostjo besede v temi in verjetnostjo besede v
+                            korpusu.</p>
+                        <p>Gradnik <hi rend="bold">LDAvis</hi> torej povežemo z gradnikom <hi
+                                rend="bold">Topic Modelling</hi>. Pri tem moramo paziti, da v LDAvis
+                            podamo prave vhodne podatke. Gradnik namreč potrebuje tabelo
+                            zastopanosti besed v temah, ki je dostopna v signalu <hi rend="italic"
+                                >All Topics</hi>. Povezavo uredimo tako, da dvakrat kliknemo
+                            povezavo med gradnikoma, nato pa povežemo signala <hi rend="italic">All
+                                Topics </hi>in <hi rend="italic">Topics </hi>(Slika 13)<hi
+                                rend="italic">.</hi></p>
+                        <figure>
+                            <graphic url="media/image21.png"/>
+                            <head>Slika 13: Določitev ustreznih vhodnih podatkov za gradnik
+                                LDAvis.</head>
+                        </figure>
+                        <p><hi rend="bold">LDAvis</hi> privzeto prikaže besede, razvrščene
+                            uravnoteženo, torej z enakim razmerjem med specifičnostjo besede v temi
+                            in specifičnostjo besede v korpusu, kar v praksi običajno da dobre
+                            rezultate.</p>
+                        <p>Z nastavljeno relevantnostjo dobimo drugačen, bolj informativen nabor
+                            besed, kot smo ga lahko videli v osnovnem gradniku <hi rend="bold">Topic
+                                Modelling</hi> (Slika 14). Zdaj je očitno, da tema 8 govori o
+                            upravljanju prostora, tema 16 o političnih sporih in medijskem
+                            poročanju, tema 18 je mešanica tem o kulturi, športu in znanosti.</p>
+                        <figure>
+                            <graphic url="media/image22.png"/>
+                            <head>Slika 14: Prikaz pogostosti besed v temi (rdeča) in v celotnem
+                                vzorcu (siva) za prvo temo.</head>
+                        </figure>
+                        <p>Poskusite sami: poljubno premaknite drsnik relevantnosti v desno in levo.
+                            Pri kateri nastavitvi je za skupine besed najlažje opredeliti temo?</p>
+                        <figure>
+                            <graphic url="media/image23.png"/>
+                        </figure>
+                        <p>Tako pregledamo vse teme. Za boljšo preglednost rezultatov lahko
+                            nadomestimo generična poimenovanja tem (npr. Topic 1) z ustreznimi
+                            pomenskimi oznakami (npr. T1: prevoz otrok). Za ta korak moramo na
+                            gradnik <hi rend="bold">Topic Modelling </hi>najprej pripeti gradnik <hi
+                                rend="bold">Select Columns, </hi>nanj pa še <hi rend="bold">Edit
+                                Domain. </hi></p>
+                        <p>Najprej odpremo gradnik <hi rend="bold">Select Columns</hi>, kjer vidimo
+                            celoten nabor spremenljivk, vključno s frekvencami besed, ki smo jih za
+                            potrebe tematskega modeliranja ustvarili z gradnikom <hi rend="bold">Bag
+                                of Words</hi>. Frekvenc besed ne potrebujemo več, zato jih
+                            odstranimo tako, da v razdelku <hi rend="italic">Features</hi> na desni
+                            s tipkama Ctrl+A (Cmd+A) izberemo vse spremenljivke in jih prenesemo na
+                            levo stran, ki je namenjena spremenljivkam, ki jih želimo prezreti. Na
+                            levi strani v filter vpišemo <hi rend="italic">Topic</hi>, s čimer
+                            poiščemo spremenljivke, ki označujejo teme (<hi rend="italic">Topic
+                                1</hi>, <hi rend="italic">Topic 2 </hi>itd.), jih izberemo in
+                            prenesemo nazaj na desno stran, ki je namenjena spremenljivkam, ki jih
+                            želimo obdržati v tabeli (Slika 15).</p>
+                        <figure>
+                            <graphic url="media/image24.png"/>
+                            <head>Slika 15: Urejen izbor spremenljivk v gradniku Select
+                                Columns.</head>
+                        </figure>
+                        <p>Nato odpremo gradnik <hi rend="bold">Edit Domain</hi>, v katerem bomo
+                            izvedli dejansko preimenovanje. S seznama na levi izberemo prvo temo in
+                            na desni strani v polju <hi rend="italic">Name </hi>določimo njeno ime,
+                            npr. <hi rend="italic">T1: prevoz otrok </hi>(Slika 16). Poimenovanje
+                            tem nam pomaga pri interpretaciji vizualizacij, s katerimi bomo teme
+                            raziskali v nadaljevanju.</p>
+                        <figure>
+                            <graphic url="media/image25.png"/>
+                            <head>Slika 16: Preimenovanje prve teme v gradniku Edit Domain.</head>
+                        </figure>
+                        <p>Ko poimenujemo vse teme, dobimo seznam tem, o katerih so razpravljali
+                            poslanci od januarja 2019 do julija 2020. Ni presenetljivo, da na
+                            seznamu tem najdemo <hi rend="italic">epidemiološke ukrepe</hi> in <hi
+                                rend="italic">zdravstvo, </hi>medtem ko je morda nekatere druge
+                            teme, npr. <hi rend="italic">prevoz otrok, davek na vozila </hi>ali <hi
+                                rend="italic">šport in kultura</hi>, težje umestiti v prostor in
+                            čas, če nam aktualno dogajanje tistega časa ni znano. V grobem vidimo,
+                            da teme pokrivajo področja večine ministrstev, med drugim pravosodje,
+                            notranje zadeve, finance, zdravje, socialne zadeve in infrastrukturo.
+                            Obenem pa je za razumevanje takratnih prednostnih nalog tak seznam
+                            zanimiv tudi z vidika manjkajočih področij, ki bi jih sicer lahko
+                            pričakovali na seznamu tem parlamentarnih razprav, saj jih pokrivajo
+                            specifična ministrstva (npr. zunanje zadeve). Dejstvo, da npr. zunanjih
+                            zadev ni na seznamu tem, sicer ne pomeni, da poslanci o tej temi sploh
+                            niso razpravljali, nakazuje pa, da o njej ni bilo toliko razprave, da bi
+                            se uvrstila med 20 najizrazitejših tem za naš vzorec.</p>
+                        <p>Tak seznam tem nam torej omogoča hiter pregled nad temami, ki so
+                            zaznamovale parlamentarno razpravo v preiskovanem obdobju, vendar pa ne
+                            razkriva dodatnih informacij, npr. o kateri temi je bilo največ
+                            razprave, kako so teme med sabo povezane oziroma kako so razporejene po
+                            obdobjih. Za odgovore na ta vprašanja je treba rezultate tematskega
+                            modeliranja dodatno analizirati, kar bomo storili v naslednjih
+                            poglavjih. Pred tem pa si bomo ogledali še, kako so teme razporejene po
+                            govorih. Na ta način lahko preverimo kontekst govorov in po potrebi
+                            prilagodimo poimenovanja tem, obenem pa je to eden od načinov, kako
+                            izluščimo govore, v katerih izbrana tema prevladuje.</p>
+                        <p>Poskusite sami: poimenujte vse teme z ustrezno nadpomenko. Nekatere teme
+                            bo težje opredeliti. Pri teh si lahko pomagate z gradnikom <hi
+                                rend="bold">Corpus Viewer</hi>, s katerim poiščete ustrezno besedo
+                            in raziščete njen kontekst.</p>
+                        <figure>
+                            <graphic url="media/image20.png"/>
+                        </figure>
+                    </div>
+                    <div>
+                        <head>Zastopanost tem po govorih</head>
+                        <figure>
+                            <graphic url="media/image26.png"/>
+                        </figure>
+                        <p>Zaradi zakonitosti tematskega modeliranja (glejte 4. poglavje) govore
+                            običajno zaznamuje več kot ena tema, vendar so teme različno močno
+                            zastopane. Zastopanost oziroma verjetnost tem po govorih je izražena v
+                            razponu od 0 do 1, pri čemer 1 pomeni, da je tema v največji meri
+                            prisotna v govoru, 0 pa, da tema sploh ni prisotna. V praksi
+                            najpogosteje srečamo vmesne vrednosti. Ker imamo torej opravka z
+                            vrednostmi v istem razponu in ker želimo primerjati zastopanost tem med
+                            sabo, je najprimernejša vizualizacija toplotni diagram. Ustvarimo ga
+                            tako, da gradnik <hi rend="bold">Heat Map</hi> povežemo z gradnikom <hi
+                                rend="bold">Edit Domain</hi>.</p>
+                        <p>V diagramu je vrednost ponazorjena z barvo: visoke vrednosti so označene
+                            z rumeno in belo (oziroma drugo barvo na desnem robu lestvice), nizke
+                            vrednost pa z modro (oziroma drugo barvo na levem robu lestvice). Vsak
+                            stolpec v diagramu predstavlja posamezno temo, vsaka vrstica pa govor.
+                            Govori so v diagramu razvrščeni v takem vrstnem redu, kot smo jih
+                            naložili v program, zaradi česar je trenutno diagram precej nepregleden,
+                            vendar lahko to z nekaj nastavitvami popravimo.</p>
+                        <p>Najprej bomo govore, ki imajo podobno izražene teme, združili med sabo.
+                            Opravka imamo namreč z velikim številom govorov (6861), zato se
+                            vizualizacija raztegne v višino. V tem primeru lahko podobne govore
+                            predstavimo z eno vrstico in tako poskrbimo za kompaktnejšo postavitev.
+                            To storimo z možnostjo <hi rend="italic">Merge by k-means</hi>, ki s
+                            postopkom metode k-voditeljev združi podobne govore med sabo.
+                            Prednastavljena vrednost je 50, mi pa jo bomo povečali na 150, saj je
+                            naših govorov veliko in ne želimo izgubiti preveč podrobnosti.</p>
+                        <p>Vizualizacija je tako že bolj pregledna, vendar bi bila še bolj
+                            informativna, če bi bile podobne vrstice blizu ena drugi. Pozor, sedaj
+                            vrstice niso več posamezni govori, temveč skupine podobnih govorov.
+                            Vrstice organiziramo s še enim postopkom odkrivanja gruč, in sicer s
+                            hierarhičnim razvrščanjem v skupine, ki ga nastavimo v razdelku <hi
+                                rend="italic">Clustering, </hi>kjer pri možnosti<hi rend="italic">
+                                Rows</hi> izberemo <hi rend="italic">Clustering (opt.
+                            ordering</hi>).</p>
+                        <p>Izriše se precej lažje berljiv diagram (Slika 17), ki ima na levi strani
+                            dendrogram oziroma drevesno strukturo podobnosti govorov, ki kaže
+                            povezave med gručami, obenem pa je priročen za natančno izbiro želene
+                            skupine govorov. V prejšnjem poglavju smo ugotovili, da krovna tematika
+                            za določeno temo ali pa interpretacija nekaterih tem, npr. <hi
+                                rend="italic">šport in kultura</hi>, ni popolnoma jasna. S tem
+                            diagramom lahko enostavno izberemo želene govore in podrobneje
+                            analiziramo njihovo vsebino.</p>
+                        <figure>
+                            <graphic url="media/image27.png"/>
+                            <head>Slika 17: Toplotni diagram zastopanosti tematik v govorih z
+                                izbrano vejo dendrograma, ki združuje govore z močno izraženo temo
+                                T18: šport in kultura.</head>
+                        </figure>
+                        <p>Kot primer bomo izbrali temo <hi rend="italic">T18: šport in
+                            kultura</hi>, ki jo predstavlja izbrana gruča v diagramu. Govore
+                            označimo tako, da izberemo vejo dendrograma, kjer je tema najbolj
+                            izrazita (rumene ali zelene barve) . Tako bo ta podmnožica govorov na
+                            voljo na izhodu gradnika. Zdaj na gradnik <hi rend="bold">Heat Map</hi>
+                            pripnemo gradnik <hi rend="bold">Corpus Viewer</hi> in si v njem
+                            preberemo izbrane govore.</p>
+                        <p>Ugotovimo lahko, da govori obravnavajo različne teme, npr. izdajo potrdil
+                            o opravljenih izobraževanjih, založniško dejavnost ter financiranje
+                            vrhunskih športnikov. Na tak način smo torej potrdili poimenovanje teme
+                            (ki je sicer nabor več podtem), obenem pa smo iz celotnega vzorca
+                            podatkov izluščili zgolj govore na izbrano temo, ki jih nato lahko
+                            uporabimo za nadaljnje analize.</p>
+                        <p>Pri interpretaciji tematskega modeliranja je nujno upoštevati, da govora
+                            ne zaznamuje zgolj ena tema, temveč je v vsakem govoru prisotnih več tem
+                            z različno verjetnostjo, kar lahko opazimo tudi pri temi <hi
+                                rend="italic">T11: proračun</hi>. Če govore izberemo in jih pozorno
+                            preberemo, opazimo, da govori obravnavajo različne pristope k rebalansu
+                            proračuna, od povečanja sredstev za Urad za Slovence v zamejstvu in po
+                            svetu do financiranja domov za ostarele. Pravzaprav je to razvidno že iz
+                            diagrama, kjer vidimo, da je v nekaterih govorih v izbrani gruči precej
+                            močno izražena tudi tema <hi rend="italic">T10: domovi za ostarele</hi>.
+                            Toplotni diagram torej odlično pokaže tudi primere tematskih presekov,
+                            kar je pomembno upoštevati, če to metodo uporabljamo zgolj za izbiro
+                            govor na določeno temo, ki jo želimo podrobneje raziskati. Na presek tem
+                            lahko kliknemo v diagramu in preberemo govore, ki se dotikajo obeh tem
+                            hkrati. Presek govorov o proračunu in domovih za ostarele predstavljajo
+                            govori o znižanju oskrbnine ter o uveljavitvi Zakona o dolgotrajni
+                            oskrbi.</p>
+                        <p>Poskusite sami: izberite govore, ki govorijo o epidemiji, in jih
+                            preglejte.</p>
+                        <figure>
+                            <graphic url="media/image26.png"/>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <head>Najizrazitejše teme in povezave med njimi</head>
+                    <figure>
+                        <graphic url="media/image28.png"/>
+                    </figure>
+                    <p>Sedaj poznamo razporeditev tem po govorih. Videli smo, da govore zaznamuje
+                        več tem hkrati, zato nas zanima, kako so te teme v posameznih govorih med
+                        seboj povezane. Poleg tega nas zanima, katere teme v našem vzorcu najbolj
+                        izstopajo. Na obe vprašanji najlažje odgovorimo s tematsko karto, na kateri
+                        so teme razporejene glede na njihovo zastopanost in razmerja do drugih
+                        tem.</p>
+                    <p>Tematsko karto bomo izdelali z gradnikom <hi rend="bold">MDS</hi>. MDS je
+                        kratica za <hi rend="italic">multidimensional scaling</hi> oziroma
+                        večrazsežnostno lestvičenje. Ta vizualizacija na podlagi vhodnih podatkov
+                        poskuša najti tak prikaz v ravnini, da povezane teme ležijo skupaj,
+                        nepovezane pa narazen. Pri postopku MDS se povezanost med temami izračuna
+                        glede na pomembnost besed v temah. Visoka povezanost med temami tako odraža
+                        zelo podobno porazdelitev besed med temami, pri čemer so lahko nekatere
+                        besede med temami celo deljene.</p>
+                    <p>Povezavo med gradnikoma <hi rend="bold">Topic Modelling</hi> in <hi
+                            rend="bold">MDS </hi>nastavimo tako, da povežemo <hi rend="italic">All
+                            Topics </hi>v <hi rend="italic">Data</hi>. Na začetku vidimo zgolj sive
+                        točke v ravnini, ki predstavljajo teme. Za lažjo interpretacijo bomo točkam
+                        dodali oznake. To storimo tako, da pri možnosti <hi rend="italic"
+                            >Labels</hi> izberemo spremenljivko <hi rend="italic">Topics</hi>. Kot
+                        lahko vidimo, so točkam pripisane zgolj prvotne oznake tem, ne pa tudi
+                        poimenovanja, ki smo jih dodali, zato si moramo pri interpretaciji pomagati
+                        s seznamom tem, ki ga pripravimo ročno (Tabela 1).</p>
+                    <table rend="rules">
+                        <head>Tabela 1: Seznam tem z izvirno in preimenovano oznako.</head>
+                        <row>
+                            <cell rend="center"><hi rend="bold">Izvirno</hi></cell>
+                            <cell rend="center"><hi rend="bold">Preimenovano</hi></cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 1</cell>
+                            <cell rend="left">T1: prevoz otrok</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 2</cell>
+                            <cell rend="left">T2: nasilje nad živalmi</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 3</cell>
+                            <cell rend="left">T3: stanovanjska politika</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 4</cell>
+                            <cell rend="left">T4: davek na vozila</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 5</cell>
+                            <cell rend="left">T5: trgovine ob nedeljah</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 6</cell>
+                            <cell rend="left">T6: zdravstvo</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 7</cell>
+                            <cell rend="left">T7: vojska</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 8</cell>
+                            <cell rend="left">T8: upravljanje prostora</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 9</cell>
+                            <cell rend="left">T9: epidemija in mediji</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 10</cell>
+                            <cell rend="left">T10: domovi za starejše</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 11</cell>
+                            <cell rend="left">T11: proračun</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 12</cell>
+                            <cell rend="left">T12: sodstvo in financiranje šolstva</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 13</cell>
+                            <cell rend="left">T13: promet</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 14</cell>
+                            <cell rend="left">T14: epidemija in zdravstvo</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 15</cell>
+                            <cell rend="left">T15: proceduralno</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 16</cell>
+                            <cell rend="left">T16: politika in mediji</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 17</cell>
+                            <cell rend="left">T17: banke</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 18</cell>
+                            <cell rend="left">T18: šport in kultura</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 19</cell>
+                            <cell rend="left">T19: pokojnine</cell>
+                        </row>
+                        <row>
+                            <cell rend="left">Topic 20</cell>
+                            <cell rend="left">T20: obvladovanje epidemije</cell>
+                        </row>
+                    </table>
+                    <p>Nastavili bomo tudi velikost točk, in sicer tako, da bo ustrezala
+                        zastopanosti teme (ki je vsota verjetnosti teme v govorih, utežena z dolžino
+                        govorov). Možnost <hi rend="italic">Size</hi> nastavimo na <hi rend="italic"
+                            >Marginal Topic Probability</hi>. Za boljšo preglednost pa pri možnosti
+                            <hi rend="italic">Color </hi>prav tako izberemo <hi rend="italic"
+                            >Marginal Topic Probability.</hi></p>
+                    <figure>
+                        <graphic url="media/image29.png"/>
+                        <head>Slika 18: Prikaz podobnosti tem v vizualizaciji MDS.</head>
+                    </figure>
+                    <p>Tematska karta s položajem točk kaže podobnost tem, velikost in barva točk pa
+                        njihovo zastopanost v našem vzorcu govorov (Slika 18). Kadar so si teme
+                        podobne, vendar točke zaradi omejitev dvodimenzionalne vizualizacije ležijo
+                        daleč narazen, je ta podobnost izražena s premico, ki povezuje ti dve točki.
+                        Vidimo, da sta najbolj zastopani obsežni temi 15 (<hi rend="italic"
+                            >proceduralno</hi>) in 11 (<hi rend="italic">proračun</hi>), najmanj pa
+                        tematsko ozke teme 1 (<hi rend="italic">prevoz otrok</hi>), 3 (<hi
+                            rend="italic">stanovanjska politika</hi>) in 20 (<hi rend="italic"
+                            >obvladovanje epidemije</hi>). </p>
+                    <p>Močna zastopanost teme 11 (<hi rend="italic">proračun</hi>) ni presenetljiva,
+                        saj je posledica pogostih razprav o rebalansu proračuna kot odgovoru na
+                        epidemiološke razmere (Vlada Republike Slovenije, 2020). Blizu nje ležita
+                        tudi temi 10 (<hi rend="italic">domovi za starejše</hi>) in 19 (<hi
+                            rend="italic">pokojnine</hi>), kar kaže, da se je o domovih za starejše
+                        in pokojninah razpravljalo tudi v kontekstu razporejanja davkoplačevalskega
+                        denarja. Ti dve temi (<hi rend="italic">T10</hi> in <hi rend="italic"
+                            >T19</hi>) sta si blizu tudi ena drugi, kar pa zopet ni presenetljivo,
+                        saj obe govorita o starejši populaciji.</p>
+                    <figure>
+                        <graphic url="media/image30.png"/>
+                    </figure>
+                    <p>Blizu teme, ki zaznamuje razprave o proračunu, ležita tudi temi 9 (<hi
+                            rend="italic">epidemija in mediji</hi>) in 16 (<hi rend="italic"
+                            >politika in mediji</hi>), ki sta obenem povezani med sabo. Te povezave
+                        (med temama 9 in 16) ni težko potrditi, če smo vsaj malo seznanjeni z
+                        dogajanjem v času epidemije, ko so mediji odigrali ključno vlogo pri
+                        obveščanju javnosti o najnovejših ukrepih, obenem pa so bili pod hudimi
+                        pritiski politike. Zgolj na podlagi vizualizacije pa je težje interpretirati
+                        povezavo med temama 16 (<hi rend="italic">politika in mediji</hi>) in 11
+                            (<hi rend="italic">proračun</hi>). Da bi lažje razumeli, na kakšen način
+                        sta ti dve temi povezani, si lahko ogledamo govore, ki izkazujeta podobno
+                        zastopanost obeh tem.</p>
+                    <p>Govore na preseku obeh tem si ogledamo tako, da najprej ustvarimo podmnožico
+                        govorov, ki imajo močno izraženi obe temi, torej <hi rend="italic">T16:
+                            politika in mediji</hi> in <hi rend="italic">T11: proračun</hi>. To
+                        storimo z gradnikom <hi rend="bold">Select Rows</hi>, ki ga povežemo z
+                        gradnikom <hi rend="bold">Topic Modelling</hi>. V gradniku nastavimo dva
+                        pogoja, in sicer <hi rend="italic">Topic 16 is greater than 0.3</hi> in <hi
+                            rend="italic">Topic 11 is greater than 0.3</hi> (Slika 19). Tako bomo
+                        izbrali zgolj govore, v katerih sta temi 16 in 11 izraženi z več kot
+                        30-odstotno verjetnostjo.<note place="foot" xml:id="ftn16" n="16">Mejo pri
+                            30 odstotkih smo izbrali, ker je to najnižja vrednost, ki vrne vsaj
+                            nekaj dokumentov. Pri tem se je treba zavedati, da je meja precej nizka,
+                            torej dokumenti izkazujejo nizko zastopanost teme. Vrednost lahko
+                            poljubno prilagajate.</note></p>
+                    <figure>
+                        <graphic url="media/image31.png"/>
+                        <head>Slika 19: Nastavitev mej za prisotnost tem v grandiku Select
+                            Rows.</head>
+                    </figure>
+                    <p><hi rend="bold">Select Rows</hi> nato povežemo v gradnik <hi rend="bold"
+                            >Corpus Viewer</hi>, v katerem preberemo izbranih šest govorov, ki
+                        predstavljajo presek tem o proračunu ter politiki in medijih (Slika 20). Iz
+                        govorov je razvidno, da gre pri tem za strankarska prerekanja o rebalansu
+                        proračuna.</p>
+                    <figure>
+                        <graphic url="media/image32.png"/>
+                        <head>Slika 20: Pregled izbranih dokumentov v gradniku Corpus Viewer.</head>
+                    </figure>
+                    <p><hi rend="italic">Poskusite sami: Na enak način raziščite, kako sta povezani
+                            tema 9 in tema 11.</hi></p>
+                    <figure>
+                        <graphic url="media/image28.png"/>
+                    </figure>
+                </div>
+                <div>
+                    <head>Teme pred in med epidemijo</head>
+                    <figure>
+                        <graphic url="media/image33.png"/>
+                    </figure>
+                    <p>Ugotovili smo, katere teme v našem vzorcu najbolj izstopajo, zdaj pa nas
+                        zanima, katere teme so najbolj značilne za obdobje pred epidemijo in med
+                        njo. Razliko med obdobjema (ki sta označena kot podkorpusa <hi rend="italic"
+                            >Reference </hi>in <hi rend="italic">COVID</hi>) bomo raziskali v
+                        gradniku <hi rend="bold">Box Plot</hi>. Ta vizualizacija, v slovenščini
+                        znana tudi kot škatla z brki, kaže porazdelitve spremenljivk ter omogoča
+                        njihovo enostavno primerjavo po <ref
+                            target="https://en.wikipedia.org/wiki/Categorical_variable"><hi
+                                rend="underline color(1155CC)">kategoričnih
+                            spremenljivkah</hi></ref> (npr. spol, datum, stranka).</p>
+                    <p><hi rend="bold">Box Plot</hi> povežemo z gradnikom <hi rend="bold">Edit
+                            Domain</hi>, saj bodo tako med rezultati že poimenovane teme. Ker želimo
+                        obdobji primerjati med sabo, v spodnjem razdelku na levi strani izberemo
+                        spremenljivko <hi rend="italic">Subcorpus</hi>, v zgornjem razdelku pa kar
+                        temo <hi rend="italic">T1: prevoz otrok</hi>. Na desni se prikažeta dve
+                        škatli z brki, zgornja za obdobje med epidemijo (<hi rend="italic"
+                            >COVID</hi>), spodnja pa za obdobje pred epidemijo (<hi rend="italic"
+                            >Reference</hi>) (Slika 21). Iz vizualizacije lahko razberemo, da so
+                        bile razprave na temo sodstva pogostejše pred epidemijo kot pa med njo.
+                        Obenem nam rezultat statističnega testa, ki je naveden pod vizualizacijo,
+                        potrjuje, da gre za statistično značilno razliko, njegova vrednost p je
+                        namreč nižja od 0,05. Na podlagi tega lahko zaključimo, da je bila tema o
+                        sodstvu bolj značilna za predepidemično obdobje.</p>
+                    <figure>
+                        <graphic url="media/image34.png"/>
+                        <head>Slika 21: Škatli z brki za temo T1: prevoz otrok za obdobje pred in
+                            med epidemijo.</head>
+                    </figure>
+                    <figure>
+                        <graphic url="media/image35.png"/>
+                        <head>Slika 21: Škatli z brki za temo T1: prevoz otrok za obdobje pred in
+                            med epidemijo.</head>
+                    </figure>
+                    <p>Na tak način bi lahko pregledali porazdelitev za vsako temo posebej, vendar
+                        bi bilo to precej časovno zamudno. Ker trenutno nismo osredotočeni na eno
+                        samo temo, ampak bi radi ugotovili, pri katerih temah se kažejo največje
+                        razlike med obdobjema, si bomo pomagali z možnostjo <hi rend="italic">Order
+                            by relevance to subgroups</hi> pod razdelkom <hi rend="italic">Variable.
+                        </hi>Tako bomo samodejno razvrstili spremenljivke glede na njihovo vrednost
+                        statističnega testa. Na vrhu bodo torej prikazane tiste spremenljivke, ki za
+                        izbrano razdelitev, ki smo jo določili v razdelku <hi rend="italic"
+                            >Subgroups </hi>(v našem primeru <hi rend="italic">Subcorpus</hi>),
+                        izkazujejo največje razlike.</p>
+                    <p>Povsem na vrh razdelka <hi rend="italic">Variable </hi>so uvrščene
+                        spremenljivke, kot so <hi rend="italic">Title, From, To </hi>in <hi
+                            rend="italic">Meeting</hi>. Gre torej za spremenljivke, ki izkazujejo
+                        izrazito različno porazdelitev med podkorpusoma <hi rend="italic">Reference
+                        </hi>in <hi rend="italic">COVID</hi>, vendar to ni presenetljivo, saj so vse
+                        te spremenljivke časovno zamejene, kar je bil tudi kriterij za oblikovanje
+                        obeh podkorpusov (glejte poglavje 3.3). Za naše potrebe je zanimiv vrstni
+                        red tem, ki sledijo tem prvim spremenljivkam.</p>
+                    <p>Najvišje na seznamu sta temi <hi rend="italic">T12: sodstvo in financiranje
+                            šolstva</hi> (Slika 22) in <hi rend="italic">T20: obvladovanje
+                            epidemije</hi>. Ko ju izberemo, vizualizacija na desni pokaže, da so
+                        poslanci o sodstvu govorili več pred epidemijo, o obvladovanju epidemije pa,
+                        nepresenetljivo, med epidemijo. Rezultat študentovega t-testa (13,824,
+                        p&lt;0,05), naveden pod vizualizacijo, obenem potrjuje, da gre za
+                        statistično pomembno razliko med obdobjema in da sta torej temi pogostejši v
+                        določenem času. Glede na okoliščine tak rezultat ni presenetljiv, kaže pa na
+                        zanesljivost metode za podobne raziskave. Sledita temi <hi rend="italic"
+                            >T14: epidemija in zdravstvo </hi>in <hi rend="italic">T2: nasilje nad
+                            živalmi</hi> (prva izkazuje večjo pogostost v epidemičnem, druga pa v
+                        predepidemičnem času). Tudi tukaj se kaže statistično značilna razlika pri
+                        zastopanosti posamezne teme med obdobjema.</p>
+                    <figure>
+                        <graphic url="media/image36.png"/>
+                        <head>Slika 22: Škatli z brki za temo T12: sodstvo in financiranje
+                            šolstva.</head>
+                    </figure>
+                    <p>Dejstvo, da sta temi o epidemiji bolj izraziti v COVID podkorpusu, pravzaprav
+                        ni presenetljivo. Bolj kot kaj drugega to potrjuje uporabnost tematskega
+                        modeliranja za podobne raziskave.</p>
+                    <p>Teme lahko podrobneje raziščemo s pomočjo gradnikov <hi rend="bold">Select
+                            Rows</hi> in <hi rend="bold">Corpus Viewer</hi>. <hi rend="bold">Select
+                            Rows</hi> povežemo na <hi rend="bold">Edit Domain</hi>. V <hi
+                            rend="bold">Select Rows</hi> izberemo spremenljivko »T14: epidemija in
+                        zdravstvo« in nastavimo pogoj <hi rend="italic">is greater than 0.7</hi>, s
+                        čimer bomo izbrali tiste govore, ki imajo zastopanost teme višjo kot 0,7
+                        (več kot 70 % verjetnost, da je tema prisotna v govoru). Izbrane govore nato
+                        lahko pogledamo v gradniku <hi rend="bold">Word Cloud</hi>.</p>
+                    <figure>
+                        <graphic url="media/image37.png" />
+                        <head>Slika 23: Oblak najpogostejših besed za temo 14.</head>
+                    </figure>
+                    <p>Vidimo, da je govora zlasti o <hi rend="italic">pogodbah</hi> za <hi
+                            rend="italic">nabavo opreme</hi>, delu <hi rend="italic">vlade</hi> in
+                            <hi rend="italic">ministrov</hi> v času epidemije, vlogi <hi
+                            rend="italic">podjetij</hi> za nakup opreme, na primer <hi rend="italic"
+                            >ventilatorjev</hi>, ter o <hi rend="italic">Zavodu</hi> za blagovne
+                        rezerve (Slika 23). Veliko poudarka pri reševanju epidemije je zlasti na
+                        dobavi opreme, birokratski odgovornosti za nakup ter vlogi države pri
+                        zagotavljanju dobave. Ministrstvo za zdravje je že 3. 2. 2020 pričelo z
+                        ugotavljanjem zalog zaščitne in medicinske opreme, med drugim tudi
+                        ventilatorjev (RS RS, 2021), 2. 4. 2020 pa je Državni zbor za seji sprejel
+                        Zakon o interventnih ukrepih za zajezitev epidemije COVID-19 in omilitev
+                        njenih posledic za državljane in gospodarstvo (DZ RS, 2020).</p>
+                    <figure>
+                        <graphic url="media/image33.png"/>
+                    </figure>
+                    <p>Poskusite sami: Na enak način, kot smo primerjali podkorpusa Reference in
+                        COVID, primerjajte med sabo tematsko porazdelitev v govorih opozicije in
+                        koalicije.</p>
+                </div>
+            </div>
+            <div>
+                <head>Zaključek</head>
+                <p>Parlamentarni korpusi, ki vsebujejo zapise parlamentarnih sej, so pomemben vir za
+                    raziskovanje političnega in družbenega dogajanja. Običajno vsebujejo številne
+                    metapodatke o govorcih in govorih, pogosto pa so tudi bogato jezikoslovno
+                    označeni, kar raziskovalcem omogoča oblikovanje najrazličnejših raziskovalnih
+                    vprašanj. Zaradi velikega obsega so za raziskovanje vsebine parlamentarnih
+                    korpusov izrazito primerne metode rudarjenja besedil, med katere uvrščamo tudi
+                    tematsko modeliranje, ki omogoča luščenje vsebinskih tematik iz korpusa. V tem
+                    učnem gradivu smo tako prikazali uporabo tehnike LDA, ki je ena od najbolj
+                    priljubljenih tehnik za tematsko modeliranje. Analizo smo izvedli v
+                    prostodostopnem programu za vizualno programiranje Orange, ki omogoča napredno
+                    obdelavo podatkov tudi tistim, ki niso vešči pisanja programske kode. Za potrebe
+                    analize smo uporabili korpus ParlaMint-SI, ki vsebuje slovenske parlamentarne
+                    razprave.</p>
+                <figure>
+                    <graphic url="media/image38.png"/>
+                    <head>Slika 24: Prikaz celotnega delotoka iz učnega gradiva.</head>
+                </figure>
+                <p>Učno gradivo je zasnovano za samostojno učenje in vsebuje enostavne opise
+                    korakov, ki so pospremljeni s številnimi posnetki zaslona za lažje sledenje
+                    (Slika 24). Poleg tega so dodana navodila za dodatno samostojno delo, kar pomaga
+                    utrjevati znanje in spodbuja k samostojni rabi programa Orange. V učnem gradivu
+                    je posebna pozornost namenjena predstavitvi bistvenih značilnosti obravnavanih
+                    podatkov, opisane pa so tudi zakonitosti in omejitve metode, kar uporabnike
+                    spodbuja k primerno kritični uporabi metode in ustrezni interpretaciji
+                    rezultatov.</p>
+                <p>V učnem gradivu smo za potrebe analize sicer uporabili slovenske parlamentarne
+                    podatke, vendar je analizo enostavno razširiti ne le na druge jezike, ampak tudi
+                    na druge primerne besedilne žanre. Družina korpusov ParlaMint namreč združuje
+                    številne primerljive parlamentarne korpuse, predstavljena metoda tematskega
+                    modeliranja pa ni jezikovnospecifična, zato jo lahko uporabimo na katerem koli
+                    jeziku. Vzporedno s slovenskim učnim gradivom smo pripravili tudi gradivo z
+                    govori britanskega parlamenta, ki ga lahko vzamete za primerjavo. Vrednost
+                    učnega gradiva za študente in raziskovalce na področju družboslovja in
+                    humanistike torej vsekakor sega prek specifičnih raziskovalnih vprašanj,
+                    obravnavanih v tem učnem gradivu.</p>
+                <p><hi rend="bold">Zahvala</hi></p>
+                <p>Delo, opisano v pričujočem gradivu, je financirala Slovenska raziskovalna
+                    agencija, raziskovalni program P6-0436: Digitalna humanistka: viri, orodja,
+                    metode (2022-2027), projekt Social Sciences &amp; Humanities Open Cloud (SSHOC)
+                        (<ref target="https://www.sshopencloud.eu/"
+                        >https://www.sshopencloud.eu/</ref>), projekt CLARIN ERIC ParlaMint (<ref
+                        target="https://www.clarin.eu/parlamint"
+                        >https://www.clarin.eu/parlamint</ref>) in raziskovalna infrastruktura
+                    DARIAH-SI. Posebna zahvala gre tudi Çağrıju Çöltekinu, Marti Kołczyński, Jiřini
+                    Popelikovi, Mladenu Zobcu in Juretu Skubicu za strokovno recenzijo in testiranje
+                    učnega gradiva ter vse njihove koristne komentarje.</p>
+            </div>
+            <div>
+                <head>Reference</head>
+                <p>Abercrombie, G., &amp; Batista-Navarro, R. (2020). Sentiment and position-taking
+                    analysis of parliamentary debates: A systematic literature review. <hi
+                        rend="italic">Journal of Computational Social Science</hi>, <hi
+                        rend="italic">3</hi>(1), 245–270.</p>
+                <p>Albalawi, R., Yeap, T. H., &amp; Benyoucef, M. (2020). Using topic modeling
+                    methods for short-text data: A comparative analysis. <hi rend="italic">Frontiers
+                        in Artificial Intelligence</hi>, <hi rend="italic">3</hi>, 42.</p>
+                <p>Allen, C., &amp; Murdock, J. (2020). LDA topic modelling: Context for the history
+                    &amp; philosophy of science [Preprint].
+                    http://philsci-archive.pitt.edu/17261/</p>
+                <p>Arun, R., Suresh, V., Veni Madhavan, C., &amp; Murthy, N. (2010). <hi
+                        rend="italic">On finding the natural number of topics with latent dirichlet
+                        allocation: Some observations</hi>. 391–402.</p>
+                <p>Bayley, P. (2004). <hi rend="italic">Cross-cultural perspectives on parliamentary
+                        discourse</hi> (Vol. 10). John Benjamins Publishing.</p>
+                <p>Bergmann, H., Geese, L., Koss, C., &amp; Schwemmer, C. (2018). <hi rend="italic"
+                        >Using legislative speech to unveil conflict between coalition parties</hi>
+                    [Preprint]. SocArXiv. https://doi.org/10.31235/osf.io/pgnwa</p>
+                <p>Blätte, A., Gehlhar, S., &amp; Leonhardt, C. (2020). <hi rend="italic">The
+                        Europeanization of Parliamentary Debates on Migration in Austria, France,
+                        Germany, and the Netherlands</hi>. 66–74.</p>
+                <p>Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent dirichlet allocation.
+                        <hi rend="italic">Journal of Machine Learning Research</hi>, <hi
+                        rend="italic">3</hi>(Jan), 993–1022.</p>
+                <p>Brezovšek, M., Haček, M., Ferfila, B., &amp; Zajc, D. (2012). <hi rend="italic"
+                        >Politični sistem Republike Slovenije</hi>. Fakulteta za družbene vede.</p>
+                <p>Chizhik, A. V., &amp; Sergeyev, D. A. (2021). <hi rend="italic">Exploring the
+                        Parliamentary Discourse of the Russian Federation Using Topic Modeling
+                        Approach</hi>. 403–416.</p>
+                <p>Curran, B., Higham, K., Ortiz, E., &amp; Vasques Filho, D. (2018). Look who’s
+                    talking: Two-mode networks as representations of a topic model of New Zealand
+                    parliamentary speeches. <hi rend="italic">PLOS ONE</hi>, <hi rend="italic"
+                        >13</hi>(6), e0199072. https://doi.org/10.1371/journal.pone.0199072</p>
+                <p>de Campos, L. M., Fernandez-Luna, J. M., Huete, J. F., &amp; Redondo-Expósito, L.
+                    (2021). LDA-based term profiles for expert finding in a political setting. <hi
+                        rend="italic">Journal of Intelligent Information Systems</hi>, <hi
+                        rend="italic">56</hi>(3), 529–559.</p>
+                <p>Demšar, J., Curk, T., Erjavec, A., Gorup, Č., Hočevar, T., Milutinovič, M.,
+                    Možina, M., Polajnar, M., Toplak, M., &amp; Starič, A. (2013). Orange: Data
+                    mining toolbox in Python. <hi rend="italic">The Journal of Machine Learning
+                        Research</hi>, <hi rend="italic">14</hi>(1), 2349–2353.</p>
+                <p>DZ RS (Državni zbor Republike Slovenija) (2020). ZIUZEOP: Zakon o interventnih
+                    ukrepih za zajezitev epidemije COVID-19 in omilitev njenih posledic za
+                    državljane in gospodarstvo (Uradni list RS, št. 49/20, 61/20, 67/20, 80/20 -
+                    ZIUOOPE, 101/20 - skl. US, 152/20 - ZZUOOP, 175/20 - ZIUOPDVE, 203/20 -
+                    ZIUPOPDVE, 15/21 - ZDUOP).
+                    http://www.pisrs.si/Pis.web/pregledPredpisa?id=ZAKO8190 </p>
+                <p>Erjavec, T., et al. (2021). <hi rend="italic">Multilingual comparable corpora of
+                        parliamentary debates ParlaMint 2.1</hi>, Slovenian language resource
+                    repository CLARIN.SI, ISSN 2820-4042, <ref
+                        target="http://hdl.handle.net/11356/1432"
+                        >http://hdl.handle.net/11356/1432</ref>.</p>
+                <p>Erjavec, T., Ogrodniczuk, M., Osenova, P., &amp; et al. (2022). The ParlaMint
+                    corpora of parliamentary proceedings. <hi rend="italic">Lang Resources &amp;
+                        Evaluation</hi>. https://doi.org/10.1007/s10579-021-09574-0</p>
+                <p>Erjavec, T., &amp; Pančur, A. (2019). Parla-CLARIN: TEI guidelines for corpora of
+                    parliamentary proceedings. <hi rend="italic">Book of Abstracts of the TEI2019:
+                        What Is Text, Really</hi>.</p>
+                <p>Fišer, D., &amp; Pahor de Maiti, K. (2021). » Prvič, sem političarka in ne
+                    politik, drugič pa…«. <hi rend="italic">Contributions to Contemporary
+                        History</hi>, <hi rend="italic">61</hi>(1).
+                    https://doi.org/10.51663/pnz.61.1.07</p>
+                <p>Gkoumas, D., Pontiki, M., Papanikolaou, K., &amp; Papageorgiou, H. (2018). <hi
+                        rend="italic">Exploring the Political Agenda of the Greek Parliament Plenary
+                        Sessions</hi> (D. Fišer, M. Eskevich, &amp; F. de Jong, Eds.).</p>
+                <p>Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls
+                    of automatic content analysis methods for political texts. <hi rend="italic"
+                        >Political Analysis</hi>, <hi rend="italic">21</hi>(3), 267–297.</p>
+                <p>Høyland, B., &amp; Søyland, M. G. (2019). Electoral reform and parliamentary
+                    debates. <hi rend="italic">Legislative Studies Quarterly</hi>, <hi rend="italic"
+                        >44</hi>(4), 593–615.</p>
+                <p>Ilie, C. (2010). <hi rend="italic">European parliaments under scrutiny: Discourse
+                        strategies and interaction practices</hi> (Vol. 38). John Benjamins
+                    Publishing.</p>
+                <p>Jacobs, T., &amp; Tschötschel, R. (2019). Topic models meet discourse analysis: A
+                    quantitative tool for a qualitative approach. <hi rend="italic">International
+                        Journal of Social Research Methodology</hi>, <hi rend="italic">22</hi>(5),
+                    469–485.</p>
+                <p>Jones, K. S. (1972). A statistical interpretation of term specificity and its
+                    application in retrieval. <hi rend="italic">Journal of Documentation</hi>.</p>
+                <p>Kilroy, D. (2021). All the king’s men? A demographic study of opinion in the
+                    first English Parliament of James I, 1604–10. <hi rend="italic">Parliaments,
+                        Estates and Representation</hi>, <hi rend="italic">41</hi>(1), 1–23.</p>
+                <p>Martin, F., &amp; Johnson, M. (2015). <hi rend="italic">More efficient topic
+                        modelling through a noun only approach</hi>. 111–115.</p>
+                <p>Meeks, E., &amp; Weingart, S. B. (2012). The digital humanities contribution to
+                    topic modeling. <hi rend="italic">Journal of Digital Humanities</hi>, <hi
+                        rend="italic">2</hi>(1), 1–6.</p>
+                <p>Mollin, S. (2007). The Hansard hazard: Gauging the accuracy of British
+                    parliamentary transcripts. <hi rend="italic">Corpora</hi>, <hi rend="italic"
+                        >2</hi>(2), 187–210.</p>
+                <p>Morstatter, F., Shao, Y., Galstyan, A., &amp; Karunasekera, S. (2018). <hi
+                        rend="italic">From alt-right to alt-rechts: Twitter analysis of the 2017
+                        German federal election</hi>. 621–628.</p>
+                <p>Müller-Hansen, F., Callaghan, M. W., Lee, Y. T., Leipprand, A., Flachsland, C.,
+                    &amp; Minx, J. C. (2021). Who cares about coal? Analyzing 70 years of German
+                    parliamentary debates on coal with dynamic topic modeling. <hi rend="italic"
+                        >Energy Research &amp; Social Science</hi>, <hi rend="italic">72</hi>,
+                    101869.</p>
+                <p>Norton, P. (2002). <hi rend="italic">Parliaments and citizens in Western
+                        Europe</hi> (Vol. 3). Psychology Press.</p>
+                <p>Pančur, A., &amp; Šorn, M. (2016). Digitalni pristop k parlamentarni zgodovini:
+                    Uporaba gradiva Državnega zbora v digitalni humanistiki. <hi rend="italic">Četrt
+                        stoletja Republike Slovenije - izzivi, dileme, pričakovanja</hi>,
+                    115–126.</p>
+                <p>Petukhova, V., Malchanau, A., &amp; Bunt, H. (2015). <hi rend="italic">Modelling
+                        argumentation in parliamentary debates</hi> (M. Baldoni &amp; et al., Eds.).
+                    Springer.</p>
+                <p>Piersma, H., Tames, I., Buitinck, L., Van Doornik, J., &amp; Marx, M. (2014). War
+                    in parliament: What a digital approach can add to the study of parliamentary
+                    history. <hi rend="italic">Digital Humanities Quarterly</hi>, <hi rend="italic"
+                        >8</hi>(1).</p>
+                <p>Pritchard, J. K., Stephens, M., &amp; Donnelly, P. (2000). Inference of
+                    population structure using multilocus genotype data. <hi rend="italic"
+                        >Genetics</hi>, <hi rend="italic">155</hi>(2), 945–959.</p>
+                <p>Proksch, S.-O., &amp; Slapin, J. B. (2010). Position taking in European
+                    Parliament speeches. <hi rend="italic">British Journal of Political
+                    Science</hi>, <hi rend="italic">40</hi>(3), 587–611.</p>
+                <p>RS RS (Računsko sodišče Republike Slovenije) (2021). Revizijsko poročilo:
+                    Učinkovitost nabav zaščitne in medicinske opreme za obvladovanje širjenja virusa
+                    SARS-CoV-2, 17. 3. 2021.
+                    https://www.rs-rs.si/fileadmin/user_upload/Datoteke/Revizije/2021/ZascitnaOprema/ZascitnaOprema2020_RSP_RevizijskoP.pdf.</p>
+                <p>Rheault, L., Beelen, K., Cochrane, C., &amp; Hirst, G. (2016). Measuring emotion
+                    in parliamentary debates with automated textual analysis. <hi rend="italic">PloS
+                        One</hi>, <hi rend="italic">11</hi>(12), e0168843.</p>
+                <p>Rheault, L., &amp; Cochrane, C. (2020). Word embeddings for the analysis of
+                    ideological placement in parliamentary corpora. <hi rend="italic">Political
+                        Analysis</hi>, <hi rend="italic">28</hi>(1), 112–133.</p>
+                <p>Rosa, A. B., Gudowsky, N., &amp; Repo, P. (2021). Sensemaking and lens-shaping:
+                    Identifying citizen contributions to foresight through comparative topic
+                    modelling. <hi rend="italic">Futures</hi>, <hi rend="italic">129</hi>,
+                    102733.</p>
+                <p>Rudkowsky, E., Haselmayer, M., Wastian, M., Jenny, M., Emrich, Š., &amp;
+                    Sedlmair, M. (n.d.). <hi rend="italic">Supervised Sentiment Analysis of
+                        Parliamentary Speeches and News Reports</hi>.</p>
+                <p>Schmidt, B. M. (2012). Words alone: Dismantling topic models in the humanities.
+                        <hi rend="italic">Journal of Digital Humanities</hi>, <hi rend="italic"
+                        >2</hi>(1), 49–65.</p>
+                <p>Schuler, P. (2020). Position taking or position ducking? A theory of public
+                    debate in single-party legislatures. <hi rend="italic">Comparative Political
+                        Studies</hi>, <hi rend="italic">53</hi>(9), 1493–1524.</p>
+                <p>Serrano, J. C. M., Shahrezaye, M., Papakyriakopoulos, O., &amp; Hegelich, S.
+                    (2019). <hi rend="italic">The rise of Germany’s AfD: A social media
+                        analysis</hi>. 214–223.</p>
+                <p>Shadrova, A. (2021). Topic models do not model topics: Epistemological remarks
+                    and steps towards best practices. <hi rend="italic">Journal of Data Mining &amp;
+                        Digital Humanities</hi>, <hi rend="italic">2021</hi>.</p>
+                <p>Sieberer, U., Müller, W. C., &amp; Heller, M. I. (2011). Reforming the rules of
+                    the parliamentary game: Measuring and explaining changes in parliamentary rules
+                    in Austria, Germany, and Switzerland, 1945–2010. <hi rend="italic">West European
+                        Politics</hi>, <hi rend="italic">34</hi>(5), 948–975.</p>
+                <p>Sievert, C., &amp; Shirley, K. (2014). <hi rend="italic">LDAvis: A method for
+                        visualizing and interpreting topics</hi>. 63–70.</p>
+                <p>Smith, N., &amp; Graham, T. (2019). Mapping the anti-vaccination movement on
+                    Facebook. <hi rend="italic">Information, Communication &amp; Society</hi>, <hi
+                        rend="italic">22</hi>(9), 1310–1327.</p>
+                <p>Truan, N., &amp; Romary, L. (2021). Building, Encoding, and Annotating a Corpus
+                    of Parliamentary Debates in XML-TEI: A Cross-Linguistic Account. <hi
+                        rend="italic">Journal of the Text Encoding Initiative</hi>.</p>
+                <p>van der Zwaan, J. M., Marx, M., &amp; Kamps, J. (2016). <hi rend="italic"
+                        >Validating Cross-Perspective Topic Modeling for Extracting Political
+                        Parties’ Positions from Parliamentary Proceedings.</hi> 28–36.</p>
+                <p>Vayansky, I., &amp; Kumar, S. A. (2020). A review of topic modeling methods. <hi
+                        rend="italic">Information Systems</hi>, <hi rend="italic">94</hi>,
+                    101582.</p>
+                <p>Vlada Republike Slovenije (2020). Obrazložitev splošnega dela predloga rebalansa
+                    proračuna Republike Slovenije za leto 2020.
+                    https://www.gov.si/assets/ministrstva/MF/Proracun-direktorat/Drzavni-proracun/Sprejeti-proracun/Rebalans-2020/Obr-splosni-del-in-politike/REB20_obrsplosnidel.pdf.</p>
+                <p>Wiedemann, G. (2016). <hi rend="italic">Text mining for qualitative data analysis
+                        in the social sciences</hi> (Vol. 1). Springer.</p>
+                <p>Zhao, W., Chen, J. J., Perkins, R., Liu, Z., Ge, W., Ding, Y., &amp; Zou, W.
+                    (2015). <hi rend="italic">A heuristic approach to determine an appropriate
+                        number of topics in topic modeling</hi>. <hi rend="italic">16</hi>(13),
+                    1–10.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

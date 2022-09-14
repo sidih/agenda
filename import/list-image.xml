@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <figure>
+      <graphic>ch6.3.png</graphic>
+   </figure>
+   <figure>
+      <graphic>ch6.3-sl.png</graphic>
+   </figure>
+   <figure>
+      <graphic>ch6.2.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch6.1.4.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch6.1.3.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch6.1.2.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch6.1.1.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch5.4.2.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch5.4.1.png</graphic> 
+   </figure>
+   <figure>
+      <graphic>ch5.3.png</graphic>
+   </figure>
+   <figure n="Figure0.10.png">
+      <graphic>Figure0.10.png</graphic>
+   </figure>
+   <figure n="Figure0.11.png">
+      <graphic>Figure0.11.png</graphic>
+   </figure>
+   <figure n="Figure0.1_LDA-eng.png">
+      <graphic>Figure0.1_LDA-eng.png</graphic>
+   </figure>
+   <figure n="Figure0.2_LDA-prob-eng.png">
+      <graphic>Figure0.2_LDA-prob-eng.png</graphic>
+   </figure>
+   <figure n="Figure0.3.png">
+      <graphic>Figure0.3.png</graphic>
+   </figure>
+   <figure n="Figure0.4.png">
+      <graphic>Figure0.4.png</graphic>
+   </figure>
+   <figure n="Figure0.5.png">
+      <graphic>Figure0.5.png</graphic>
+   </figure>
+   <figure n="Figure0.6.png">
+      <graphic>Figure0.6.png</graphic>
+   </figure>
+   <figure n="Figure0.7.png">
+      <graphic>Figure0.7.png</graphic>
+   </figure>
+   <figure n="Figure0.8.png">
+      <graphic>Figure0.8.png</graphic>
+   </figure>
+   <figure n="Figure0.9.png">
+      <graphic>Figure0.9.png</graphic>
+   </figure>
+   <figure n="Figure10_word-cloud.png">
+      <title xml:lang="en">Figure 10: The most frequent words in the subset after preprocessing.</title>
+      <graphic>Figure10_word-cloud.png</graphic>
+   </figure>
+   <figure n="Figure11_bag-of-words.png">
+      <title xml:lang="en">Figure 11: Setting the bag-of-words parameters.</title>
+      <graphic>Figure11_bag-of-words.png</graphic>
+   </figure>
+   <figure n="Figure12_topic-modelling.png">
+      <title xml:lang="en">Figure 12: LDA results for twenty topics.</title>
+      <graphic>Figure12_topic-modelling.png</graphic>
+   </figure>
+   <figure n="Figure13_edit-links.png">
+      <title xml:lang="en">Figure 13: Setting correct input data for the LDAvis widget.</title>
+      <graphic>Figure13_edit-links.png</graphic>
+   </figure>
+   <figure n="Figure14_ldavis.png">
+      <title xml:lang="en">Figure 14: Visualisation of word frequency in the topic (red) to word frequency in the corpus (grey) for Topic 2.</title>
+      <graphic>Figure14_ldavis.png</graphic>
+   </figure>
+   <figure n="Figure15_select-columns.png">
+      <title xml:lang="en">Figure 15: The list of variables in Select Columns.</title>
+      <graphic>Figure15_select-columns.png</graphic>
+   </figure>
+   <figure n="Figure16_edit-domain.png">
+      <title xml:lang="en">Figure 16: Renaming of topics in the Edit Domain widget.</title>
+      <graphic>Figure16_edit-domain.png</graphic>
+   </figure>
+   <figure n="Figure17_heat-map.png">
+      <title xml:lang="en">Figure 17: A heat map of topic frequency. The selected branch of the dendrogram contains topics with a highly expressed T8: constituency-related issues topic.</title>
+      <graphic>Figure17_heat-map.png</graphic>
+   </figure>
+   <figure n="Figure18_mds.png">
+      <title xml:lang="en">Figure 18: Displaying topic relatedness in MDS.</title>
+      <graphic>Figure18_mds.png</graphic>
+   </figure>
+   <figure n="Figure19_select-rows.png">
+      <title xml:lang="en">Figure 19: Setting the threshold in the Select Rows widget.</title>
+      <graphic>Figure19_select-rows.png</graphic>
+   </figure>
+   <figure n="Figure1_addon.png">
+      <title xml:lang="en">Figure 1: Installing the Text add-on.</title>
+      <graphic>Figure1_addon.png</graphic>
+   </figure>
+   <figure n="Figure20_corpus-viewer.png">
+      <title xml:lang="en">Figure 20: Overview of the selected speeches in the Corpus Viewer widget.</title>
+      <graphic>Figure20_corpus-viewer.png</graphic>
+   </figure>
+   <figure n="Figure21_box-plot1.png">
+      <title xml:lang="en">Figure 21: Box plot for topic T1: UK &amp; nation before and during the pandemic.</title>
+      <graphic>Figure21_box-plot1.png</graphic>
+   </figure>
+   <figure n="Figure22_box-plot2.png">
+      <title xml:lang="en">Figure 22: Box plot for topic T7: virus and politics.</title>
+      <graphic>Figure22_box-plot2.png</graphic>
+   </figure>
+   <figure n="Figure23_corpus-viewer.png">
+      <title xml:lang="en">Figure 23: Corpus Viewer with speeches containing the word "vote".</title>
+      <graphic>Figure23_corpus-viewer.png</graphic>
+   </figure>
+   <figure n="Figure24_word-cloud.png">
+      <title xml:lang="en">Figure 24: Word cloud of the most frequent words in Topic 7.</title>
+      <graphic>Figure24_word-cloud.png</graphic>
+   </figure>
+   <figure n="Figure25_final-workflow.png">
+      <title xml:lang="en">Figure 25: The final workflow.</title>
+      <graphic>Figure25_final-workflow.png</graphic>
+   </figure>
+   <figure n="Figure2_canvas.png">
+      <title xml:lang="en">Figure 2: Home screen after restarting Orange, having installed the Text add-on.</title>
+      <graphic>Figure2_canvas.png</graphic>
+   </figure>
+   <figure n="Figure3_link.png">
+      <title xml:lang="en">Figure 3: A connection between the widgets.</title>
+      <graphic>Figure3_link.png</graphic>
+   </figure>
+   <figure n="Figure4_import-document.png">
+      <title xml:lang="en">Figure 4: Import data window.</title>
+      <graphic>Figure4_import-document.png</graphic>
+   </figure>
+   <figure n="Figure5_connlu.png">
+      <title xml:lang="en">Figure 5: Data in the CoNLL-U format: the first sentence in the file ParlaMint-GB_2019-01-07-commons.conllu.</title>
+      <graphic>Figure5_connlu.png</graphic>
+   </figure>
+   <figure n="Figure6_corpus-viewer.png">
+      <title xml:lang="en">Figure 6: Data overview in the Corpus Viewer widget.</title>
+      <graphic>Figure6_corpus-viewer.png</graphic>
+   </figure>
+   <figure n="Figure7_data-tabel.png">
+      <title xml:lang="en">Figure 7: Word count and character count columns are added to the data (far right).</title>
+      <graphic>Figure7_data-tabel.png</graphic>
+   </figure>
+   <figure n="Figure8_select-rows.png">
+      <title xml:lang="en">Figure 8: A selection of speeches with more than 50 words given by regular MPs.</title>
+      <graphic>Figure8_select-rows.png</graphic>
+   </figure>
+   <figure n="Figure9_preprocess-text.png">
+      <title xml:lang="en">Figure 9: Setting the Preprocess Text widget.</title>
+      <graphic>Figure9_preprocess-text.png</graphic>
+   </figure>
+   <figure n="Slika0.1_LDA.png">
+      <graphic>Slika0.1_LDA.png</graphic>
+   </figure>
+   <figure n="Slika0.2_LDA-prob.png">
+      <graphic>Slika0.2_LDA-prob.png</graphic>
+   </figure>
+   <figure n="Slika0.3.png">
+      <graphic>Slika0.3.png</graphic>
+   </figure>
+   <figure n="Slika0.4.png">
+      <graphic>Slika0.4.png</graphic>
+   </figure>
+   <figure n="Slika0.5.png">
+      <graphic>Slika0.5.png</graphic>
+   </figure>
+   <figure n="Slika10_word-cloud.png">
+      <title xml:lang="en">Slika 10: Najpogostejše besede oblikovanega vzorca podatkov po predprocesiranju.</title>
+      <graphic>Slika10_word-cloud.png</graphic>
+   </figure>
+   <figure n="Slika11_bag-of-words.png">
+      <title xml:lang="en">Slika 11: Nastavitve gradnika Bag of Words.</title>
+      <graphic>Slika11_bag-of-words.png</graphic>
+   </figure>
+   <figure n="Slika12_topic-modelling.png">
+      <title xml:lang="en">Slika 12: Rezultat tematskega modeliranja s tehniko LDA za dvajset tem.</title>
+      <graphic>Slika12_topic-modelling.png</graphic>
+   </figure>
+   <figure n="Slika13_edit-links.png">
+      <title xml:lang="en">Slika 13: Določitev ustreznih vhodnih podatkov za gradnik LDAvis.</title>
+      <graphic>Slika13_edit-links.png</graphic>
+   </figure>
+   <figure n="Slika14_ldavis-topic8.png">
+      <title xml:lang="en">Slika 14: Prikaz pogostosti besed v temi (rdeča) in v celotnem vzorcu (siva) za prvo temo.</title>
+      <graphic>Slika14_ldavis-topic8.png</graphic>
+   </figure>
+   <figure n="Slika15_select-columns.png">
+      <title xml:lang="en">Slika 15: Urejen izbor spremenljivk v gradniku Select Columns.</title>
+      <graphic>Slika15_select-columns.png</graphic>
+   </figure>
+   <figure n="Slika16_edit-domain.png">
+      <title xml:lang="en">Slika 16: Preimenovanje prve teme v gradniku Edit Domain.</title>
+      <graphic>Slika16_edit-domain.png</graphic>
+   </figure>
+   <figure n="Slika17_heat-map-topic18.png">
+      <title xml:lang="en">Slika 17: Toplotni diagram zastopanosti tematik v govorih z izbrano vejo dendrograma, ki združuje govore z močno izraženo temo T18: šport in kultura.</title>
+      <graphic>Slika17_heat-map-topic18.png</graphic>
+   </figure>
+   <figure n="Slika18_mds.png">
+      <title xml:lang="en">Slika 18: Prikaz podobnosti tem v vizualizaciji MDS.</title>
+      <graphic>Slika18_mds.png</graphic>
+   </figure>
+   <figure n="Slika19_select-rows.png">
+      <title xml:lang="en">Slika 19: Nastavitev mej za prisotnost tem v grandiku Select Rows.</title>
+      <graphic>Slika19_select-rows.png</graphic>
+   </figure>
+   <figure n="Slika1_razsiritev.png">
+      <title xml:lang="en">Slika 1: Namestitev razširitve Text.</title>
+      <graphic>Slika1_razsiritev.png</graphic>
+   </figure>
+   <figure n="Slika20_corpus-viewer.png">
+      <title xml:lang="en">Slika 20: Pregled izbranih dokumentov v gradniku Corpus Viewer.</title>
+      <graphic>Slika20_corpus-viewer.png</graphic>
+   </figure>
+   <figure n="Slika21_box-plot.png">
+      <title xml:lang="en">Slika 21: Škatli z brki za temo T1: prevoz otrok za obdobje pred in med epidemijo.</title>
+      <graphic>Slika21_box-plot.png</graphic>
+   </figure>
+   <figure n="Slika22_box-plot2.png">
+      <title xml:lang="en">Slika 22: Škatli z brki za temo T12: sodstvo in financiranje šolstva.</title>
+      <graphic>Slika22_box-plot2.png</graphic>
+   </figure>
+   <figure n="Slika23_word-cloud.png">
+      <title xml:lang="en">Slika 23: Oblak najpogostejših besed za temo 14.</title>
+      <graphic>Slika23_word-cloud.png</graphic>
+   </figure>
+   <figure n="Slika24_entire-workflow.png">
+      <title xml:lang="en">Slika 24: Prikaz celotnega delotoka iz učnega gradiva.</title>
+      <graphic>Slika24_entire-workflow.png</graphic>
+   </figure>
+   <figure n="Slika2_platno.png">
+      <title xml:lang="en">Slika 2: Začetni zaslon ob zagonu programa po namestitvi razširitve Text.</title>
+      <graphic>Slika2_platno.png</graphic>
+   </figure>
+   <figure n="Slika3_povezava.png">
+      <title xml:lang="en">Slika 3: Povezava med gradnikoma omogoča prehod podatkov od izhoda prvega gradnika do vhoda naslednjega gradnika.</title>
+      <graphic>Slika3_povezava.png</graphic>
+   </figure>
+   <figure n="Slika4_import-documents.png">
+      <title xml:lang="en">Slika 4: Okno za uvoz podatkov.</title>
+      <graphic>Slika4_import-documents.png</graphic>
+   </figure>
+   <figure n="Slika5_connlu.png">
+      <title xml:lang="en">Slika 5: Zapis podatkov v formatu CoNLL-U za prvi dve povedi iz dokumenta ParlaMint-SI_2019-01-28-SDZ8-Redna-04.conllu.</title>
+      <graphic>Slika5_connlu.png</graphic>
+   </figure>
+   <figure n="Slika6_corpus-viewer.png">
+      <title xml:lang="en">Slika 6: Pregled govorov v gradniku Corpus Viewer.</title>
+      <graphic>Slika6_corpus-viewer.png</graphic>
+   </figure>
+   <figure n="Slika7_data-table.png">
+      <title xml:lang="en">Slika 7: Stolpca skrajno desno prikazujeta podatke o številu besed in znakov, ki so dodani osnovnim podatkom.</title>
+      <graphic>Slika7_data-table.png</graphic>
+   </figure>
+   <figure n="Slika8_select-rows.png">
+      <title xml:lang="en">Slika 8: Izbor govorov z več kot petdeset besedami, ki so jih izrekli redni poslanci.</title>
+      <graphic>Slika8_select-rows.png</graphic>
+   </figure>
+   <figure n="Slika9_preprocess-text.png">
+      <title xml:lang="en">Slika 9: Nastavitve gradnika Preprocess Text.</title>
+      <graphic>Slika9_preprocess-text.png</graphic>
+   </figure>
+</root>
