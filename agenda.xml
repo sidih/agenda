@@ -162,7 +162,7 @@
          </divGen>
       </front>
       <body>
-         <div type="preface" xml:id="preface1" xml:lang="en" corresp="#preface1-sl">
+         <div type="chapter" xml:id="ch1" xml:lang="en" corresp="#ch1-sl">
             <head xml:id="head-11">1. Introduction</head>
             <p xml:id="p-6">In democratic countries, a parliament is a central representative and
                legislative institution. It is composed of elected representatives through which the
@@ -214,7 +214,7 @@
                            target="#Demšar.2013">Demšar et al., 2013</ref>), which enables the use of
                advanced text mining techniques without any programming knowledge.</p>
          </div>
-         <div type="preface" xml:id="preface1-sl" xml:lang="sl" corresp="#preface1">
+         <div type="chapter" xml:id="ch1-sl" xml:lang="sl" corresp="#ch1">
             <head xml:id="sl-head-1">1. Uvod</head>
             <p xml:id="sl-p-3">V demokratičnih državah parlament deluje kot osrednje predstavniško
                in zakonodajno telo. To pomeni, da ga sestavljajo izvoljeni predstavniki
@@ -273,7 +273,7 @@
                </ref> (<ref target="#Demšar.2013.sl">Demšar idr., 2013</ref>), ki uporabniku brez
                znanja programiranja omogoča uporabo naprednih metod rudarjenja besedil.</p>
          </div>
-         <div type="preface" xml:id="preface2" xml:lang="en" corresp="#preface2-sl">
+         <div type="chapter" xml:id="ch2" xml:lang="en" corresp="#ch2-sl">
             <head xml:id="head-12">2. Tutorial overview and instructions</head>
             <p xml:id="p-11">The tutorial is divided into the theoretical and empirical parts. In
                the theoretical part, the characteristics of parliamentary debates and the ParlaMint
@@ -316,7 +316,7 @@
                   independent research and help you consolidate the acquired knowledge.</p>
             </note>
          </div>
-         <div type="preface" xml:id="preface2-sl" xml:lang="sl" corresp="#preface2">
+         <div type="chapter" xml:id="ch2-sl" xml:lang="sl" corresp="#ch2">
             <head xml:id="sl-head-2">2. Pregled učnega gradiva in navodila za uporabo</head>
             <p xml:id="sl-p-8">Učno gradivo je razdeljeno na teoretični in praktični del. V
                teoretičnem delu predstavimo značilnosti parlamentarnih razprav in korpus ParlaMint
