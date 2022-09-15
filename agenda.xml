@@ -160,6 +160,8 @@
          <divGen type="search" xml:id="sl-search" xml:lang="sl" corresp="#search">
             <head>Iskanje</head>
          </divGen>
+      </front>
+      <body>
          <div type="preface" xml:id="preface1" xml:lang="en" corresp="#preface1-sl">
             <head xml:id="head-11">1. Introduction</head>
             <p xml:id="p-6">In democratic countries, a parliament is a central representative and
@@ -185,8 +187,8 @@
                be analysed by hand within a reasonable time frame. Concordancers are popular tools
                to analyse corpora. You can familiarize yourself with them in a <ref
                   target="https://sidih.github.io/voices/index.html">related tutorial</ref> (<ref
-                  target="#Fišer.2021">Fišer and Pahor de Maiti, 2021</ref>). Other tools, such as
-                  <ref target="https://orangedatamining.com/">Orange</ref> (<ref
+                     target="#Fišer.2021">Fišer and Pahor de Maiti, 2021</ref>). Other tools, such as
+               <ref target="https://orangedatamining.com/">Orange</ref> (<ref
                   target="#Demšar.2013">Demšar et al., 2013</ref>), used in this tutorial, enable
                text mining approaches which take large amounts of data to extract patterns and
                information that are not obvious from the text at first glance (<ref
@@ -196,8 +198,8 @@
                   2016</ref>; <ref target="#Rudkowsky.">Rudkowsky et al., 2017</ref>), for modelling
                policy conflict between the cabinet parties (<ref target="#Bergmann.2018">Bergmann et
                   al., 2018</ref>), for opinion mining (<ref target="#Abercrombie.2020">Abercrombie
-                  and Batista-Navarro, 2020</ref>), modelling argumentation (<ref
-                  target="#Petukhova.2015">Petukhova et al., 2015</ref>), etc. Among these, topic
+                     and Batista-Navarro, 2020</ref>), modelling argumentation (<ref
+                        target="#Petukhova.2015">Petukhova et al., 2015</ref>), etc. Among these, topic
                modelling (<ref target="#Meeks.2012">Meeks and Weingart, 2012</ref>) is one of the
                most often used text mining techniques in the digital humanities and the one that
                will be the focus of this tutorial.</p>
@@ -207,16 +209,16 @@
                discourse and topic modelling by answering concrete research questions. The analysis
                is based on the freely accessible corpus of British parliamentary debates <ref
                   target="http://hdl.handle.net/11356/1432">ParlaMint</ref> (<ref
-                  target="#Erjavec.2021">Erjavec et al., 2021</ref>) and the <ref
-                  target="https://orangedatamining.com/">Orange</ref> tool (<ref
-                  target="#Demšar.2013">Demšar et al., 2013</ref>), which enables the use of
+                     target="#Erjavec.2021">Erjavec et al., 2021</ref>) and the <ref
+                        target="https://orangedatamining.com/">Orange</ref> tool (<ref
+                           target="#Demšar.2013">Demšar et al., 2013</ref>), which enables the use of
                advanced text mining techniques without any programming knowledge.</p>
          </div>
          <div type="preface" xml:id="preface1-sl" xml:lang="sl" corresp="#preface1">
             <head xml:id="sl-head-1">1. Uvod</head>
             <p xml:id="sl-p-3">V demokratičnih državah parlament deluje kot osrednje predstavniško
                in zakonodajno telo. To pomeni, da ga sestavljajo izvoljeni predstavniki
-                  državljanov<note place="foot" xml:id="ftn1-sl" n="1">V učnem gradivu uporabljamo
+               državljanov<note place="foot" xml:id="ftn1-sl" n="1">V učnem gradivu uporabljamo
                   generični moški spol.</note>, ki v njihovem imenu sodelujejo pri oblikovanju in
                sprejemanju zakonov ter tako urejajo vsa področja življenja in delovanja v družbi.
                Parlament pogosto nadzoruje tudi delo izvršilne oblasti (<ref
@@ -233,7 +235,7 @@
                pa so zapisi parlamentarnih sej tudi priročen vir za izdelavo parlamentarnih
                korpusov. Pri tem gre za časovno zamejene in strukturirane nabore zapisov sej, ki so
                dodatno opremljeni z metapodatki o govorcih in govorih ter jezikoslovnimi oznakami
-                  (<ref target="#Truan.2021.sl">Truan in Romary, 2021</ref>).</p>
+               (<ref target="#Truan.2021.sl">Truan in Romary, 2021</ref>).</p>
             <p xml:id="sl-p-5">Parlamentarni korpusi običajno vsebujejo velike količine podatkov, ki
                jih je v razumnem času nemogoče obdelati ročno. Eno od priljubljenih orodij za
                analizo korpusov so konkordančniki, s katerimi se lahko spoznate v <ref
@@ -250,13 +252,13 @@
             <p xml:id="sl-p-6">Tehnike rudarjenja besedil so raznovrstne in se jih med drugim
                uporablja za analizo čustvene zaznamovanosti parlamentarnih razprav (<ref
                   target="#Rheault.2016.sl">Rheault idr., 2016</ref>; <ref target="#Rudkowsky..sl"
-                  >Rudkowsky idr., n.d.</ref>), prepoznavo politične opredelitve (<ref
-                  target="#Bergmann.2018.sl">Bergmann idr., 2018</ref>) ali stališča poslancev (<ref
-                  target="#Abercrombie.2020.sl">Abercrombie in Batista-Navarro, 2020</ref>),
+                     >Rudkowsky idr., n.d.</ref>), prepoznavo politične opredelitve (<ref
+                        target="#Bergmann.2018.sl">Bergmann idr., 2018</ref>) ali stališča poslancev (<ref
+                           target="#Abercrombie.2020.sl">Abercrombie in Batista-Navarro, 2020</ref>),
                modeliranje argumentacije v parlamentarnih razpravah (<ref
                   target="#Petukhova.2015.sl">Petukhova idr., 2015</ref>) in podobno. Ena od njih je
                tudi tematsko modeliranje (<ref target="#Meeks.2012.sl">Meeks in Weingart,
-               2012</ref>), ki sodi med najbolj razširjene tehnike s področja besedilnega rudarjenja
+                  2012</ref>), ki sodi med najbolj razširjene tehnike s področja besedilnega rudarjenja
                v digitalni humanistiki in ki se ji bomo posvetili v tem učnem gradivu.</p>
             <p xml:id="sl-p-7">Namen učnega gradiva je raziskovalce s področja humanistike in
                družboslovja vpeljati v svet rudarjenja besedil ter prikazati vrednost tovrstnih
@@ -287,7 +289,7 @@
             <p xml:id="p-12">All the resources and tools used in this tutorial are freely accessible
                online. You can find the detailed instructions on downloading the <ref
                   target="http://hdl.handle.net/11356/1432">ParlaMint</ref> data and setting up the
-                  <ref target="https://orangedatamining.com/">Orange</ref> software in <ref
+               <ref target="https://orangedatamining.com/">Orange</ref> software in <ref
                   target="#ch5">Chapter 5</ref>. If you are mainly interested in analysing texts in
                Orange, you can begin with <ref target="#ch5">Chapter 5</ref>. However, we recommend
                reading the introductory theoretical chapters containing key information on
@@ -318,7 +320,7 @@
             <head xml:id="sl-head-2">2. Pregled učnega gradiva in navodila za uporabo</head>
             <p xml:id="sl-p-8">Učno gradivo je razdeljeno na teoretični in praktični del. V
                teoretičnem delu predstavimo značilnosti parlamentarnih razprav in korpus ParlaMint
-                  (<ref target="#ch3-sl">3. poglavje</ref>) ter metodo tematskega modeliranja (<ref
+               (<ref target="#ch3-sl">3. poglavje</ref>) ter metodo tematskega modeliranja (<ref
                   target="#ch4-sl">4. poglavje</ref>). Praktični del se začne s poglavjem, ki nas
                vodi skozi pripravo na analizo in v katerem je razloženo, kako namestiti program
                Orange, uvoziti in pregledati podatke ter pripraviti vzorec podatkov za analizo (<ref
@@ -331,7 +333,7 @@
             <p xml:id="sl-p-9">Vsi viri in orodja, uporabljeni v tem učnem gradivu, so prosto
                dostopni na spletu. Podrobna navodila glede prenosa podatkov <ref
                   target="http://hdl.handle.net/11356/1432">ParlaMint</ref> in namestitve programa
-                  <ref target="https://orangedatamining.com/">Orange</ref> so navedena v <ref
+               <ref target="https://orangedatamining.com/">Orange</ref> so navedena v <ref
                   target="#ch5.1-sl">poglavju 5.1</ref>. Če vas zanima predvsem analiza besedil v
                programu Orange, lahko začnete s <ref target="#ch5-sl">5. poglavjem</ref>, vendar
                priporočamo, da si preberete tudi začetna teoretična poglavja, saj vsebujejo ključne
@@ -347,14 +349,12 @@
                posamezne korake analize. Imena <hi rend="bold">gradnikov </hi>so v besedilu zapisana
                odebeljeno, <hi rend="italic">nastavitve gradnikov</hi>, <hi rend="italic">imena
                   spremenljivk, iskalni ukazi, obravnavane besede</hi> ter <hi rend="italic"
-                  >angleške ustreznice izrazov</hi> pa so označene ležeče.</p>
+                     >angleške ustreznice izrazov</hi> pa so označene ležeče.</p>
             <note rend="bluebox" xml:id="sl-note-3">
                <p>Oranžni okvirčki <hi rend="italic">Poskusite sami</hi> vsebujejo navodila za
                   samostojno raziskovanje podatkov in utrjevanje pridobljenega znanja.</p>
             </note>
          </div>
-      </front>
-      <body>
          <div type="chapter" xml:id="ch3" xml:lang="en" corresp="#ch3-sl">
             <head xml:id="head-13">3. Parliamentary debates</head>
             <p xml:id="p-16">The tutorial analyses MPs’ speeches during parliamentary sessions. This
