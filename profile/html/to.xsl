@@ -104,6 +104,18 @@
          .keywordlink:hover { opacity: 0.5;}
          .numberParagraphLink {text-decoration: none;}
          .numberParagraph:hover {color: black;}
+         button.sticky-img {
+         float: left;
+         
+         left: 50%;
+         margin-left: -50vw;
+         position: relative;
+         }
+         p.sticky-img {
+         position: -webkit-sticky;
+         position: sticky;
+         top: 0;
+         }
       </style>
    </xsl:template>
    <xsldoc:doc xmlns:xsldoc="http://www.oxygenxml.com/ns/doc/xsl">
@@ -124,9 +136,25 @@
    </xsl:template>
    
    <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+      <desc>Sticky image</desc>
+   </doc>
+   <xsl:template match="tei:figure[@type='sticky-img']">
+      <div class="reveal" id="{@xml:id}" data-reveal="">
+         <figure>
+            <!--<img src="{concat('https://sidih.si/iiif/2/entity|2001-3000|2177|',tokenize(tei:graphic/@url,'/')[last()],'/full/350,/0/default.jpg')}" class="sticky-img"/>-->
+            <img src="{tei:graphic/@url}"/>
+         </figure>
+         <button class="close-button" data-close="" aria-label="Close modal" type="button">
+            <span aria-hidden="true">X</span>
+         </button>
+      </div>
+      <p class="sticky-img"><button class="button sticky-img" data-open="{@xml:id}">Workflow</button></p>
+   </xsl:template>
+   
+   <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">
       <desc>Slike, ki imajo vključeno možnost povečanja slike z imageviewer</desc>
    </doc>
-   <xsl:template match="tei:figure">
+   <xsl:template match="tei:figure[not(@type)]">
       <xsl:variable name="image-file-name" select="tokenize(tei:graphic/@url,'/')[last()]"/>
       <xsl:variable name="height" select="if (tei:graphic/@height) then 'max' else ',600'"/>
       <figure id="{@xml:id}">

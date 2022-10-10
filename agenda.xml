@@ -2355,8 +2355,11 @@
                      ParlaMint-GB_2019-01-07-commons.conllu.</head>
                </figure>
             </div>
-            <div type="subchapter" xml:id="ch5.3" facs="https://sidih.si/cdn/2177/ch5.3.png">
+            <div type="subchapter" xml:id="ch5.3">
                <head xml:id="head-31">5.3. Data overview</head>
+               <figure type="sticky-img" xml:id="img-1">
+                  <graphic url="https://sidih.si/cdn/2177/ch5.3.png"/>
+               </figure>
                <p xml:id="p-69">Before we begin the analysis, let us make sure that the data we have
                   uploaded is correct. We can do this in the <hi rend="bold">Corpus Viewer</hi>
                   widget. First, we add it to the canvas and connect it from left to right with the
@@ -2437,8 +2440,11 @@
                   following the LDA method, which requires longer texts to achieve good results (see
                      <ref target="#ch4">Chapter 4</ref>). Along with the too-short speeches, the
                   sample will also exclude speeches from guests of the parliament.</p>
-               <div type="subchapter" xml:id="ch5.4.1" facs="https://sidih.si/cdn/2177/ch5.4.1.png">
+               <div type="subchapter" xml:id="ch5.4.1">
                   <head xml:id="head-34">5.4.1. Removing unwanted speeches</head>
+                  <figure type="sticky-img" xml:id="img-2">
+                     <graphic url="https://sidih.si/cdn/2177/ch5.4.1.png"/>
+                  </figure>
                   <table rend="rules" xml:id="table-12">
                      <row>
                         <cell rend="left">Option 1: follow the tutorial</cell>
@@ -2514,8 +2520,11 @@
                      the previous 180,565; the complete information on the output can be accessed by
                      clicking the numbers at the bottom).</p>
                </div>
-               <div type="subchapter" xml:id="ch5.4.2" facs="https://sidih.si/cdn/2177/ch5.4.2.png">
+               <div type="subchapter" xml:id="ch5.4.2">
                   <head xml:id="head-37">5.4.2. Removing unwanted words</head>
+                  <figure type="sticky-img" xml:id="img-3">
+                     <graphic url="https://sidih.si/cdn/2177/ch5.4.2.png"/>
+                  </figure>
                   <p xml:id="p-78">To achieve good topic modelling results, we must also preprocess
                      the data (see <ref target="#ch4.3">Chapter 4.3)</ref>. We can do this by
                      filtering in the <hi rend="bold">Preprocess Text</hi> widget, which we insert
@@ -2728,8 +2737,11 @@
                      ParlaMint-SI_2019-01-28-SDZ8-Redna-04.conllu.</head>
                </figure>
             </div>
-            <div type="subchapter" xml:id="ch5.3-sl" facs="https://sidih.si/cdn/2177/ch5.3.png">
+            <div type="subchapter" xml:id="ch5.3-sl">
                <head xml:id="sl-head-21">5.3. Pregled podatkov</head>
+               <figure type="sticky-img" xml:id="img-4">
+                  <graphic url="https://sidih.si/cdn/2177/ch5.3.png"/>
+               </figure>
                <p xml:id="sl-p-60">Preden začnemo z analizo, se je dobro najprej prepričati, da so
                   naloženi podatki res pravi. To bomo storili z gradnikom <hi rend="bold">Corpus
                      Viewer</hi>, ki ga dodamo na platno in ga od leve proti desni povežemo s
@@ -2814,9 +2826,11 @@
                   daljša besedila (glejte <ref target="#ch4-sl">4. poglavje</ref>). Poleg tega bomo
                   iz vzorca za analizo izločili tudi vse govore posameznikov in posameznic, ki v
                   parlamentu lahko nastopajo kot gosti.</p>
-               <div type="subchapter" xml:id="ch5.4.1-sl"
-                  facs="https://sidih.si/cdn/2177/ch5.4.1.png">
+               <div type="subchapter" xml:id="ch5.4.1-sl">
                   <head xml:id="sl-head-24">5.4.1. Odstranjevanje neželenih govorov</head>
+                  <figure type="sticky-img" xml:id="img-5">
+                     <graphic url="https://sidih.si/cdn/2177/ch5.4.1.png"/>
+                  </figure>
                   <p xml:id="sl-p-66">Za oblikovanje vzorca potrebujemo gradnika <hi rend="bold"
                         >Statistics </hi>in <hi rend="bold">Select Rows</hi>. Na platno dodamo
                      gradnik <hi rend="bold">Statistics</hi> in ga povežemo z gradnikom <hi
@@ -2862,9 +2876,11 @@
                      </hi>vidimo, da se je število govorov skrčilo na 6861 (s prejšnjih 18.476;
                      podrobne podatke dobimo, če kliknemo številke na spodnjem robu).</p>
                </div>
-               <div type="subchapter" xml:id="ch5.4.2-sl"
-                  facs="https://sidih.si/cdn/2177/ch5.4.2.png">
+               <div type="subchapter" xml:id="ch5.4.2-sl">
                   <head xml:id="sl-head-27">5.4.2. Odstranjevanje neželenih besed</head>
+                  <figure type="sticky-img" xml:id="img-6">
+                     <graphic url="https://sidih.si/cdn/2177/ch5.4.2.png"/>
+                  </figure>
                   <p xml:id="sl-p-69">Za dobre rezultate tematskega modeliranja je pomembna tudi
                      predobdelava podatkov (glejte <ref target="#ch4.3-sl">poglavje 4.3.</ref>). To
                      storimo s filtriranjem v gradniku <hi rend="bold">Preprocess Text</hi>, ki ga
@@ -2949,8 +2965,11 @@
                   corpus, which is necessary for the LDA methods. Next, we will extract the topics
                   and name them. In the end, we will observe how these topics are distributed in the
                   corpus and how we can find the speech on a given topic.</p>
-               <div type="subchapter" xml:id="ch6.1.1" facs="https://sidih.si/cdn/2177/ch6.1.1.png">
+               <div type="subchapter" xml:id="ch6.1.1">
                   <head xml:id="head-42">6.1.1. Computing document vectors</head>
+                  <figure type="sticky-img" xml:id="img-7">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.1.png"/>
+                  </figure>
                   <p xml:id="p-84">Before we can begin topic modelling, we need preprocessed data
                      and a vector representation of speeches. We have already preprocessed the
                      corpus (see <ref target="#ch5.4">Chapter 5.4</ref>). To compute the vector
@@ -2985,8 +3004,11 @@
                      <head>Figure 11: Setting the bag-of-words parameters.</head>
                   </figure>
                </div>
-               <div type="subchapter" xml:id="ch6.1.2" facs="https://sidih.si/cdn/2177/ch6.1.2.png">
+               <div type="subchapter" xml:id="ch6.1.2">
                   <head xml:id="head-44">6.1.2. Topic modelling</head>
+                  <figure type="sticky-img" xml:id="img-8">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.2.png"/>
+                  </figure>
                   <p xml:id="p-87">Now that we have the vector representation of speeches, we can
                      begin with topic modelling. If the <hi rend="bold">Bag of Words </hi>process
                      completed successfully, continue with <hi rend="italic">Option 1.</hi> However,
@@ -3051,8 +3073,11 @@
                         number of topics, say 50?</p>
                   </note>
                </div>
-               <div type="subchapter" xml:id="ch6.1.3" facs="https://sidih.si/cdn/2177/ch6.1.3.png">
+               <div type="subchapter" xml:id="ch6.1.3">
                   <head xml:id="head-46">6.1.3. Topic definition</head>
+                  <figure type="sticky-img" xml:id="img-9">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.3.png"/>
+                  </figure>
                   <p xml:id="p-93">LDA returns the ten words most related to each topic.<note
                         place="foot" xml:id="ftn15" n="15">It is possible to get a different result
                         with LDA than seen in the tutorial. LDA is a generative model, which
@@ -3163,8 +3188,11 @@
                         a word from the topic and explore its context.</p>
                   </note>
                </div>
-               <div type="subchapter" xml:id="ch6.1.4" facs="https://sidih.si/cdn/2177/ch6.1.4.png">
+               <div type="subchapter" xml:id="ch6.1.4">
                   <head xml:id="head-51">6.1.4. Distribution of topics in a corpus</head>
+                  <figure type="sticky-img" xml:id="img-10">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.4.png"/>
+                  </figure>
                   <p xml:id="p-104">Due to the nature of topic modelling (see <ref target="#ch4"
                         >Chapter 4</ref>), the speeches are characterised by more than a single
                      topic, but topics will have different frequencies in different documents. Topic
@@ -3236,8 +3264,11 @@
                   </note>
                </div>
             </div>
-            <div type="subchapter" xml:id="ch6.2" facs="https://sidih.si/cdn/2177/ch6.2.png">
+            <div type="subchapter" xml:id="ch6.2">
                <head xml:id="head-53">6.2. Topic map</head>
+               <figure type="sticky-img" xml:id="img-11">
+                  <graphic url="https://sidih.si/cdn/2177/ch6.2.png"/>
+               </figure>
                <p xml:id="p-113">Now we know the distribution of topics by speech. We have learned
                   that several topics characterise a speech, so we would like to know how the topics
                   are related to one another. Besides, we would like to know which topics are the
@@ -3420,8 +3451,11 @@
                   <p>Try it yourself: Explore the Topics 3 and 5 in the same way.</p>
                </note>
             </div>
-            <div type="subchapter" xml:id="ch6.3" facs="https://sidih.si/cdn/2177/ch6.3.png">
+            <div type="subchapter" xml:id="ch6.3">
                <head xml:id="head-58">6.3. Topics before and during the pandemic</head>
+               <figure type="sticky-img" xml:id="img-12">
+                  <graphic url="https://sidih.si/cdn/2177/ch6.3.png"/>
+               </figure>
                <p xml:id="p-123">We identified the topics which stand out the most in our corpus,
                   but now we would like to investigate which topics are the most characteristic of
                   the pre-pandemic and the pandemic periods. The differences between the two periods
@@ -3558,9 +3592,11 @@
                   številski opis, ki je potreben za izvedbo metode LDA, nato bomo teme izluščili in
                   jih poimenovali, na koncu pa bomo preverili še, kako so teme razporejene po
                   dokumentih in kako lahko poiščemo govore na izbrano temo.</p>
-               <div type="subchapter" xml:id="ch6.1.1-sl"
-                  facs="https://sidih.si/cdn/2177/ch6.1.1.png">
+               <div type="subchapter" xml:id="ch6.1.1-sl">
                   <head xml:id="sl-head-32">6.1.1. Ustvarjanje besedilnih vektorjev</head>
+                  <figure type="sticky-img" xml:id="img-13">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.1.png"/>
+                  </figure>
                   <p xml:id="sl-p-75">Preden lahko izvedemo tematsko modeliranje, potrebujemo
                      predprocesirane podatke in vektorsko reprezentacijo govorov. Predprocesiranje
                      podatkov smo že opravili (glejte <ref target="#ch5.4-sl">poglavje 5.4</ref>),
@@ -3598,9 +3634,11 @@
                      <head>Slika 11: Nastavitve gradnika Bag of Words.</head>
                   </figure>
                </div>
-               <div type="subchapter" xml:id="ch6.1.2-sl"
-                  facs="https://sidih.si/cdn/2177/ch6.1.2.png">
+               <div type="subchapter" xml:id="ch6.1.2-sl">
                   <head xml:id="sl-head-34">6.1.2. Luščenje tem</head>
+                  <figure type="sticky-img" xml:id="img-14">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.2.png"/>
+                  </figure>
                   <p xml:id="sl-p-78">Sedaj, ko smo pripravili vektorsko reprezentacijo govorov,
                      lahko začnemo z luščenjem tematik. To bomo storili z gradnikom <hi rend="bold"
                         >Topic Modelling</hi>, ki ga povežemo z <hi rend="bold">Bag of Words </hi>in
@@ -3630,9 +3668,11 @@
                         večjega števila tem, npr. 50?</p>
                   </note>
                </div>
-               <div type="subchapter" xml:id="ch6.1.3-sl"
-                  facs="https://sidih.si/cdn/2177/ch6.1.3.png">
+               <div type="subchapter" xml:id="ch6.1.3-sl">
                   <head xml:id="sl-head-36">6.1.3. Opredelitev tem</head>
+                  <figure type="sticky-img" xml:id="img-15">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.3.png"/>
+                  </figure>
                   <p xml:id="sl-p-81">LDA za vsako temo vrne 10 besed, ki so najpogosteje povezane z
                         njo.<note place="foot" xml:id="ftn15-sl" n="15">Možno je, da dobite nekoliko
                         drugačne rezultate, kot so navedeni v gradivu. LDA je namreč generativni
@@ -3748,9 +3788,11 @@
                         kontekst.</p>
                   </note>
                </div>
-               <div type="subchapter" xml:id="ch6.1.4-sl"
-                  facs="https://sidih.si/cdn/2177/ch6.1.4.png">
+               <div type="subchapter" xml:id="ch6.1.4-sl">
                   <head xml:id="sl-head-41">6.1.4. Zastopanost tem po govorih</head>
+                  <figure type="sticky-img" xml:id="img-16">
+                     <graphic url="https://sidih.si/cdn/2177/ch6.1.4.png"/>
+                  </figure>
                   <p xml:id="sl-p-92">Zaradi zakonitosti tematskega modeliranja (glejte <ref
                         target="#ch4-sl">4. poglavje</ref>) govore običajno zaznamuje več kot ena
                      tema, vendar so teme različno močno zastopane. Zastopanost oziroma verjetnost
@@ -3830,8 +3872,11 @@
                   </note>
                </div>
             </div>
-            <div type="subchapter" xml:id="ch6.2-sl" facs="https://sidih.si/cdn/2177/ch6.2.png">
+            <div type="subchapter" xml:id="ch6.2-sl">
                <head xml:id="sl-head-43">6.2. Najizrazitejše teme in povezave med njimi</head>
+               <figure type="sticky-img" xml:id="img-17">
+                  <graphic url="https://sidih.si/cdn/2177/ch6.2.png"/>
+               </figure>
                <p xml:id="sl-p-101">Sedaj poznamo razporeditev tem po govorih. Videli smo, da govore
                   zaznamuje več tem hkrati, zato nas zanima, kako so te teme v posameznih govorih
                   med seboj povezane. Poleg tega nas zanima, katere teme v našem vzorcu najbolj
@@ -4019,8 +4064,11 @@
                      11.</p>
                </note>
             </div>
-            <div type="subchapter" xml:id="ch6.3-sl" facs="https://sidih.si/cdn/2177/ch6.3-sl.png">
+            <div type="subchapter" xml:id="ch6.3-sl">
                <head xml:id="sl-head-48">6.3. Teme pred in med epidemijo</head>
+               <figure type="sticky-img" xml:id="img-18">
+                  <graphic url="https://sidih.si/cdn/2177/ch6.3-sl.png"/>
+               </figure>
                <p xml:id="sl-p-111">Ugotovili smo, katere teme v našem vzorcu najbolj izstopajo,
                   zdaj pa nas zanima, katere teme so najbolj značilne za obdobje pred epidemijo in
                   med njo. Razliko med obdobjema (ki sta označena kot podkorpusa <hi rend="italic"
