@@ -143,11 +143,16 @@
             <!--<img src="{concat('https://sidih.si/iiif/2/entity|2001-3000|2177|',tokenize(tei:graphic/@url,'/')[last()],'/full/350,/0/default.jpg')}" class="sticky-img"/>-->
             <img src="{tei:graphic/@url}"/>
          </figure>
-         <button class="close-button" data-close="" aria-label="Close modal" type="button">
+         <!--<button class="close-button" data-close="" aria-label="Close modal" type="button">
             <span aria-hidden="true">X</span>
-         </button>
+         </button>-->
       </div>
-      <p class="sticky-img"><button class="button sticky-img" data-open="{@xml:id}">Workflow</button></p>
+      <p class="sticky-img"><button class="button sticky-img" data-open="{@xml:id}">
+         <xsl:choose>
+            <xsl:when test=" ancestor::tei:div[@xml:lang = 'sl']">Delotok</xsl:when>
+            <xsl:otherwise>Workflow</xsl:otherwise>
+         </xsl:choose>
+      </button></p>
    </xsl:template>
    
    <doc xmlns="http://www.oxygenxml.com/ns/doc/xsl">

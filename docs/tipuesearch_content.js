@@ -57,7 +57,7 @@ var tipuesearch = {"pages": [
 { "title": "4.1. The LDA method", "text": "4.1. The LDA method", "tags": "", "url": "ch4.html#head-18" },
 { "title": "4.1. The LDA method", "text": "The LDA method includes the following steps, performed in iteration:", "tags": "", "url": "ch4.html#p-29" },
 { "title": "4.1. The LDA method", "text": "The algorithm first randomly allocates topics to the words in the corpus.", "tags": "", "url": "ch4.html#list-1" },
-{ "title": "4.1. The LDA method", "text": "word document epidemic crisis tax economy doc1 topic 1 topic 2 topic 2 topic 1 doc2 topic 1 topic 1 topic 2 topic 1 doc3 topic 2 topic 1 topic 1 topic 2 doc4 topic 1 topic 2 topic 2 topic 2", "tags": "", "url": "ch4.html#table-1" },
+{ "title": "4.1. The LDA method", "text": "document word epidemic crisis tax economy doc1 topic 1 topic 2 topic 2 topic 1 doc2 topic 1 topic 1 topic 2 topic 1 doc3 topic 2 topic 1 topic 1 topic 2 doc4 topic 1 topic 2 topic 2 topic 2", "tags": "", "url": "ch4.html#table-1" },
 { "title": "4.1. The LDA method", "text": "Next, the algorithm counts the number of times a particular topic appears in each document (left table) and the number of times a certain topic is assigned to each word (right table).", "tags": "", "url": "ch4.html#list-2" },
 { "title": "4.1. The LDA method", "text": "topic 1 topic 2 doc1 2 2 doc2 3 1 doc3 2 2 doc4 1 3 topic 1 topic 2 epidemic 3 1 crisis 2 2 tax 1 3 economy 2 2", "tags": "", "url": "ch4.html#table-2" },
 { "title": "4.1. The LDA method", "text": "The algorithm then assumes it no longer knows the topic of a given word.", "tags": "", "url": "ch4.html#list-3" },

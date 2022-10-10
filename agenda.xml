@@ -686,8 +686,8 @@
                </list>
                <table rend="table-scroll" xml:id="table-1">
                   <row>
-                     <cell style="border:0.5px solid #333333;" rows="2">word</cell>
-                     <cell style="border:0.5px solid #333333;" cols="4">document</cell>
+                     <cell style="border:0.5px solid #333333;" rows="2">document</cell>
+                     <cell style="border:0.5px solid #333333;" cols="4">word</cell>
                   </row>
                   <row>
                      <cell style="border:0.5px solid #333333;">
