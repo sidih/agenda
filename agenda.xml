@@ -32,7 +32,7 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Editon 1.0</edition>
+            <edition>Edition 1.0</edition>
          </editionStmt>
          <publicationStmt>
             <authority>CLARIN.SI</authority>
@@ -684,26 +684,22 @@
                      corpus.<lb/>
                   </item>
                </list>
-               <table rend="rules" xml:id="table-1">
+               <table rend="table-scroll" xml:id="table-1">
                   <row>
-                     <cell rend="center">
-                        <p style="text-align:center;">
-                           <hi rend="bold smallcaps">word</hi>
-                        </p>
-                        <p>
-                           <hi rend="bold smallcaps">document</hi>
-                        </p>
-                     </cell>
-                     <cell rend="left">
+                     <cell style="border:0.5px solid #333333;" rows="2">word</cell>
+                     <cell style="border:0.5px solid #333333;" cols="4">document</cell>
+                  </row>
+                  <row>
+                     <cell style="border:0.5px solid #333333;">
                         <hi rend="bold smallcaps">epidemic</hi>
                      </cell>
-                     <cell rend="left">
+                     <cell style="border:0.5px solid #333333;">
                         <hi rend="bold smallcaps">crisis</hi>
                      </cell>
-                     <cell rend="left">
+                     <cell style="border:0.5px solid #333333;">
                         <hi rend="bold smallcaps">tax</hi>
                      </cell>
-                     <cell rend="left">
+                     <cell style="border:0.5px solid #333333;">
                         <hi rend="bold smallcaps">economy</hi>
                      </cell>
                   </row>
@@ -749,10 +745,10 @@
                      each document (left table) and the number of times a certain topic is assigned
                      to each word (right table).</item>
                </list>
-               <table rend="rules" xml:id="table-2">
+               <table rend="table-scroll" xml:id="table-2">
                   <row>
                      <cell rend="List_Paragraph">
-                        <table rend="rules">
+                        <table rend="table-scroll">
                            <row>
                               <cell rend="left"/>
                               <cell rend="left">
@@ -793,7 +789,7 @@
                         </table>
                      </cell>
                      <cell rend="List_Paragraph">
-                        <table rend="rules">
+                        <table rend="table-scroll">
                            <row>
                               <cell rend="left"/>
                               <cell rend="left">
@@ -839,7 +835,7 @@
                   <item>The algorithm then assumes it no longer knows the topic of a given
                      word.</item>
                </list>
-               <table rend="rules" xml:id="table-5">
+               <table rend="table-scroll" xml:id="table-5">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -899,88 +895,98 @@
                      frequency of topics in the corpus (left table) and the frequency of words in
                      the topics (right table).</item>
                </list>
-               <table rend="rules" xml:id="table-6">
+               <table rend="table-scroll" xml:id="table-6-7">
                   <row>
-                     <cell rend="left"/>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">topic 1</hi>
+                     <cell>
+                        <table rend="table-scroll" xml:id="table-6">
+                           <row>
+                              <cell rend="left"/>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">topic 1</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">topic 2</hi>
+                              </cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">doc1</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold color(FF0000)">1</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">doc2</hi>
+                              </cell>
+                              <cell rend="left">3</cell>
+                              <cell rend="left">1</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">doc3</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">doc4</hi>
+                              </cell>
+                              <cell rend="left">1</cell>
+                              <cell rend="left">3</cell>
+                           </row>
+                        </table>
                      </cell>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">topic 2</hi>
+                     <cell>
+                        <table rend="table-scroll" xml:id="table-7">
+                           <row>
+                              <cell rend="left"/>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">topic 1</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">topic 2</hi>
+                              </cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">epidemic</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold color(FF0000)">2</hi>
+                              </cell>
+                              <cell rend="left">1</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">crisis</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">tax</hi>
+                              </cell>
+                              <cell rend="left">1</cell>
+                              <cell rend="left">3</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">economy</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                        </table>
                      </cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">doc1</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="bold color(FF0000)">1</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">doc2</hi>
-                     </cell>
-                     <cell rend="left">3</cell>
-                     <cell rend="left">1</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">doc3</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                     <cell rend="left">2</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">doc4</hi>
-                     </cell>
-                     <cell rend="left">1</cell>
-                     <cell rend="left">3</cell>
                   </row>
                </table>
-               <table rend="rules" xml:id="table-7">
-                  <row>
-                     <cell rend="left"/>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">topic 1</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">topic 2</hi>
-                     </cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">epidemic</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="bold color(FF0000)">2</hi>
-                     </cell>
-                     <cell rend="left">1</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">crisis</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                     <cell rend="left">2</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">tax</hi>
-                     </cell>
-                     <cell rend="left">1</cell>
-                     <cell rend="left">3</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">economy</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                     <cell rend="left">2</cell>
-                  </row>
-               </table>
+               
+               
                <list type="ordered:5" rend="ordered" xml:id="list-5">
                   <item>It computes the strength of the <hi rend="bold">connection between a
                         document and a topic</hi> (the probability of the topic in a document: the
@@ -1009,7 +1015,7 @@
                      that even a lesser topic is present in a document. Once the topic is assigned
                      to the word, the documents-words table is updated. </item>
                </list>
-               <table rend="rules" xml:id="table-8">
+               <table rend="table-scroll" xml:id="table-8">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -1068,7 +1074,7 @@
                   <item>Based on the new value from the table in step 6, the algorithm updates both
                      tables: the topic-document and the word-topic table.</item>
                </list>
-               <table rend="rules" xml:id="table-9">
+               <table rend="table-scroll" xml:id="table-9">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -1109,7 +1115,7 @@
                      <cell rend="left">3</cell>
                   </row>
                </table>
-               <table rend="rules" xml:id="table-10">
+               <table rend="table-scroll" xml:id="table-10">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -1443,27 +1449,23 @@
                   <item>Algoritem najprej vsem besedam v besedilu naključno dodeli oznako
                      teme.</item>
                </list>
-               <table rend="rules" xml:id="sl-table-1">
+               <table rend="table-scroll" xml:id="sl-table-1">
                   <row>
-                     <cell rend="center">
-                        <p style="text-align:center;">
-                           <hi rend="bold smallcaps">Beseda</hi>
-                        </p>
-                        <p>
-                           <hi rend="bold smallcaps">Dokument</hi>
-                        </p>
+                     <cell style="border:0.5px solid #333333;" rows="2">Beseda</cell>
+                     <cell style="border:0.5px solid #333333;" cols="4">Dokument</cell>
+                  </row>
+                  <row>
+                     <cell style="border:0.5px solid #333333;">
+                        <hi rend="bold smallcaps">EPIDEMIJA</hi>
                      </cell>
-                     <cell rend="left">
-                        <hi rend="smallcaps">EPIDEMIJA</hi>
+                     <cell style="border:0.5px solid #333333;">
+                        <hi rend="bold smallcaps">KRIZA</hi>
                      </cell>
-                     <cell rend="left">
-                        <hi rend="smallcaps">KRIZA</hi>
+                     <cell style="border:0.5px solid #333333;">
+                        <hi rend="bold smallcaps">DAVEK</hi>
                      </cell>
-                     <cell rend="left">
-                        <hi rend="smallcaps">DAVEK</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="smallcaps">GOSPODARSTVO</hi>
+                     <cell style="border:0.5px solid #333333;">
+                        <hi rend="bold smallcaps">GOSPODARSTVO</hi>
                      </cell>
                   </row>
                   <row>
@@ -1508,10 +1510,10 @@
                      (leva tabela) in kolikokrat je določena tema pripisana posamezni besedi (desna
                      tabela).</item>
                </list>
-               <table rend="rules" xml:id="sl-table-2">
+               <table rend="table-scroll" xml:id="sl-table-2">
                   <row>
                      <cell rend="left">
-                        <table rend="rules">
+                        <table rend="table-scroll">
                            <row>
                               <cell rend="left"/>
                               <cell rend="left">
@@ -1552,7 +1554,7 @@
                         </table>
                      </cell>
                      <cell rend="left">
-                        <table rend="rules">
+                        <table rend="table-scroll">
                            <row>
                               <cell rend="left"/>
                               <cell rend="left">
@@ -1598,7 +1600,7 @@
                   <item>Nato algoritem za posamezno besedo privzame, da ne pozna več njene
                      teme.</item>
                </list>
-               <table rend="rules" xml:id="sl-table-5">
+               <table rend="table-scroll" xml:id="sl-table-5">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -1658,86 +1660,94 @@
                      določene teme v posameznih besedilih (leva tabela) in frekvenco določene besede
                      v posameznih temah (desna tabela).</item>
                </list>
-               <table rend="rules" xml:id="sl-table-6">
+               <table rend="table-scroll" xml:id="sl-table-6-7">
                   <row>
-                     <cell rend="left"/>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">tema 1</hi>
+                     <cell>
+                        <table rend="table-scroll" xml:id="sl-table-6">
+                           <row>
+                              <cell rend="left"/>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">tema 1</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">tema 2</hi>
+                              </cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">dok1</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold color(FF0000)">1</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">dok2</hi>
+                              </cell>
+                              <cell rend="left">3</cell>
+                              <cell rend="left">1</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">dok3</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">dok4</hi>
+                              </cell>
+                              <cell rend="left">1</cell>
+                              <cell rend="left">3</cell>
+                           </row>
+                        </table>
                      </cell>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">tema 2</hi>
+                     <cell>
+                        <table rend="table-scroll" xml:id="sl-table-7">
+                           <row>
+                              <cell rend="left"/>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">tema 1</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">tema 2</hi>
+                              </cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">epidemija</hi>
+                              </cell>
+                              <cell rend="left">
+                                 <hi rend="bold color(FF0000)">2</hi>
+                              </cell>
+                              <cell rend="left">1</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">kriza</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">davek</hi>
+                              </cell>
+                              <cell rend="left">1</cell>
+                              <cell rend="left">3</cell>
+                           </row>
+                           <row>
+                              <cell rend="left">
+                                 <hi rend="bold smallcaps">gospodarstvo</hi>
+                              </cell>
+                              <cell rend="left">2</cell>
+                              <cell rend="left">2</cell>
+                           </row>
+                        </table>
                      </cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">dok1</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="bold color(FF0000)">1</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">dok2</hi>
-                     </cell>
-                     <cell rend="left">3</cell>
-                     <cell rend="left">1</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">dok3</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                     <cell rend="left">2</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">dok4</hi>
-                     </cell>
-                     <cell rend="left">1</cell>
-                     <cell rend="left">3</cell>
-                  </row>
-               </table>
-               <table rend="rules" xml:id="sl-table-7">
-                  <row>
-                     <cell rend="left"/>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">tema 1</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">tema 2</hi>
-                     </cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">epidemija</hi>
-                     </cell>
-                     <cell rend="left">
-                        <hi rend="bold color(FF0000)">2</hi>
-                     </cell>
-                     <cell rend="left">1</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">kriza</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                     <cell rend="left">2</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">davek</hi>
-                     </cell>
-                     <cell rend="left">1</cell>
-                     <cell rend="left">3</cell>
-                  </row>
-                  <row>
-                     <cell rend="left">
-                        <hi rend="bold smallcaps">gospodarstvo</hi>
-                     </cell>
-                     <cell rend="left">2</cell>
-                     <cell rend="left">2</cell>
                   </row>
                </table>
                <list type="ordered:5" rend="ordered" xml:id="sl-list-5">
@@ -1766,7 +1776,7 @@
                      tema.<lb/>Ko besedi algoritem določi temo, posodobi tudi tabelo
                      besedila-besede. </item>
                </list>
-               <table rend="rules" xml:id="sl-table-8">
+               <table rend="table-scroll" xml:id="sl-table-8">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -1826,7 +1836,7 @@
                      tabeli, torej tabeli teme-besedila in besede-teme.<lb/>
                   </item>
                </list>
-               <table rend="rules" xml:id="sl-table-9">
+               <table rend="table-scroll" xml:id="sl-table-9">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -1867,7 +1877,7 @@
                      <cell rend="left">3</cell>
                   </row>
                </table>
-               <table rend="rules" xml:id="sl-table-10">
+               <table rend="table-scroll" xml:id="sl-table-10">
                   <row>
                      <cell rend="left"/>
                      <cell rend="left">
@@ -2245,7 +2255,7 @@
                      come with the widget.</note>
                </p>
                <figure xml:id="figure.3">
-                  <graphic url="https://sidih.si/cdn/2177/Figure3_link.png" height="374px"/>
+                  <graphic url="https://sidih.si/cdn/2177/Figure3_link.png" height="250px"/>
                   <head>Figure 3: A connection between the widgets.</head>
                </figure>
                <p xml:id="p-61">The tutorial will describe how to build a workflow to perform topic
@@ -2292,36 +2302,39 @@
                         </figure>
                      </cell>
                   </row>
+                  </table>
+               <table rend="rules" xml:id="table-11b">
                   <row>
                      <cell rend="left">
-                        <p>You will get the most comprehensive understanding of the entire process
+                        You will get the most comprehensive understanding of the entire process
                            (from the preparation of data to the final results) if you follow along
                            the tutorial. Certain steps might take your computer some time to
-                           process, so please be patient.</p>
-                        <p>If you decide for this option, download <ref
-                              target="https://www2.sistory.si/publikacije/material/parlamint/ParlaMint-GB.conllu.zip"
-                              >the CoNLL-U files</ref>
+                           process, so please be patient.
+                           <lb/><lb/>
+                        If you decide for this option, download <ref
+                           target="https://www2.sistory.si/publikacije/material/parlamint/ParlaMint-GB.conllu.zip"
+                           >the CoNLL-U files</ref>
                            <note place="foot" xml:id="ftn7" n="7">The folder will contain
                               linguistically annotated parliamentary speeches in the CoNLL-U format
                               and metadata in the TSV format. Keep all the files in the folder for
                               the import. </note> and continue below.<note place="foot"
-                              xml:id="ftn8" n="8">This is the file format you get from the CLARIN.SI
-                              repository if you search for the ParlaMint data with added linguistic
-                              annotations. The provided link will lead you to a selection of files
-                              that are relevant for this tutorial (i.e., only the data from 2019 and
-                              2020). The Parla-Mint-GB corpus, however, includes much more data. If,
-                              at a later time, you would like to analyse the entire corpus or a
-                              different time period, you can get the entire corpus from the <ref
-                                 target="http://hdl.handle.net/11356/1431"
-                                 >ParlaMint-GB.ana.tgz</ref> folder in the CLARIN.SI repository and
-                              make a selection of the data according to your needs.</note>
-                        </p>
+                                 xml:id="ftn8" n="8">This is the file format you get from the CLARIN.SI
+                                 repository if you search for the ParlaMint data with added linguistic
+                                 annotations. The provided link will lead you to a selection of files
+                                 that are relevant for this tutorial (i.e., only the data from 2019 and
+                                 2020). The Parla-Mint-GB corpus, however, includes much more data. If,
+                                 at a later time, you would like to analyse the entire corpus or a
+                                 different time period, you can get the entire corpus from the <ref
+                                    target="http://hdl.handle.net/11356/1431"
+                                    >ParlaMint-GB.ana.tgz</ref> folder in the CLARIN.SI repository and
+                                 make a selection of the data according to your needs.</note>
+                        
                      </cell>
                      <cell rend="left">
-                        <p>If you are unable to load the CoNLL-U files, download <ref
+                        If you are unable to load the CoNLL-U files, download <ref
                               target="https://www2.sistory.si/publikacije/material/parlamint/ParlaMint-GB.pkl"
                               >the .pkl data</ref>, load the data to Orange with the <hi rend="bold"
-                              >Corpus </hi>widget and continue with chapter 5.3.</p>
+                              >Corpus </hi>widget and continue with chapter 5.3.
                      </cell>
                   </row>
                </table>
@@ -2336,7 +2349,7 @@
                   an individual document. At the bottom of the window, the software will inform us
                   that we have imported 180,565 documents or files.</p>
                <figure xml:id="figure.4">
-                  <graphic url="https://sidih.si/cdn/2177/Figure4_import-document.png"/>
+                  <graphic url="https://sidih.si/cdn/2177/Figure4_import-document.png" height="400px"/>
                   <head>Figure 4: Import data window.</head>
                </figure>
                <p xml:id="p-68">For a better understanding of the data structure, here are a few
@@ -2369,7 +2382,7 @@
                   different speeches. Holding the <hi rend="italic">Shift</hi> key while clicking
                   will display several speeches simultaneously.</p>
                <figure xml:id="figure.6">
-                  <graphic url="https://sidih.si/cdn/2177/Figure6_corpus-viewer.png"/>
+                  <graphic url="https://sidih.si/cdn/2177/Figure6_corpus-viewer.png" height="500px"/>
                   <head>Figure 6: Data overview in the Corpus Viewer widget.</head>
                </figure>
                <p xml:id="p-70">In the top left-hand corner, we can see the basic information on the
@@ -2445,7 +2458,7 @@
                   <figure type="sticky-img" xml:id="img-2">
                      <graphic url="https://sidih.si/cdn/2177/ch5.4.1.png"/>
                   </figure>
-                  <table rend="rules" xml:id="table-12">
+                  <table rend="table-scroll" xml:id="table-12">
                      <row>
                         <cell rend="left">Option 1: follow the tutorial</cell>
                         <cell rend="left">Option 2: speed up the analysis</cell>
@@ -2464,6 +2477,8 @@
                            </figure>
                         </cell>
                      </row>
+                     </table>
+                  <table rend="table-scroll" xml:id="table-12b">
                      <row>
                         <cell rend="left">Continue with the steps below.</cell>
                         <cell rend="left">If the sampling process is slow, first open a new session
@@ -2511,7 +2526,7 @@
                         will exclude the speeches given by the guests.</item>
                   </list>
                   <figure xml:id="figure.8">
-                     <graphic url="https://sidih.si/cdn/2177/Figure8_select-rows.png"/>
+                     <graphic url="https://sidih.si/cdn/2177/Figure8_select-rows.png" height="400px"/>
                      <head>Figure 8: A selection of speeches with more than 50 words given by
                         regular MPs.</head>
                   </figure>
@@ -2662,7 +2677,7 @@
                      podatki.</note>
                </p>
                <figure xml:id="slika.3">
-                  <graphic url="https://sidih.si/cdn/2177/Slika3_povezava.png" height="372px"/>
+                  <graphic url="https://sidih.si/cdn/2177/Slika3_povezava.png" height="250px"/>
                   <head>Slika 3: Povezava med gradnikoma omogoča prehod podatkov od izhoda prvega
                      gradnika do vhoda naslednjega gradnika.</head>
                </figure>
@@ -2718,7 +2733,7 @@
                   spodnjem delu okna nas program obvesti, da smo uvozili 18.476 dokumentov oziroma
                   govorov.</p>
                <figure xml:id="slika.4">
-                  <graphic url="https://sidih.si/cdn/2177/Slika4_import-documents.png"/>
+                  <graphic url="https://sidih.si/cdn/2177/Slika4_import-documents.png" height="400px"/>
                   <head>Slika 4: Okno za uvoz podatkov.</head>
                </figure>
                <p xml:id="sl-p-59">Za boljše razumevanje strukture podatkov si na kratko oglejmo
@@ -2732,7 +2747,7 @@
                   (npr. ID govora, ID povedi in besedilo) (<ref target="#slika.5">Slika
                   5</ref>).</p>
                <figure xml:id="slika.5">
-                  <graphic url="https://sidih.si/cdn/2177/Slika5_connlu.png"/>
+                  <graphic url="https://sidih.si/cdn/2177/Slika5_connlu.png" height="700px"/>
                   <head>Slika 5: Zapis podatkov v formatu CoNLL-U za prvi dve povedi iz dokumenta
                      ParlaMint-SI_2019-01-28-SDZ8-Redna-04.conllu.</head>
                </figure>
@@ -2868,7 +2883,7 @@
                         izločimo govore gostov.</item>
                   </list>
                   <figure xml:id="slika.8">
-                     <graphic url="https://sidih.si/cdn/2177/Slika8_select-rows.png"/>
+                     <graphic url="https://sidih.si/cdn/2177/Slika8_select-rows.png" height="400px"/>
                      <head>Slika 8: Izbor govorov z več kot petdeset besedami, ki so jih izrekli
                         redni poslanci.</head>
                   </figure>
@@ -2922,7 +2937,7 @@
                   <p xml:id="sl-p-70">Sedaj <hi rend="bold">Preprocess Text</hi> povežemo z
                      gradnikom <hi rend="bold">Select Rows</hi>.</p>
                   <figure xml:id="slika.9">
-                     <graphic url="https://sidih.si/cdn/2177/Slika9_preprocess-text.png"/>
+                     <graphic url="https://sidih.si/cdn/2177/Slika9_preprocess-text.png" height="500px"/>
                      <head>Slika 9: Nastavitve gradnika Preprocess Text.</head>
                   </figure>
                   <p xml:id="sl-p-71">Najpogostejše besede našega vzorca lahko preverimo v oblaku
@@ -3000,7 +3015,7 @@
                         Frequency</hi> (<ref target="#figure.11">Figure 11</ref>).</p>
                   <figure xml:id="figure.11">
                      <graphic url="https://sidih.si/cdn/2177/Figure11_bag-of-words.png"
-                        height="562px"/>
+                        height="400px"/>
                      <head>Figure 11: Setting the bag-of-words parameters.</head>
                   </figure>
                </div>
@@ -3039,15 +3054,16 @@
                            connect it to <hi rend="bold">Bag of Words.</hi> From here, continue as
                            described below.</cell>
                         <cell rend="left">
-                           <p>If the computation is taking too long, first open a new session in
+                           If the computation is taking too long, first open a new session in
                               Orange. Then download <ref
                                  target="https://www2.sistory.si/publikacije/material/parlamint/ParlaMint-GB-bow.pkl"
                                  >ParlaMint-GB-bow.pkl</ref> and load the data into Orange with the
                                  <hi rend="bold">Corpus </hi>widget. The file contains a
-                              pre-constructed bag-of-words matrix.</p>
-                           <p>Now add the <hi rend="bold">Topic Modelling</hi> widget and connect it
+                              pre-constructed bag-of-words matrix.
+                              <lb/><lb/>
+                           Now add the <hi rend="bold">Topic Modelling</hi> widget and connect it
                               directly to the <hi rend="bold">Corpus. </hi>Continue as described
-                              below.</p>
+                              below.
                         </cell>
                      </row>
                   </table>
@@ -3105,7 +3121,7 @@
                         rend="italic">All Topics</hi> signal to <hi rend="italic">Topics</hi> (<ref
                         target="#figure.13">Figure 13</ref>).</p>
                   <figure xml:id="figure.13">
-                     <graphic url="https://sidih.si/cdn/2177/Figure13_edit-links.png" height="572px"/>
+                     <graphic url="https://sidih.si/cdn/2177/Figure13_edit-links.png" height="350px"/>
                      <head>Figure 13: Setting correct input data for the LDAvis widget.</head>
                   </figure>
                   <p xml:id="p-95">By default, <hi rend="bold">LDAvis</hi> shows words in balanced
@@ -3224,7 +3240,7 @@
                         rend="italic">Clustering </hi>section. Set the <hi rend="italic">Rows</hi>
                      option to <hi rend="italic">Clustering (opt. ordering)</hi>.</p>
                   <figure xml:id="figure.17">
-                     <graphic url="https://sidih.si/cdn/2177/Figure17_heat-map.png"/>
+                     <graphic url="https://sidih.si/cdn/2177/Figure17_heat-map.png" height="700px"/>
                      <head>Figure 17: A heat map of topic frequency. The selected branch of the
                         dendrogram contains topics with a highly expressed T8: constituency-related
                         issues topic.</head>
@@ -3291,7 +3307,7 @@
                   them in <hi rend="bold">Edit Domain</hi>, but the original names. Thus, we need to
                   use a manually created list of topics for interpretation (<ref target="#table.1"
                      >Table 1</ref>).</p>
-               <table xml:id="table.1" rend="rules">
+               <table xml:id="table.1" rend="table-scroll">
                   <head>Table 1: A list of topics with the original and assigned label.</head>
                   <row>
                      <cell rend="center">
@@ -3433,7 +3449,7 @@
                      freely.</note>
                </p>
                <figure xml:id="figure.19">
-                  <graphic url="https://sidih.si/cdn/2177/Figure19_select-rows.png"/>
+                  <graphic url="https://sidih.si/cdn/2177/Figure19_select-rows.png" height="400px"/>
                   <head>Figure 19: Setting the threshold in the Select Rows widget.</head>
                </figure>
                <p xml:id="p-121">
@@ -3630,7 +3646,7 @@
                         target="#slika.11">Slika 11</ref>).</p>
                   <figure xml:id="slika.11">
                      <graphic url="https://sidih.si/cdn/2177/Slika11_bag-of-words.png"
-                        height="562px"/>
+                        height="400px"/>
                      <head>Slika 11: Nastavitve gradnika Bag of Words.</head>
                   </figure>
                </div>
@@ -3701,7 +3717,7 @@
                         (<ref target="#slika.13">Slika 13</ref>)<hi rend="italic">.</hi>
                   </p>
                   <figure xml:id="slika.13">
-                     <graphic url="https://sidih.si/cdn/2177/Slika13_edit-links.png" height="572px"/>
+                     <graphic url="https://sidih.si/cdn/2177/Slika13_edit-links.png" height="400px"/>
                      <head>Slika 13: Določitev ustreznih vhodnih podatkov za gradnik LDAvis.</head>
                   </figure>
                   <p xml:id="sl-p-83">
@@ -3834,7 +3850,7 @@
                      diagramom lahko enostavno izberemo želene govore in podrobneje analiziramo
                      njihovo vsebino.</p>
                   <figure xml:id="slika.17">
-                     <graphic url="https://sidih.si/cdn/2177/Slika17_heat-map-topic18.png"/>
+                     <graphic url="https://sidih.si/cdn/2177/Slika17_heat-map-topic18.png" height="700px"/>
                      <head>Slika 17: Toplotni diagram zastopanosti tematik v govorih z izbrano vejo
                         dendrograma, ki združuje govore z močno izraženo temo T18: šport in
                         kultura.</head>
@@ -3898,7 +3914,7 @@
                   zgolj prvotne oznake tem, ne pa tudi poimenovanja, ki smo jih dodali, zato si
                   moramo pri interpretaciji pomagati s seznamom tem, ki ga pripravimo ročno (<ref
                      target="#tabela.1">Tabela 1</ref>).</p>
-               <table xml:id="tabela.1" rend="rules">
+               <table xml:id="tabela.1" rend="table-scroll">
                   <head>Tabela 1: Seznam tem z izvirno in preimenovano oznako.</head>
                   <row>
                      <cell rend="center">
@@ -4046,7 +4062,7 @@
                      prilagajate.</note>
                </p>
                <figure xml:id="slika.19">
-                  <graphic url="https://sidih.si/cdn/2177/Slika19_select-rows.png" height="598px"/>
+                  <graphic url="https://sidih.si/cdn/2177/Slika19_select-rows.png" height="400px"/>
                   <head>Slika 19: Nastavitev mej za prisotnost tem v grandiku Select Rows.</head>
                </figure>
                <p xml:id="sl-p-109">

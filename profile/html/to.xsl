@@ -106,7 +106,6 @@
          .numberParagraph:hover {color: black;}
          button.sticky-img {
          float: left;
-         
          left: 50%;
          margin-left: -50vw;
          position: relative;
@@ -156,9 +155,9 @@
    </doc>
    <xsl:template match="tei:figure[not(@type)]">
       <xsl:variable name="image-file-name" select="tokenize(tei:graphic/@url,'/')[last()]"/>
-      <xsl:variable name="height" select="if (tei:graphic/@height) then 'max' else ',600'"/>
+      <xsl:variable name="height" select="if (tei:graphic/@height) then substring-before(tei:graphic/@height,'px') else '600'"/>
       <figure id="{@xml:id}">
-         <img class="imageviewer" src="{concat('https://sidih.si/iiif/2/entity|2001-3000|2177|',$image-file-name,'/full/',$height,'/0/default.jpg')}" data-high-res-src="{concat('https://sidih.si/cdn/2177/',$image-file-name)}" alt="{normalize-space(tei:head)}"/>
+         <img class="imageviewer" src="{concat('https://sidih.si/iiif/2/entity|2001-3000|2177|',$image-file-name,'/full/,',$height,'/0/default.jpg')}" data-high-res-src="{concat('https://sidih.si/cdn/2177/',$image-file-name)}" alt="{normalize-space(tei:head)}"/>
          <figcaption>
             <xsl:apply-templates select="tei:head"/>
          </figcaption>
